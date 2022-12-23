@@ -11,13 +11,6 @@ fi
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 curl g++-mingw-w64-x86-64 g++-mingw-w64-x86-64-posix libqt5svg5-dev -y
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
-# Clone code from official Github repository
-	rm -rf Advantage
-	git clone https://github.com/TheCodexBlockchain/Advantage.git
-
-# Entering directory
-	cd Advantage
-
 # Disable WSL support for Win32 applications.
 sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
 
