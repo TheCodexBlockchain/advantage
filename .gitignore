@@ -6,6 +6,14 @@ reset-files.bash
 *.tar.gz
 *.exe
 configure~
+# Advantage
+src/advantage
+src/advantaged
+src/advantage-cli
+src/advantage-tx
+src/bench/bench_advantage
+src/test/test_advantage
+src/qt/test/test_advantage-qt
 
 
 ##########################################
