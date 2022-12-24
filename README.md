@@ -36,8 +36,8 @@ Advantage Wallet Repository
   <td class=xl6317252 width=107 style='width:81pt'>Block Reward</td>
   <td class=xl6317252 width=107 style='width:81pt'>MN Reward %</td>
   <td class=xl6317252 width=134 style='width:100pt'>Staking Reward %</td>
-  <td class=xl6317252 width=107 style='width:81pt'>MN Reward</td>
-  <td class=xl6317252 width=107 style='width:81pt'>Staker Reward</td>
+  <td class=xl6317252 width=107 style='width:81pt'>Advantage</td>
+  <td class=xl6317252 width=107 style='width:81pt'>Community Chest</td>
  </tr>
  <tr height=21 style='mso-height-source:userset;height:15.75pt'>
   <td height=21 class=xl6417252 style='height:15.75pt'>1-500</td>
