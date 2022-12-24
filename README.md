@@ -1,13 +1,13 @@
 **ALERT: This document should be updated for EACH coin individually**
-**The dummy values below belongs to Sapphire Coin**
 
-DECENOMY Standard wallet repository
+
+Advantage Wallet Repository
 =====================================
 
 ### Coin Specs
 
 • PoW Algorithm: X11KVS
-• Premine: 1,000,000,000 USDX
+• Premine: 90,000,000,000 USDX
 • PoW Blocks: 1 - 1000
 • PoS Blocks: Starting from 1001
 • Block Time: 60 Seconds
@@ -17,7 +17,7 @@ DECENOMY Standard wallet repository
 
 • Explorer https://explorer.decenomy.net/
 
-• Website [advantage.com](advantage.com)
+• Website [advantage.com](theadvantageblockchain.com)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
