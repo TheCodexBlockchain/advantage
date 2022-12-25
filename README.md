@@ -12,7 +12,7 @@ Advantage Wallet Repository
 • PoS Blocks: Starting from 1001
 • Block Time: 60 Seconds
 • Maturity: 100 Confirmations
-• Prefix: USDX adresses start with the capital letter "D"
+• Prefix: USDX adresses start with the capital letter "A"
 • Ports: __PORT_MAINNET__ (p2p) / __RPCPORT_MAINNET__ (rpc)
 
 • Website [www.theadvantageblockchain.com/](theadvantageblockchain.com)
