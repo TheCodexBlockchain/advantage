@@ -1,6 +1,3 @@
-**ALERT: This document should be updated for EACH coin individually**
-
-
 Advantage Wallet Repository
 =====================================
 
