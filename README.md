@@ -17,7 +17,7 @@ Advantage Wallet Repository
 
 • Explorer https://explorer.decenomy.net/
 
-• Website [advantage.com](theadvantageblockchain.com)
+• Website [www.theadvantageblockchain.com/](theadvantageblockchain.com)
 
 ### Rewards Breakdown
 <table border=0 cellpadding=0 cellspacing=0 width=701 class=xl6553517252
