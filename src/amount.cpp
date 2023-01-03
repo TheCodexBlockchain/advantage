@@ -11,7 +11,7 @@
 
 const std::string CURRENCY_UNIT = "USDX";
 
-// CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
+CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 {
     if (nSize > 0)
         nSatoshisPerK = (nFeePaid * 5) / 100; // Calculating the Flat 5% fee based on amount instead of per block size
