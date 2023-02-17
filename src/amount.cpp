@@ -9,23 +9,27 @@
 
 #include "tinyformat.h"
 
-const std::string CURRENCY_UNIT = "USDX";
+const std::string CURRENCY_UNIT = "__USDX__";
 
 CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 {
     if (nSize > 0)
-        nSatoshisPerK = (nFeePaid * 5) / 100; // Calculating the Flat 5% fee based on amount instead of per block size
+        nSatoshisPerK = nFeePaid * 1000 / nSize;
     else
-        nSatoshisPerK = 0; // If block size is 0 no fee will be charged
+        nSatoshisPerK = 0;
 }
 
 CAmount CFeeRate::GetFee(size_t nSize) const
 {
-    CAmount nFee = nSatoshisPerK; // This function will return the fee which has been directly set as per amount. Refer to line 16.
+    CAmount nFee = nSatoshisPerK * nSize / 1000;
+
+    if (nFee == 0 && nSatoshisPerK > 0)
+        nFee = nSatoshisPerK;
+
     return nFee;
 }
 
 std::string CFeeRate::ToString() const
 {
-    return strprintf("Flat 5%"); // Returned the Fee Rate which will be visible on Front
+    return strprintf("%d.%08d %s/kB", nSatoshisPerK / COIN, nSatoshisPerK % COIN, CURRENCY_UNIT);
 }
