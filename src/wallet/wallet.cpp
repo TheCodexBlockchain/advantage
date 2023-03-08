@@ -2465,7 +2465,8 @@ bool CWallet::CreateCoinStake(
         unsigned int nBits,
         CMutableTransaction& txNew,
         int64_t& nTxNewTime,
-        std::vector<COutput>* availableCoins
+        std::vector<COutput>* availableCoins,
+        CAmount& nBlockValue
         )
 {
 
@@ -2485,6 +2486,8 @@ bool CWallet::CreateCoinStake(
 
     // Kernel Search
     CAmount nCredit;
+    CAmount nMasternodeCredit = CMasternode::GetMasternodePayment(nBlockValue);
+    CAmount nTreasuryCredit = (consensus.nTreasuryActivationHeight <= pindexPrev->nHeight + 1) ? CMasternode::GetTreasuryPayment(nBlockValue) : 0;
     CScript scriptPubKeyKernel;
     bool fKernelFound = false;
     int nAttempts = 0;
@@ -2521,12 +2524,11 @@ bool CWallet::CreateCoinStake(
         nCredit += stakeInput.GetValue();
 
         // Add block reward to the credit
-        nCredit += CMasternode::GetBlockValue(pindexPrev->nHeight + 1);
-        CAmount nMasternodeCredit = CMasternode::GetMasternodePayment(pindexPrev->nHeight + 1);
+        nCredit += nBlockValue;
 
         // Create the output transaction(s)
         std::vector<CTxOut> vout;
-        if (!stakeInput.CreateTxOuts(this, vout, nCredit - nMasternodeCredit, onlyP2PK)) {
+        if (!stakeInput.CreateTxOuts(this, vout, nCredit - nMasternodeCredit - nTreasuryCredit, onlyP2PK)) {
             LogPrintf("%s : failed to create output\n", __func__);
             continue;
         }
@@ -2553,7 +2555,8 @@ bool CWallet::CreateCoinStake(
             return error("%s : exceeded coinstake size limit", __func__);
 
         // Masternode payment
-        FillBlockPayee(txNew, pindexPrev, true);
+        if (nBlockValue > 0)
+            FillBlockPayee(txNew, pindexPrev, true, nBlockValue);
 
         const uint256& hashTxOut = txNew.GetHash();
         CTxIn in;

@@ -294,9 +294,9 @@ bool IsBlockPayeeValid(const CBlock& block, int nBlockHeight)
 }
 
 
-void FillBlockPayee(CMutableTransaction& txNew, const CBlockIndex* pindexPrev, bool fProofOfStake)
+void FillBlockPayee(CMutableTransaction& txNew, const CBlockIndex* pindexPrev, bool fProofOfStake, CAmount& nBlockValue)
 {
-    masternodePayments.FillBlockPayee(txNew, pindexPrev, fProofOfStake);
+    masternodePayments.FillBlockPayee(txNew, pindexPrev, fProofOfStake, nBlockValue);
 }
 
 std::string GetRequiredPaymentsString(int nBlockHeight)
@@ -304,64 +304,115 @@ std::string GetRequiredPaymentsString(int nBlockHeight)
     return masternodePayments.GetRequiredPaymentsString(nBlockHeight);
 }
 
-void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBlockIndex* pindexPrev, bool fProofOfStake)
+void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBlockIndex* pindexPrev, bool fProofOfStake, CAmount& nBlockValue)
 {
     if (!pindexPrev) return;
 
     bool hasPayment = true;
-    CScript payee;
+    CScript masternodePayee;
 
     //spork
-    if (!masternodePayments.GetBlockPayee(pindexPrev->nHeight + 1, payee)) {
+    if (!masternodePayments.GetBlockPayee(pindexPrev->nHeight + 1, masternodePayee)) {
         //no masternode detected
         CMasternode* winningNode = mnodeman.GetCurrentMasterNode(1);
         if (winningNode) {
-            payee = GetScriptForDestination(winningNode->pubKeyCollateralAddress.GetID());
+            masternodePayee = GetScriptForDestination(winningNode->pubKeyCollateralAddress.GetID());
         } else {
             LogPrint(BCLog::MASTERNODE,"CreateNewBlock: Failed to detect masternode to pay\n");
             hasPayment = false;
         }
     }
 
+    bool treasuryActive = Params().GetConsensus().nTreasuryActivationHeight <= pindexPrev->nHeight + 1;
+    CTxDestination treasuryDest = DecodeDestination(Params().GetConsensus().strTreasuryAddress);
+    CScript treasuryPayee = GetScriptForDestination(treasuryDest);
+    CAmount treasuryPayment = treasuryActive ? CMasternode::GetTreasuryPayment(nBlockValue) : 0;
+
     if (hasPayment) {
-        CAmount masternodePayment = CMasternode::GetMasternodePayment(pindexPrev->nHeight + 1);
+        CAmount masternodePayment = CMasternode::GetMasternodePayment(nBlockValue);
+        CAmount totalPayment = masternodePayment + treasuryPayment;
+
         if (fProofOfStake) {
             /**For Proof Of Stake vout[0] must be null
              * Stake reward can be split into many different outputs, so we must
              * use vout.size() to align with several different cases.
-             * An additional output is appended as the masternode payment
+             * Two additional outputs are appended for the masternode and treasury payment
              */
             unsigned int i = txNew.vout.size();
-            txNew.vout.resize(i + 1);
-            txNew.vout[i].scriptPubKey = payee;
+            txNew.vout.resize(i + treasuryActive ? 2 : 1);
+            txNew.vout[i].scriptPubKey = masternodePayee;
             txNew.vout[i].nValue = masternodePayment;
+            if (treasuryActive) {
+                txNew.vout[i + 1].scriptPubKey = treasuryPayee;
+                txNew.vout[i + 1].nValue = treasuryPayment;
+            }
 
-            //subtract mn payment from the stake reward
+            //subtract mn and treasury payment from the stake reward
             if (i == 2) {
                 // Majority of cases; do it quick and move on
-                txNew.vout[i - 1].nValue -= masternodePayment;
+                txNew.vout[i - 1].nValue -= totalPayment;
             } else if (i > 2) {
                 // special case, stake is split between (i-1) outputs
                 unsigned int outputs = i-1;
-                CAmount mnPaymentSplit = masternodePayment / outputs;
-                CAmount mnPaymentRemainder = masternodePayment - (mnPaymentSplit * outputs);
+                CAmount paymentSplit = totalPayment / outputs;
+                CAmount paymentRemainder = totalPayment - (paymentSplit * outputs);
                 for (unsigned int j=1; j<=outputs; j++) {
-                    txNew.vout[j].nValue -= mnPaymentSplit;
+                    txNew.vout[j].nValue -= paymentSplit;
                 }
                 // in case it's not an even division, take the last bit of dust from the last one
-                txNew.vout[outputs].nValue -= mnPaymentRemainder;
+                txNew.vout[outputs].nValue -= paymentRemainder;
+            }
+        } else {
+            txNew.vout.resize(treasuryActive ? 3 : 2);
+            txNew.vout[0].nValue = nBlockValue - totalPayment;
+            txNew.vout[1].scriptPubKey = masternodePayee;
+            txNew.vout[1].nValue = masternodePayment;
+            if (treasuryActive) {
+                txNew.vout[2].scriptPubKey = treasuryPayee;
+                txNew.vout[2].nValue = treasuryPayment;
+            }
+            
+        }
+
+        CTxDestination masternodeDest;
+        ExtractDestination(masternodePayee, masternodeDest);
+
+        LogPrint(BCLog::MASTERNODE,"Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), EncodeDestination(masternodeDest).c_str());
+        LogPrint(BCLog::MASTERNODE,"Treasury payment of %s to %s\n", FormatMoney(treasuryPayment).c_str(), Params().GetConsensus().strTreasuryAddress);
+    } else if (treasuryActive) {
+        if (fProofOfStake) {
+            /**For Proof Of Stake vout[0] must be null
+             * Stake reward can be split into many different outputs, so we must
+             * use vout.size() to align with several different cases.
+             * An additional output is appended as the treasury payment
+             */
+            unsigned int i = txNew.vout.size();
+            txNew.vout.resize(i + 1);
+            txNew.vout[i].scriptPubKey = treasuryPayee;
+            txNew.vout[i].nValue = treasuryPayment;
+
+            //subtract treasury payment from the stake reward
+            if (i == 2) {
+                // Majority of cases; do it quick and move on
+                txNew.vout[i - 1].nValue -= treasuryPayment;
+            } else if (i > 2) {
+                // special case, stake is split between (i-1) outputs
+                unsigned int outputs = i-1;
+                CAmount paymentSplit = treasuryPayment / outputs;
+                CAmount paymentRemainder = treasuryPayment - (paymentSplit * outputs);
+                for (unsigned int j=1; j<=outputs; j++) {
+                    txNew.vout[j].nValue -= paymentSplit;
+                }
+                // in case it's not an even division, take the last bit of dust from the last one
+                txNew.vout[outputs].nValue -= paymentRemainder;
             }
         } else {
             txNew.vout.resize(2);
-            txNew.vout[1].scriptPubKey = payee;
-            txNew.vout[1].nValue = masternodePayment;
-            txNew.vout[0].nValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1) - masternodePayment;
+            txNew.vout[0].nValue = nBlockValue - treasuryPayment;
+            txNew.vout[1].scriptPubKey = treasuryPayee;
+            txNew.vout[1].nValue = treasuryPayment;
         }
-
-        CTxDestination address1;
-        ExtractDestination(payee, address1);
-
-        LogPrint(BCLog::MASTERNODE,"Masternode payment of %s to %s\n", FormatMoney(masternodePayment).c_str(), EncodeDestination(address1).c_str());
+        LogPrint(BCLog::MASTERNODE,"Treasury payment of %s to %s\n", FormatMoney(treasuryPayment).c_str(), Params().GetConsensus().strTreasuryAddress);
     }
 }
 
@@ -620,7 +671,8 @@ bool CMasternodeBlockPayees::IsTransactionValidV1(const CTransaction& txNew, int
     }
 
     std::string strPayeesPossible = "";
-    CAmount requiredMasternodePayment = CMasternode::GetMasternodePayment(nBlockHeight);
+    CAmount nValueOut = txNew.GetValueOut();
+    CAmount requiredMasternodePayment = CMasternode::GetMasternodePayment(nValueOut);
 
     for (CMasternodePayee& payee : vecPayments) {
         bool found = false;
@@ -674,7 +726,8 @@ bool CMasternodeBlockPayees::IsTransactionValidV2(const CTransaction& txNew, int
         return true;
     }
 
-    auto requiredMasternodePayment = CMasternode::GetMasternodePayment(nBlockHeight);
+    CAmount nValueOut = txNew.GetValueOut();
+    auto requiredMasternodePayment = CMasternode::GetMasternodePayment(nValueOut);
     auto found = false;
     CScript paidPayee;
 

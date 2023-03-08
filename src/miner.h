@@ -43,6 +43,7 @@ void UpdateTime(CBlockHeader* block, const CBlockIndex* pindexPrev);
 
 extern double dHashesPerSec;
 extern int64_t nHPSTimerStart;
+extern CAmount nBlockValue;
 
 struct CBlockTemplate {
     CBlock block;
