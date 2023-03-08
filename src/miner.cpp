@@ -66,6 +66,7 @@ public:
 
 uint64_t nLastBlockTx = 0;
 uint64_t nLastBlockSize = 0;
+CAmount nBlockValue = 0;
 
 // We want to sort transactions by priority and fee rate, so:
 typedef boost::tuple<double, CFeeRate, const CTransaction*> TxPriority;
@@ -109,15 +110,16 @@ bool CreateCoinbaseTx(CBlock* pblock, const CScript& scriptPubKeyIn, CBlockIndex
     txNew.vout[0].scriptPubKey = scriptPubKeyIn;
 
     //Masternode and general budget payments
-    FillBlockPayee(txNew, pindexPrev, false);
+    if (nBlockValue > 0)
+        FillBlockPayee(txNew, pindexPrev, false, nBlockValue);
 
     txNew.vin[0].scriptSig = CScript() << pindexPrev->nHeight + 1 << OP_0;
     // If no payee was detected, then the whole block value goes to the first output.
     if (txNew.vout.size() == 1) {
-        txNew.vout[0].nValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1);
+        txNew.vout[0].nValue = nBlockValue;
     }
 
-    pblock->vtx.emplace_back(txNew);
+    pblock->vtx.emplace(pblock->vtx.begin(), txNew);
     return true;
 }
 
@@ -127,7 +129,7 @@ bool SolveProofOfStake(CBlock* pblock, CBlockIndex* pindexPrev, CWallet* pwallet
     pblock->nBits = GetNextWorkRequired(pindexPrev, pblock);
     CMutableTransaction txCoinStake;
     int64_t nTxNewTime = 0;
-    if (!pwallet->CreateCoinStake(*pwallet, pindexPrev, pblock->nBits, txCoinStake, nTxNewTime, availableCoins)) {
+    if (!pwallet->CreateCoinStake(*pwallet, pindexPrev, pblock->nBits, txCoinStake, nTxNewTime, availableCoins, nBlockValue)) {
         LogPrint(BCLog::STAKING, "%s : stake not found\n", __func__);
         return false;
     }
@@ -138,8 +140,8 @@ bool SolveProofOfStake(CBlock* pblock, CBlockIndex* pindexPrev, CWallet* pwallet
     emptyTx.vin[0].scriptSig = CScript() << pindexPrev->nHeight + 1 << OP_0;
     emptyTx.vout.resize(1);
     emptyTx.vout[0].SetEmpty();
-    pblock->vtx.emplace_back(emptyTx);
-    pblock->vtx.emplace_back(txCoinStake);
+    pblock->vtx.emplace(pblock->vtx.begin(), txCoinStake);
+    pblock->vtx.emplace(pblock->vtx.begin(), emptyTx);
     return true;
 }
 
@@ -171,12 +173,6 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     // -blockversion=N to test forking scenarios
     if (Params().IsRegTestNet()) {
         pblock->nVersion = GetArg("-blockversion", pblock->nVersion);
-    }
-
-    // Depending on the tip height, try to find a coinstake who solves the block or create a coinbase tx.
-    if (!(fProofOfStake ? SolveProofOfStake(pblock, pindexPrev, pwallet, availableCoins)
-                        : CreateCoinbaseTx(pblock, scriptPubKeyIn, pindexPrev))) {
-        return nullptr;
     }
 
     pblocktemplate->vTxFees.push_back(-1);   // updated at end
@@ -380,11 +376,15 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
             }
         }
 
-        if (!fProofOfStake) {
-            // Coinbase can get the fees.
-            pblock->vtx[0].vout[0].nValue += nFees;
-            pblocktemplate->vTxFees[0] = -nFees;
+        nBlockValue = CMasternode::GetBlockValue(pindexPrev->nHeight + 1) + nFees;
+
+        // Depending on the tip height, try to find a coinstake who solves the block or create a coinbase tx.
+        if (!(fProofOfStake ? SolveProofOfStake(pblock, pindexPrev, pwallet, availableCoins)
+                            : CreateCoinbaseTx(pblock, scriptPubKeyIn, pindexPrev))) {
+            return nullptr;
         }
+
+        pblocktemplate->vTxFees[0] = -nFees;
 
         nLastBlockTx = nBlockTx;
         nLastBlockSize = nBlockSize;
@@ -469,7 +469,7 @@ CBlockTemplate* CreateNewBlockWithKey(CReserveKey& reservekey, CWallet* pwallet)
 bool ProcessBlockFound(CBlock* pblock, CWallet& wallet, Optional<CReserveKey>& reservekey)
 {
     LogPrintf("%s\n", pblock->ToString());
-    LogPrintf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue));
+    LogPrintf("generated %s\n", FormatMoney(pblock->vtx[0].GetValueOut()));
 
     // Found a solution
     {

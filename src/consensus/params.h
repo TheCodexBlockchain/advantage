@@ -111,6 +111,11 @@ struct Params {
     int64_t nTime_EnforceNewSporkKey;
     int64_t nTime_RejectOldSporkKey;
 
+    // Treasury
+    int nTreasuryActivationHeight;
+    int nTreasuryPercentage;
+    std::string strTreasuryAddress;
+
     // Map with network updates
     NetworkUpgrade vUpgrades[MAX_NETWORK_UPGRADES];
 

@@ -2148,22 +2148,37 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     // track mint amount info
-    const int64_t nMint = (nValueOut - nValueIn) + nFees;
+    CAmount nMint = (nValueOut - nValueIn) + nFees;
 
     int64_t nTime1 = GetTimeMicros();
     nTimeConnect += nTime1 - nTimeStart;
     LogPrint(BCLog::BENCH, "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime1 - nTimeStart), 0.001 * (nTime1 - nTimeStart) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime1 - nTimeStart) / (nInputs - 1), nTimeConnect * 0.000001);
 
-    //PoW phase redistributed fees to miner. PoS stage destroys fees.
-    CAmount nExpectedMint = CMasternode::GetBlockValue(pindex->pprev->nHeight + 1);
-    if (block.IsProofOfWork())
-        nExpectedMint += nFees;
+    //Fees are redistributed to miners and stakers.
+    CAmount nExpectedMint = CMasternode::GetBlockValue(pindex->pprev->nHeight + 1) + nFees;
 
     //Check that the block does not overmint
     if (!IsBlockValueValid(pindex->nHeight, nExpectedMint, nMint)) {
         return state.DoS(100, error("ConnectBlock() : reward pays too much (actual=%s vs limit=%s)",
                                     FormatMoney(nMint), FormatMoney(nExpectedMint)),
                          REJECT_INVALID, "bad-cb-amount");
+    }
+
+    //Check for treasury payment
+    if (consensus.nTreasuryActivationHeight <= pindex->nHeight) {
+        const CTransaction& txNew = (isPoSActive ? block.vtx[1] : block.vtx[0]);
+        bool found = false;
+        CTxDestination treasuryDest = DecodeDestination(consensus.strTreasuryAddress);
+        CScript treasuryPayee = GetScriptForDestination(treasuryDest);
+
+        for (CTxOut out : txNew.vout) {
+            if (out.nValue == CMasternode::GetTreasuryPayment(nMint) && out.scriptPubKey == treasuryPayee)
+                found = true;
+        }
+
+        if (!found) {
+            return state.DoS(100, error("ConnectBlock() : no treasury payment found"), REJECT_INVALID, "no-treasury-payment");
+        }
     }
 
     if (!control.Wait())

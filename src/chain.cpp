@@ -251,11 +251,12 @@ CScript* CBlockIndex::GetPaidPayee()
         CBlock block;
         if (nHeight <= chainActive.Height() && ReadBlockFromDisk(block, this)) {
             const auto& tx = block.vtx[block.IsProofOfWork() ? 0 : 1];
-            auto amount = CMasternode::GetMasternodePayment(nHeight);
+
+            CAmount nBlockValue = tx.GetValueOut();
+            auto amount = CMasternode::GetMasternodePayment(nBlockValue);
 
             for (const CTxOut& out : tx.vout) {
-                if (out.nValue == amount
-                ) {
+                if (out.nValue == amount) {
                     paidPayee = new CScript(out.scriptPubKey);
                 }
             }

@@ -155,7 +155,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0xc23375b8f590160b976ba7b5db63f623a7ff375af8c230834970f51cfc9f0e76"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;   
+        consensus.powLimit   = ~UINT256_ZERO >> 20;
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nCoinbaseMaturity = 3;
@@ -202,6 +202,11 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock = uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].hashActivationBlock     = uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].hashActivationBlock     = uint256S("0x0");
+
+        // Treasury
+        consensus.nTreasuryActivationHeight = 3;
+        consensus.nTreasuryPercentage = 23;
+        consensus.strTreasuryAddress = "777KRLWeLQpB3DXxVtocNgfozEzp1ebgP1";
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -302,6 +307,11 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock  =uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].hashActivationBlock      = uint256S("0x0");
 
+        // Treasury
+        consensus.nTreasuryActivationHeight = 10;
+        consensus.nTreasuryPercentage = 23;
+        consensus.strTreasuryAddress = "7F66FzXD9CHvYwFWyEwMor6RFLZGGuumpz";
+
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -382,18 +392,19 @@ public:
         consensus.nTime_RejectOldSporkKey = 0;
 
         // Network upgrades
-        consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight =
-                Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
-        consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight =
-                Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight           = 251;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight        = 251;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight         =
-                Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight          = 251;
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight          =
-                Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight       = 300;
+        consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight                    = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
+        consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight               = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                     = 251;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                  = 251;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                   = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight       = 251;
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight        = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight  = 300;
+
+        // Treasury
+        consensus.nTreasuryActivationHeight = 10;
+        consensus.nTreasuryPercentage = 23;
+        consensus.strTreasuryAddress = "yCvUVd72w7xpimf981m114FSFbmAmne7j9";
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.

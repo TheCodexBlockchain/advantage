@@ -374,6 +374,9 @@ CAmount CMasternode::GetBlockValue(int nHeight)
 {
     CAmount maxMoneyOut= Params().GetConsensus().nMaxMoneyOut;
 
+    if (Params().IsRegTestNet())
+        return 250 * COIN;
+
     if(nMoneySupply >= maxMoneyOut) {
         return 0;
     }
@@ -381,9 +384,9 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     CAmount nSubsidy;
 
     if (nHeight == 2) {
-        nSubsidy = 90000000000 * COIN;
+        nSubsidy = 100000000 * COIN;
     } else {
-        nSubsidy = 0 * COIN;
+        nSubsidy = 10 * COIN;
     }
 
     if(nMoneySupply + nSubsidy > maxMoneyOut) {
@@ -393,9 +396,14 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     return nSubsidy;
 }
 
-CAmount CMasternode::GetMasternodePayment(int nHeight)
+CAmount CMasternode::GetMasternodePayment(CAmount& nBlockValue)
 {
-    return CMasternode::GetBlockValue(nHeight) * 20 / 100;
+    return nBlockValue * 20 / 100;
+}
+
+CAmount CMasternode::GetTreasuryPayment(CAmount& nBlockValue)
+{
+    return nBlockValue * Params().GetConsensus().nTreasuryPercentage / 100;
 }
 
 void CMasternode::InitMasternodeCollateralList() {

@@ -504,7 +504,8 @@ public:
                          unsigned int nBits,
                          CMutableTransaction& txNew,
                          int64_t& nTxNewTime,
-                         std::vector<COutput>* availableCoins);
+                         std::vector<COutput>* availableCoins,
+                         CAmount& nBlockValue);
     bool MultiSend();
     void AutoCombineDust(CConnman* connman);
 
