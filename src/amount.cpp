@@ -13,20 +13,20 @@ const std::string CURRENCY_UNIT = "__USDX__";
 
 CFeeRate::CFeeRate(const CAmount& nFeePaid, size_t nSize)
 {
-    if (nSize > 0)
-        nSatoshisPerK = nFeePaid * 1000 / nSize;
-    else
-        nSatoshisPerK = 0;
+    // New fee rate as a percentage of the transaction amount
+    double newFeeRate = 0.0395;
+
+    // Calculate the new fee in satoshis per kilobyte
+    nSatoshisPerK = (nSize > 0) ? (nFeePaid * newFeeRate) / (nSize / 1000) : 0;
 }
 
 CAmount CFeeRate::GetFee(size_t nSize) const
 {
-    CAmount nFee = nSatoshisPerK * nSize / 1000;
-
-    if (nFee == 0 && nSatoshisPerK > 0)
-        nFee = nSatoshisPerK;
-
-    return nFee;
+    // New fee rate as a percentage of the transaction amount
+    double newFeeRate = 0.0395;
+    CAmount newFee = (nSize * nSatoshisPerK * 1000 * newFeeRate) / 100;
+    // Return the new fee, but no less than the original fee rate
+    return (newFee > 0) ? newFee : nSatoshisPerK;
 }
 
 std::string CFeeRate::ToString() const
