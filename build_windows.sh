@@ -12,7 +12,10 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Disable WSL support for Win32 applications.
-sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
+	sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
+
+# Strip out problematic Windows %PATH% imported var
+	PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
 
 # Compile dependencies
 	cd depends 
@@ -23,10 +26,9 @@ sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
 	./autogen.sh
 	./configure --prefix=$(pwd)/depends/x86_64-w64-mingw32 --disable-debug --disable-tests --disable-bench --disable-online-rust CFLAGS="-O3" CXXFLAGS="-O3"
 	make -j$(echo $CPU_CORES) HOST=x86_64-w64-mingw32
-	cd ..
 
 # Create zip file of binaries
-	cp Advantage/src/advantaged.exe Advantage/src/advantage-cli.exe Advantage/src/advantage-tx.exe Advantage/src/qt/advantage-qt.exe .
+	cp src/advantaged.exe src/advantage-cli.exe src/advantage-tx.exe src/qt/advantage-qt.exe .
 	zip USDX-Windows.zip advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
 	rm -f advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
 
