@@ -12,23 +12,33 @@ fi
 	echo "1" | sudo update-alternatives --config x86_64-w64-mingw32-g++
 
 # Disable WSL support for Win32 applications.
-sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
+	sudo bash -c "echo 0 > /proc/sys/fs/binfmt_misc/status"
+
+# Remember path environment variable and strip out any problematic Windows paths
+	PATH_OLD=$PATH
+	PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
+
+# Get the root dir of the project where this script should be located
+	PROJECT_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Compile dependencies
-	cd depends 
+	cd $PROJECT_ROOT/depends
 	make -j$(echo $CPU_CORES) HOST=x86_64-w64-mingw32 
 	cd ..
 
 # Compile
 	./autogen.sh
-	./configure --prefix=$(pwd)/depends/x86_64-w64-mingw32 --disable-debug --disable-tests --disable-bench --disable-online-rust CFLAGS="-O3" CXXFLAGS="-O3"
+	./configure --prefix=$PROJECT_ROOT/depends/x86_64-w64-mingw32 --disable-debug --disable-tests --disable-bench --disable-online-rust CFLAGS="-O3" CXXFLAGS="-O3"
 	make -j$(echo $CPU_CORES) HOST=x86_64-w64-mingw32
 	cd ..
 
 # Create zip file of binaries
-	cp Advantage/src/advantaged.exe Advantage/src/advantage-cli.exe Advantage/src/advantage-tx.exe Advantage/src/qt/advantage-qt.exe .
+	cp $PROJECT_ROOT/src/advantaged.exe $PROJECT_ROOT/src/advantage-cli.exe $PROJECT_ROOT/src/advantage-tx.exe $PROJECT_ROOT/src/qt/advantage-qt.exe .
 	zip USDX-Windows.zip advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
 	rm -f advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
+
+# Restore original path environment variable
+	PATH=$PATH_OLD
 
 # Enable WSL support for Win32 applications.
 	sudo bash -c "echo 1 > /proc/sys/fs/binfmt_misc/status"
