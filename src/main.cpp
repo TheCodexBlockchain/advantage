@@ -1008,10 +1008,10 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
             }
         }
 
-        if (fRejectAbsurdFee && nFees > ::minRelayTxFee.GetFee(nSize) * 1000000000)
-            return state.Invalid(false,
-                REJECT_HIGHFEE, "absurdly-high-fee",
-                strprintf("%d > %d", nFees, ::minRelayTxFee.GetFee(nSize) * 1000000000));
+        // if (fRejectAbsurdFee && nFees > ::minRelayTxFee.GetFee(nSize) * 1000000000)
+        //     return state.Invalid(false,
+        //         REJECT_HIGHFEE, "absurdly-high-fee",
+        //         strprintf("%d > %d", nFees, ::minRelayTxFee.GetFee(nSize) * 1000000000));
 
         // As zero fee transactions are not going to be accepted in the near future (4.0) and the code will be fully refactored soon.
         // This is just a quick inline towards that goal, the mempool by default will not accept them. Blocking
