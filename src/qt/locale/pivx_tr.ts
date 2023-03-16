@@ -1584,10 +1584,6 @@ Emin misiniz?</translation>
         <translation>Sistem Mesajı</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>ÇokluGönderi işlemi gönderildi</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>Gönderilmiş işlem</translation>
     </message>
@@ -3224,144 +3220,6 @@ Emin misiniz?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Form</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>İşlem Detayları</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>İPTAL</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>KAYDET</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>ÇokluGönder için yeni alıcı</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Yüzde</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Form</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>ÇokluGönder olgunlaşmış masternode ve staking ödüllerinizin 100% 'üne kadarını diğer USDX adreslerine otomatik olarak göndermenizi sağlar. </translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Aktif</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>Devre dışı bırak</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Henüz aktif alıcı bulunmuyor</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Stakeleri gönder</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Masternode ödüllerini gönder</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>ALICI EKLE</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>TEMİZLE</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Temizlik başarılı</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Hepsini temizleme işlemi başarısız, cüzdan dosyasında adres bulunamadı</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>Girilmiş adres: %1 geçersiz.
-Lütfen adresi kontrol ediniz ve tekrar deneyiniz.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Geçersiz yüzde, lütfen 1 ile 100 arasında bir değer girin</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>MultiSend vectorünüzün toplam miktarı stake ödülünün 100% ünden fazla</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>ÇokluGönder kaydetme hatası, özellikler veritabanına yazılamadı.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>ÇokluGönder aktive edilemedi, hazırda alıcı bulunmuyor.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>ÇokluGönder aktive edilemedi
-İşaret kuturlarından birini veya ikisini seçerek stake ve/veya masternode ödüllerinden gönderin.</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>Çoklu Gönderim devrede fakat ayarlar veritabanına yazılamadı</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>ÇokluGönderi geçerli hale getirildi</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>İlk ÇokluGönder adresi geçersiz</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>Çoklu Gönderim devredışı fakat ayarlar veritabanına yazılamadı</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>Çoklu Gönderim devredışı</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -3599,10 +3457,6 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     <message>
         <source>Wallet</source>
         <translation>Cüzdan</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>Çoklu Gönderim</translation>
     </message>
     <message>
         <source>Tools</source>

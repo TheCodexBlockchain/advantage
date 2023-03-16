@@ -1823,10 +1823,6 @@ NODES</source>
         <translation>Системное сообщение</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Отправленная MultiSend транзакция</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>Отправленная транзакция</translation>
     </message>
@@ -3853,160 +3849,6 @@ Are you sure?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Вид</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Детали транзакции</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Текстовая метка</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>ОТМЕНА</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>СОХРАНИТЬ</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>Новый получатель для мультиотправки</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>Лейбл Адреса (необязательно)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Введите лейбл для сохранения с этим адресом</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Процент</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Вид</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>Текстовая метка</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>Недоступно</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>Флажок</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>MultiSend позволяет автоматически отправлять до 100% ваших вознаграждений от стекинга или мастернод в список других адресов USDX после его созревания.</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Активно</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>Отключить</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Пока нет активных получателей</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Отправить вознаграждения за стекинг</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Отправить вознаграждения за мастерноду</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>ДОБАВИТЬ ПОЛУЧАТЕЛЯ</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>ОЧИСТИТЬ ВСЕ</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Невозможно выполнить операцию, кошелек заблокирован</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Очистка успешно завершена</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Полная очистка не удалась. Не удалось найти адрес в файле кошелька</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Невозможно добавить получателя мультисендинга, кошелек заблокирован</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>Введенный адрес: %1 неверен.
-Пожалуйста, проверьте адрес и попробуйте еще раз.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Неверный процент, введите значения от 1 до 100.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>Общая сумма вашего вектора MultiSend превышает 100% ваших вознаграждения за стекинг</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Ошибка при сохранении MultiSend. Не удалось сохранить свойства в базе данных.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>Невозможно активировать MultiSend. Нет доступных получателей</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>Невозможно активировать MultiSend.
-Проверьте один или оба флажка для отправки вознаграждений за стекинг и / или мастерноду.</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend активирован, но запись настроек в DB не удалась</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>MultiSend активирован</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>Первый адрес мультиотправки неверен</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend деактивирован, но запись настроек в DB не удалась </translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>MultiSend деактивирован </translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -4300,10 +4142,6 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     <message>
         <source>Wallet</source>
         <translation>Кошелек</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>Multisend</translation>
     </message>
     <message>
         <source>Export Accounting</source>

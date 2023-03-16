@@ -1709,10 +1709,6 @@ Are you sure?</source>
         <translation>系统消息</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>发送MultiSend交易</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>发送交易</translation>
     </message>
@@ -3577,156 +3573,6 @@ Are you sure?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>来自</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>交易明细</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>文本标签</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>删除</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>保存</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>多重发送新接收人</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>地址标签（可选项）</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>输入要用此地址保存的标签</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>百分百</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>来自</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>文本标签</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>查看列表</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>成熟以后，多重花费允许您自动发送高达 100% 的股权或主节点奖励到其他USDX地址列表</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>激活</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>不可用</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>还没激活接收人</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>发送加注</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>发送主节点奖励</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>添加接收人</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>清除所有</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>无法进行操作，钱包被锁了</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>清除成功</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>清除所有失败，无法找到钱包文件中的地址</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>无法添加多重发送接收人，钱包被锁了</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>输入的地址:%1无效。
-请检查地址，然后再试一次。</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>百分比无效，请输入从1到100的值。</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>保存多重发送出错，将属性保存到数据库失败</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>无法激活多重发送，没有可用的收件人</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>无法激活多重发送
-选中一个或两个复选框来发送加注和/或主节点奖励</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>多重发送已激活，但将设置写入DB失败</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>多重发送激活</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>第一个多重发送地址无效</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>多重发送未激活，但设置写入DB失败</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>多重发送未激活</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -3972,10 +3818,6 @@ Check one or both of the check boxes to send on stake and/or masternode rewards<
     <message>
         <source>Wallet</source>
         <translation>钱包</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>多重发送</translation>
     </message>
     <message>
         <source>Export Accounting</source>

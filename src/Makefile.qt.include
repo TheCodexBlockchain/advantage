@@ -56,8 +56,6 @@ QT_FORMS_UI = \
   qt/pivx/settings/forms/settingsfaqwidget.ui \
   qt/pivx/settings/forms/settingsinformationwidget.ui \
   qt/pivx/settings/forms/settingsmainoptionswidget.ui \
-  qt/pivx/settings/forms/settingsmultisenddialog.ui \
-  qt/pivx/settings/forms/settingsmultisendwidget.ui \
   qt/pivx/settings/forms/settingssignmessagewidgets.ui \
   qt/pivx/settings/forms/settingswalletoptionswidget.ui \
   qt/pivx/settings/forms/settingswalletrepairwidget.ui \
@@ -142,8 +140,6 @@ QT_MOC_CPP = \
   qt/pivx/settings/moc_settingsfaqwidget.cpp \
   qt/pivx/settings/moc_settingsinformationwidget.cpp \
   qt/pivx/settings/moc_settingsmainoptionswidget.cpp \
-  qt/pivx/settings/moc_settingsmultisenddialog.cpp \
-  qt/pivx/settings/moc_settingsmultisendwidget.cpp \
   qt/pivx/settings/moc_settingssignmessagewidgets.cpp \
   qt/pivx/settings/moc_settingswalletoptionswidget.cpp \
   qt/pivx/settings/moc_settingswalletrepairwidget.cpp \
@@ -261,8 +257,6 @@ BITCOIN_QT_H = \
   qt/pivx/settings/settingsfaqwidget.h \
   qt/pivx/settings/settingsinformationwidget.h \
   qt/pivx/settings/settingsmainoptionswidget.h \
-  qt/pivx/settings/settingsmultisenddialog.h \
-  qt/pivx/settings/settingsmultisendwidget.h \
   qt/pivx/settings/settingssignmessagewidgets.h \
   qt/pivx/settings/settingswalletoptionswidget.h \
   qt/pivx/settings/settingswalletrepairwidget.h \
@@ -346,7 +340,6 @@ RES_ICONS = \
   qt/pivx/res/img/ic-add-liliac.svg \
   qt/pivx/res/img/ic-check-theme-light.svg \
   qt/pivx/res/img/ic-nav-receive-hover.svg \
-  qt/pivx/res/img/img-empty-dark-multisend.svg \
   qt/pivx/res/img/ic-add-purple.svg \
   qt/pivx/res/img/ic-check-white.svg \
   qt/pivx/res/img/ic-nav-receive.svg \
@@ -371,7 +364,6 @@ RES_ICONS = \
   qt/pivx/res/img/ic-address-send-white.svg \
   qt/pivx/res/img/ic-clear-purple.svg \
   qt/pivx/res/img/ic-nav-settings-hover.svg \
-  qt/pivx/res/img/img-empty-multisend.svg \
   qt/pivx/res/img/ic-address-send.svg \
   qt/pivx/res/img/ic-close-white.svg \
   qt/pivx/res/img/ic-nav-settings.svg \
@@ -565,8 +557,6 @@ BITCOIN_QT_WALLET_CPP = \
   qt/pivx/settings/settingsfaqwidget.cpp \
   qt/pivx/settings/settingsinformationwidget.cpp \
   qt/pivx/settings/settingsmainoptionswidget.cpp \
-  qt/pivx/settings/settingsmultisenddialog.cpp \
-  qt/pivx/settings/settingsmultisendwidget.cpp \
   qt/pivx/settings/settingssignmessagewidgets.cpp \
   qt/pivx/settings/settingswalletoptionswidget.cpp \
   qt/pivx/settings/settingswalletrepairwidget.cpp \
