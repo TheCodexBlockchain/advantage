@@ -3480,8 +3480,8 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
         <translation>2) Pourquoi mes USDX ne peuvent pas être dépensés?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>

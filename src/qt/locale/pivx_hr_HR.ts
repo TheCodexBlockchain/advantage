@@ -3409,8 +3409,8 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>2) Zašto se moji USDX ne mogu potrošiti?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>

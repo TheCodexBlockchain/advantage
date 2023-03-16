@@ -3480,8 +3480,8 @@ Ha habido un error al tratar de guardar la libreta de direcciones en %1. Por fav
         <translation>2) ¿Por qué mis USDX no se pueden gastar?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>

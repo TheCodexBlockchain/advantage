@@ -3477,8 +3477,8 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>2) Почему мои USDX невозможно потратить?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>

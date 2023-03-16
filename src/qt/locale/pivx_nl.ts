@@ -3483,8 +3483,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2) Waarom is mijn USDX niet besteedbaar?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>

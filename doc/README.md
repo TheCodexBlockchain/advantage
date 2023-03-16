@@ -3,7 +3,7 @@ Advantage Core
 
 Setup
 ---------------------
-[Advantage Core](advantage.com/) is the original Advantage client and it builds the backbone of the network. However, it downloads and stores the entire history of Advantage transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Advantage Core](https://www.advantageblockchain.com/) is the original Advantage client and it builds the backbone of the network. However, it downloads and stores the entire history of Advantage transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -55,7 +55,7 @@ The Advantage repo's [root README](/README.md) contains relevant information on 
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [Advantage Homepage](advantage.com/).
+* Discuss on the [Advantage Homepage](https://www.advantageblockchain.com/).
 * Join the [Advantage Discord](https://discord.gg/vCgKhFFeJt).
 
 ### Miscellaneous
