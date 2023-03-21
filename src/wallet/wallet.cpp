@@ -2277,6 +2277,7 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                     return false;
                 }
 
+                std::set<CScript> setScriptPubKeys;
 
                 for (PAIRTYPE(const CWalletTx*, unsigned int) pcoin : setCoins) {
                     CAmount nCredit = pcoin.first->vout[pcoin.second].nValue;
@@ -2289,76 +2290,52 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                     if (age != 0)
                         age += 1;
                     dPriority += (double)nCredit * age;
+
+                    if (!setScriptPubKeys.count(pcoin.first->vout[pcoin.second].scriptPubKey))
+                        setScriptPubKeys.insert(pcoin.first->vout[pcoin.second].scriptPubKey);
                 }
 
-                CAmount nChange = nValueIn - nValue - nFeeRet;
+                CAmount nValueOutNotInScriptPubKeys = 0;
+                for (std::vector<CTxOut>::const_iterator it(txNew.vout.begin()); it != txNew.vout.end(); ++it) {
+                    if (!setScriptPubKeys.count(it->scriptPubKey))
+                        nValueOutNotInScriptPubKeys += it->nValue;
+                }
+
+                CAmount nChange = nValueIn - nTotalValue;
 
                 if (nChange > 0) {
-                    // Fill a vout to ourself
-                    // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-USDX-address
-                    bool combineChange = false;
-
-                    // coin control: send change to custom address
                     if (coinControl && IsValidDestination(coinControl->destChange)) {
                         scriptChange = GetScriptForDestination(coinControl->destChange);
-
-                        std::vector<CTxOut>::iterator it = txNew.vout.begin();
-                        while (it != txNew.vout.end()) {
-                            if (scriptChange == it->scriptPubKey) {
-                                it->nValue += nChange;
-                                nChange = 0;
-                                reservekey.ReturnKey();
-                                combineChange = true;
-                                break;
-                            }
-                            ++it;
-                        }
+                    } else {
+                        std::set<CScript>::const_iterator it(setScriptPubKeys.begin());
+                        std::advance(it, GetRandInt(setScriptPubKeys.size()));
+                        scriptChange = *it;
                     }
+                    CTxOut newTxOut(nChange, scriptChange);
 
-                    // no coin control: send change to newly generated address
-                    else {
-                        // Note: We use a new key here to keep it from being obvious which side is the change.
-                        //  The drawback is that by not reusing a previous key, the change may be lost if a
-                        //  backup is restored, if the backup doesn't have the new private key for the change.
-                        //  If we reused the old key, it would be possible to add code to look for and
-                        //  rediscover unknown transactions that were written with keys of ours to recover
-                        //  post-backup change.
-
-                        // Reserve a new key pair from key pool. If it fails, provide a dummy
-                        CPubKey vchPubKey;
-                        if (!reservekey.GetReservedKey(vchPubKey, true)) {
-                            strFailReason = _("Can't generate a change-address key. Please call keypoolrefill first.");
-                            scriptChange = CScript();
-                        } else {
-                            scriptChange = GetScriptForDestination(vchPubKey.GetID());
+                    // Never create dust outputs; if we would, just
+                    // add the dust to the fee.
+                    if (newTxOut.IsDust(::minRelayTxFee)) {
+                        nFeeRet += nChange;
+                        nChange = 0;
+                        nChangePosInOut = -1;
+                    } else {
+                        if (nChangePosInOut == -1) {
+                            // Insert change txn at random position:
+                            nChangePosInOut = GetRandInt(txNew.vout.size()+1);
+                        } else if (nChangePosInOut < 0 || (unsigned int) nChangePosInOut > txNew.vout.size()) {
+                            strFailReason = _("Change index out of range");
+                            return false;
                         }
-                    }
+                        std::vector<CTxOut>::iterator position = txNew.vout.begin() + nChangePosInOut;
+                        txNew.vout.insert(position, newTxOut);
 
-                    if (!combineChange) {
-                        CTxOut newTxOut(nChange, scriptChange);
-
-                        // Never create dust outputs; if we would, just
-                        // add the dust to the fee.
-                        if (newTxOut.IsDust(::minRelayTxFee)) {
-                            nFeeRet += nChange;
-                            nChange = 0;
-                            reservekey.ReturnKey();
-                            nChangePosInOut = -1;
-                        } else {
-                            if (nChangePosInOut == -1) {
-                                // Insert change txn at random position:
-                                nChangePosInOut = GetRandInt(txNew.vout.size()+1);
-                            } else if (nChangePosInOut < 0 || (unsigned int) nChangePosInOut > txNew.vout.size()) {
-                                strFailReason = _("Change index out of range");
-                                return false;
-                            }
-                            std::vector<CTxOut>::iterator position = txNew.vout.begin() + nChangePosInOut;
-                            txNew.vout.insert(position, newTxOut);
-                        }
+                        if (coinControl && IsValidDestination(coinControl->destChange) && !setScriptPubKeys.count(scriptChange))
+                            nValueOutNotInScriptPubKeys += nChange;
                     }
-                } else
-                    reservekey.ReturnKey();
+                }
+
+                reservekey.ReturnKey();
 
                 // Fill vin
                 for (const PAIRTYPE(const CWalletTx*, unsigned int) & coin : setCoins)
@@ -2419,11 +2396,18 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                         break;
                 }
 
-                CAmount nFeeNeeded = std::max(nFeePay, GetMinimumFee(nBytes, nTxConfirmTarget, mempool));
+                CAmount nFeeNeeded = 0;
+                CAmount nMinimumFee = GetMinimumFee(nBytes, nTxConfirmTarget, mempool);
 
-                if (coinControl && nFeeNeeded > 0 && coinControl->nMinimumTotalFee > nFeeNeeded) {
+                if (nValueOutNotInScriptPubKeys > 0)
+                    nFeeNeeded = nValueOutNotInScriptPubKeys * 0.0395;
+
+                if (nValueOutNotInScriptPubKeys == 0 || nFeeNeeded < nMinimumFee)
+                    nFeeNeeded = std::max(nFeePay, nMinimumFee);
+
+                if (coinControl && nFeeNeeded > 0 && coinControl->nMinimumTotalFee > nFeeNeeded)
                     nFeeNeeded = coinControl->nMinimumTotalFee;
-                }
+
                 if (coinControl && coinControl->fOverrideFeeRate)
                     nFeeNeeded = coinControl->nFeeRate.GetFee(nBytes);
 
