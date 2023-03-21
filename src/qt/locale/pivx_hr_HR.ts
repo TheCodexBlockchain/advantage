@@ -1789,10 +1789,6 @@ NODEOVI</translation>
         <translation>Sistemska poruka</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Pošalji Višestruku transakciju</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>Poslana transakcija</translation>
     </message>
@@ -3409,8 +3405,8 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>2) Zašto se moji USDX ne mogu potrošiti?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3789,160 +3785,6 @@ Jeste li sigurni?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Obrazac</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalji tranksacije</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>PONIŠTI</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>SPREMI</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>Novi primatelj za multisend</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>Oznaka adrese (neobavezno)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Unesite oznaku koju želite spremiti s ovom adresom</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Postotak</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Obrazac</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TekstOznake</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>PotvrdniOkvir</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>MultiSend vam omogućuje da automatski pošaljete do 100% svog uloga ili nagrade masternode na popis drugih USDX adresa nakon što sazriju.</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Aktivno </translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>Onemogući</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Još nema aktivnog primatelja</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Pošalji stake-ove</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Pošalji masternode nagrade</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>DODAJ PRIMATELJA</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>OČISTI SVE</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Ne može se izvršiti operacija, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Čišćenje uspjelo</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Brisanje svega nije uspjelo, nije bilo moguće locirati adresu u datoteci novčanika</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Ne može se dodati multisend primatelj, novčanik je zaključan</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>Unesena adresa: %1 nije važeća.
-Molimo provjerite adresu i pokušajte ponovo.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Nevažeći postotak, unesite vrijednosti od 1 do 100.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>Ukupan iznos MultiSend vektora je preko 100% nagrade</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Pogreška prilikom spremanja MultiSenda, neuspješno spremanje svojstava u bazu podataka.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>MultiSend nije moguće aktivirati, nema dostupnih primatelja</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>Ne mogu aktivirati MultiSend
-Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masternode nagrade</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend je aktiviran, ali postavke pisanja u bazu podataka nisu uspjele</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>MultiSend aktiviran</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>Prva MultiSend adresa nije važeća</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend je deaktiviran, ali postavke pisanja u bazu podataka nisu uspjele</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>MultiSend deaktiviran</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -4196,10 +4038,6 @@ Označite jedan ili oba polja za potvrdu da biste poslali staking i/ili masterno
     <message>
         <source>Wallet</source>
         <translation>Novčanik</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>Multisend</translation>
     </message>
     <message>
         <source>Export Accounting</source>

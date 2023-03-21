@@ -265,7 +265,7 @@ struct CNodeStateStats {
     std::vector<int> vHeightInFlight;
 };
 
-CAmount GetMinRelayFee(const CTransaction& tx, const CTxMemPool& pool, unsigned int nBytes, bool fAllowFree);
+CAmount GetMinRelayFee(const CTransaction& tx, const CTxMemPool& pool, unsigned int nBytes, bool fAllowFree, CAmount nValueOut = 0);
 
 /**
  * Check transaction inputs, and make sure any

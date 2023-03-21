@@ -1703,10 +1703,6 @@ Are you sure?</source>
         <translation>시스템 메세지</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>멀티 전송 방식으로 보냄</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>보낸 내역</translation>
     </message>
@@ -3293,130 +3289,6 @@ Are you sure?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>양식</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>전송 상세내역</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>텍스트라벨</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>취소</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>저장</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>새로운 멀티 전송 받는이</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>주소 라벨 (선택사항)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>저장될 이 주소의 라벨을 입력하여 주십시요</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>퍼센티지</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>양식</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>텍스트라벨</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>체크박스</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>멀티 전송 기능은 확인된 새로 받은 스테이킹 혹은 마스터노드 보상을 100% 전부 까지 지정된 다른 주소로 자동 전송할수 있는 기능입니다.</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>누적 활성 시간</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>비활성화</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>활성화된 받는이 주소가 아직 없음</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>스테이크 보상 전송</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>마스터노드 보상 전송</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>받는이 추가 하기</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>모두 지우기</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>명령을 수행할 수 없습니다. 지갑이 잠겨 있습니다.</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>지갑이 잠겨있어 멀티 전송 받는이 추가가 불가 합니다.</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>입력된 주소: %1 은 올바르지 않습니다.
-주소를 확인하고 다시 시도해주세요.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>올바르지 않은 퍼센트 값이 입력되었습니다. 1 부터 100 사이로 입력해주십시요.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>멀티전송 벡터의 총 금액이 스테이크 보상 금액의 100 % 이상입니다</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>멀티전송 보내기에 실패했습니다. 유효한 연락처가 존재하지 않습니다.</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>멀티 전송 기능이 활성화 됨</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>멀티 전송 기능이 비활성화 됨</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -3658,10 +3530,6 @@ Please check the address and try again.</source>
     <message>
         <source>Wallet</source>
         <translation>지갑</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>멀티 전송</translation>
     </message>
     <message>
         <source>Export Accounting</source>

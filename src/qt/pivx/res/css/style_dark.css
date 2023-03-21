@@ -2899,12 +2899,6 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
   background-color: transparent;
 }
 
-*[cssClass="img-empty-multisend"] {
-  qproperty-icon: url("://img-empty-dark-multisend");
-  qproperty-iconSize: 100px 100px;
-  background-color: transparent;
-}
-
 *[cssClass="img-empty-staking-on"] {
   qproperty-icon: url("://img-empty-dark-staking-on");
   qproperty-iconSize: 100px 100px;

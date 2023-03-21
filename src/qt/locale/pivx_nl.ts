@@ -1829,10 +1829,6 @@ NODES</translation>
         <translation>Systeembericht</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Verzonden MultiSend transactie</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>Verzend transactie</translation>
     </message>
@@ -3483,8 +3479,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2) Waarom is mijn USDX niet besteedbaar?</translation>
     </message>
     <message>
-        <source>advantage.com/</source>
-        <translation>advantage.com/</translation>
+        <source>https://www.advantageblockchain.com/</source>
+        <translation>https://www.advantageblockchain.com/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3900,160 +3896,6 @@ Weet u het zeker?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulier</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Transactie details</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>Annuleren</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>Opslaan</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>Nieuwe ontvanger voor multisend</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>Adreslabel (optioneel)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Voer een label in dat bij het adres opgeslagen moet worden </translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Percentage</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulier</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>TextLabel</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>NB</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>Selectievakje</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>Met MultiSend kunt u automatisch tot 100% van uw inzet of masternode beloning naar een lijst met andere USDX-adressen sturen nadat deze volwaardig zijn geworden.</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Actief</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>Uitschakelen</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Nog geen actieve ontvanger</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Verstuur stakes</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Verstuurd masternode beloningen</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>VOEG BESTEMMELING TOE</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>WIS ALLES</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>Kan deze actie niet uitvoeren, portemonnee vergrendeld</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Wissen geslaagd</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Alles wissen mislukt, kon geen adres terugvinden in het portemonnee bestand</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>Kan geen multisendontvanger toevoegen, portemonnee vergrendeld</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>Het ingevoerde adres: %1 is ongeldig.
-Controleer het adres en probeer opnieuw.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Ongeldig percentage, voer waarden in van 1 tot 100.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>De totale hoeveelheid van je MultiSend vector is meer dan 100% van je inzet beloning</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Opslaan van MultiSend mislukt, foutgelopen bij opslaan van eigenschappen naar de database.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>Kon MultiSend niet activeren, geen beschikbare ontvangers</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>MultiSend kan niet geactiveerd worden
-Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternode te sturen.</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend geactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>MultiSend geactiveerd</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>Eerste MultiSend-adres ongeldig</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend gedeactiveerd maar instellingen naar DB wegschrijven mislukt</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>MultiSend gedeactiveerd</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -4347,10 +4189,6 @@ Vink één of beide selectievakjes aan om beloningen op de inzet en/of masternod
     <message>
         <source>Wallet</source>
         <translation>Portemonnee</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>Multisend</translation>
     </message>
     <message>
         <source>Export Accounting</source>

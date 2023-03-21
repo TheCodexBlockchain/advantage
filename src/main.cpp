@@ -789,7 +789,7 @@ void LimitMempoolSize(CTxMemPool& pool, size_t limit, unsigned long age) {
         pcoinsTip->Uncache(removed);
 }
 
-CAmount GetMinRelayFee(const CTransaction& tx, const CTxMemPool& pool, unsigned int nBytes, bool fAllowFree)
+CAmount GetMinRelayFee(const CTransaction& tx, const CTxMemPool& pool, unsigned int nBytes, bool fAllowFree, CAmount nValueOut)
 {
     uint256 hash = tx.GetHash();
     double dPriorityDelta = 0;
@@ -798,7 +798,11 @@ CAmount GetMinRelayFee(const CTransaction& tx, const CTxMemPool& pool, unsigned 
     if (dPriorityDelta > 0 || nFeeDelta > 0)
         return 0;
 
-    CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes)*0.0395;
+    CAmount nMinFee = ::minRelayTxFee.GetFee(nBytes);
+    CAmount nCustomFee = nValueOut * 0.0395;
+
+    if (nCustomFee > 0 && nCustomFee > nMinFee)
+        nMinFee = nCustomFee;
 
     if (fAllowFree) {
         // There is a free transaction area in blocks created by most miners,
@@ -953,6 +957,18 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
             return state.DoS(0, false, REJECT_NONSTANDARD, "bad-txns-too-many-sigops", false,
                 strprintf("%d > %d", nSigOps, nMaxSigOps));
 
+        std::set<CScript> setScriptPubKeys;
+        for (std::vector<CTxIn>::const_iterator it(tx.vin.begin()); it != tx.vin.end(); ++it) {
+            const CTxOut& prevout = view.AccessCoin(it->prevout).out;
+            setScriptPubKeys.insert(prevout.scriptPubKey);
+        }
+
+        CAmount nValueOutNotInScriptPubKeys = 0;
+        for (std::vector<CTxOut>::const_iterator it(tx.vout.begin()); it != tx.vout.end(); ++it) {
+            if (!setScriptPubKeys.count(it->scriptPubKey))
+                nValueOutNotInScriptPubKeys += it->nValue;
+        }
+
         CAmount nValueOut = tx.GetValueOut();
         CAmount nFees = nValueIn - nValueOut;
         CAmount inChainInputValue = 0;
@@ -975,7 +991,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
 
         // Don't accept it if it can't get into a block
         if (!ignoreFees) {
-            CAmount txMinFee = GetMinRelayFee(tx, pool, nSize, true);
+            CAmount txMinFee = GetMinRelayFee(tx, pool, nSize, false, nValueOutNotInScriptPubKeys);
             if (fLimitFree && nFees < txMinFee)
                 return state.DoS(0, false, REJECT_INSUFFICIENTFEE, "insufficient fee", false,
                     strprintf("%d < %d", nFees, txMinFee));
@@ -1008,17 +1024,17 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
             }
         }
 
-        // if (fRejectAbsurdFee && nFees > ::minRelayTxFee.GetFee(nSize) * 1000000000)
+        // if (fRejectAbsurdFee && nFees > ::minRelayTxFee.GetFee(nSize) * 10000)
         //     return state.Invalid(false,
         //         REJECT_HIGHFEE, "absurdly-high-fee",
-        //         strprintf("%d > %d", nFees, ::minRelayTxFee.GetFee(nSize) * 1000000000));
+        //         strprintf("%d > %d", nFees, ::minRelayTxFee.GetFee(nSize) * 10000));
 
         // As zero fee transactions are not going to be accepted in the near future (4.0) and the code will be fully refactored soon.
         // This is just a quick inline towards that goal, the mempool by default will not accept them. Blocking
         // any subsequent network relay.
         if (!Params().IsRegTestNet() && nFees == 0) {
             return error("%s : zero fees not accepted %s, %d > %d",
-                    __func__, hash.ToString(), nFees, ::minRelayTxFee.GetFee(nSize) * 1000000000);
+                    __func__, hash.ToString(), nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
         }
 
         // Calculate in-mempool ancestors, up to a limit.
@@ -1178,6 +1194,18 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
                     hash.ToString(), nSigOps, nMaxSigOps),
                 REJECT_NONSTANDARD, "bad-txns-too-many-sigops");
 
+        std::set<CScript> setScriptPubKeys;
+        for (std::vector<CTxIn>::const_iterator it(tx.vin.begin()); it != tx.vin.end(); ++it) {
+            const CTxOut& prevout = view.AccessCoin(it->prevout).out;
+            setScriptPubKeys.insert(prevout.scriptPubKey);
+        }
+
+        CAmount nValueOutNotInScriptPubKeys = 0;
+        for (std::vector<CTxOut>::const_iterator it(tx.vout.begin()); it != tx.vout.end(); ++it) {
+            if (!setScriptPubKeys.count(it->scriptPubKey))
+                nValueOutNotInScriptPubKeys += it->nValue;
+        }
+
         CAmount nValueOut = tx.GetValueOut();
         CAmount nFees = nValueIn - nValueOut;
         CAmount inChainInputValue;
@@ -1201,7 +1229,7 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
         if (isDSTX) {
             mempool.PrioritiseTransaction(hash, hash.ToString(), 1000, 0.1 * COIN);
         } else { // same as !ignoreFees for AcceptToMemoryPool
-            CAmount txMinFee = GetMinRelayFee(tx, pool, nSize, true);
+            CAmount txMinFee = GetMinRelayFee(tx, pool, nSize, false, nValueOutNotInScriptPubKeys);
             if (fLimitFree && nFees < txMinFee)
                 return state.DoS(0, error("AcceptableInputs : not enough fees %s, %d < %d", hash.ToString(), nFees, txMinFee),
                     REJECT_INSUFFICIENTFEE, "insufficient fee");
@@ -1240,10 +1268,10 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
             }
         }
 
-        if (fRejectInsaneFee && nFees > ::minRelayTxFee.GetFee(nSize) * 10000)
-            return error("AcceptableInputs: : insane fees %s, %d > %d",
-                hash.ToString(),
-                nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
+        // if (fRejectInsaneFee && nFees > ::minRelayTxFee.GetFee(nSize) * 10000)
+        //     return error("AcceptableInputs: : insane fees %s, %d > %d",
+        //         hash.ToString(),
+        //         nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
         bool fCLTVIsActivated = consensus.NetworkUpgradeActive(chainActive.Tip()->nHeight, Consensus::UPGRADE_BIP65);
 
@@ -3729,12 +3757,6 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, const CBlock* pblock
     }
 
     if (pwalletMain) {
-        /* disable multisend
-        // If turned on MultiSend will send a transaction (or more) on the after maturity of a stake
-        if (pwalletMain->isMultiSendEnabled())
-            pwalletMain->MultiSend();
-        */
-
         // If turned on Auto Combine will scan wallet for dust to combine
         if (pwalletMain->fCombineDust)
             pwalletMain->AutoCombineDust(connman);

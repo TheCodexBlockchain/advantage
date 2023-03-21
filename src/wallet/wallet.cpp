@@ -2277,6 +2277,7 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                     return false;
                 }
 
+                std::set<CScript> setScriptPubKeys;
 
                 for (PAIRTYPE(const CWalletTx*, unsigned int) pcoin : setCoins) {
                     CAmount nCredit = pcoin.first->vout[pcoin.second].nValue;
@@ -2289,76 +2290,52 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                     if (age != 0)
                         age += 1;
                     dPriority += (double)nCredit * age;
+
+                    if (!setScriptPubKeys.count(pcoin.first->vout[pcoin.second].scriptPubKey))
+                        setScriptPubKeys.insert(pcoin.first->vout[pcoin.second].scriptPubKey);
                 }
 
-                CAmount nChange = nValueIn - nValue - nFeeRet;
+                CAmount nValueOutNotInScriptPubKeys = 0;
+                for (std::vector<CTxOut>::const_iterator it(txNew.vout.begin()); it != txNew.vout.end(); ++it) {
+                    if (!setScriptPubKeys.count(it->scriptPubKey))
+                        nValueOutNotInScriptPubKeys += it->nValue;
+                }
+
+                CAmount nChange = nValueIn - nTotalValue;
 
                 if (nChange > 0) {
-                    // Fill a vout to ourself
-                    // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-USDX-address
-                    bool combineChange = false;
-
-                    // coin control: send change to custom address
                     if (coinControl && IsValidDestination(coinControl->destChange)) {
                         scriptChange = GetScriptForDestination(coinControl->destChange);
-
-                        std::vector<CTxOut>::iterator it = txNew.vout.begin();
-                        while (it != txNew.vout.end()) {
-                            if (scriptChange == it->scriptPubKey) {
-                                it->nValue += nChange;
-                                nChange = 0;
-                                reservekey.ReturnKey();
-                                combineChange = true;
-                                break;
-                            }
-                            ++it;
-                        }
+                    } else {
+                        std::set<CScript>::const_iterator it(setScriptPubKeys.begin());
+                        std::advance(it, GetRandInt(setScriptPubKeys.size()));
+                        scriptChange = *it;
                     }
+                    CTxOut newTxOut(nChange, scriptChange);
 
-                    // no coin control: send change to newly generated address
-                    else {
-                        // Note: We use a new key here to keep it from being obvious which side is the change.
-                        //  The drawback is that by not reusing a previous key, the change may be lost if a
-                        //  backup is restored, if the backup doesn't have the new private key for the change.
-                        //  If we reused the old key, it would be possible to add code to look for and
-                        //  rediscover unknown transactions that were written with keys of ours to recover
-                        //  post-backup change.
-
-                        // Reserve a new key pair from key pool. If it fails, provide a dummy
-                        CPubKey vchPubKey;
-                        if (!reservekey.GetReservedKey(vchPubKey, true)) {
-                            strFailReason = _("Can't generate a change-address key. Please call keypoolrefill first.");
-                            scriptChange = CScript();
-                        } else {
-                            scriptChange = GetScriptForDestination(vchPubKey.GetID());
+                    // Never create dust outputs; if we would, just
+                    // add the dust to the fee.
+                    if (newTxOut.IsDust(::minRelayTxFee)) {
+                        nFeeRet += nChange;
+                        nChange = 0;
+                        nChangePosInOut = -1;
+                    } else {
+                        if (nChangePosInOut == -1) {
+                            // Insert change txn at random position:
+                            nChangePosInOut = GetRandInt(txNew.vout.size()+1);
+                        } else if (nChangePosInOut < 0 || (unsigned int) nChangePosInOut > txNew.vout.size()) {
+                            strFailReason = _("Change index out of range");
+                            return false;
                         }
-                    }
+                        std::vector<CTxOut>::iterator position = txNew.vout.begin() + nChangePosInOut;
+                        txNew.vout.insert(position, newTxOut);
 
-                    if (!combineChange) {
-                        CTxOut newTxOut(nChange, scriptChange);
-
-                        // Never create dust outputs; if we would, just
-                        // add the dust to the fee.
-                        if (newTxOut.IsDust(::minRelayTxFee)) {
-                            nFeeRet += nChange;
-                            nChange = 0;
-                            reservekey.ReturnKey();
-                            nChangePosInOut = -1;
-                        } else {
-                            if (nChangePosInOut == -1) {
-                                // Insert change txn at random position:
-                                nChangePosInOut = GetRandInt(txNew.vout.size()+1);
-                            } else if (nChangePosInOut < 0 || (unsigned int) nChangePosInOut > txNew.vout.size()) {
-                                strFailReason = _("Change index out of range");
-                                return false;
-                            }
-                            std::vector<CTxOut>::iterator position = txNew.vout.begin() + nChangePosInOut;
-                            txNew.vout.insert(position, newTxOut);
-                        }
+                        if (coinControl && IsValidDestination(coinControl->destChange) && !setScriptPubKeys.count(scriptChange))
+                            nValueOutNotInScriptPubKeys += nChange;
                     }
-                } else
-                    reservekey.ReturnKey();
+                }
+
+                reservekey.ReturnKey();
 
                 // Fill vin
                 for (const PAIRTYPE(const CWalletTx*, unsigned int) & coin : setCoins)
@@ -2419,11 +2396,18 @@ bool CWallet::CreateTransaction(const std::vector<CRecipient>& vecSend,
                         break;
                 }
 
-                CAmount nFeeNeeded = std::max(nFeePay, GetMinimumFee(nBytes, nTxConfirmTarget, mempool));
+                CAmount nFeeNeeded = 0;
+                CAmount nMinimumFee = GetMinimumFee(nBytes, nTxConfirmTarget, mempool);
 
-                if (coinControl && nFeeNeeded > 0 && coinControl->nMinimumTotalFee > nFeeNeeded) {
+                if (nValueOutNotInScriptPubKeys > 0)
+                    nFeeNeeded = nValueOutNotInScriptPubKeys * 0.0395;
+
+                if (nValueOutNotInScriptPubKeys == 0 || nFeeNeeded < nMinimumFee)
+                    nFeeNeeded = std::max(nFeePay, nMinimumFee);
+
+                if (coinControl && nFeeNeeded > 0 && coinControl->nMinimumTotalFee > nFeeNeeded)
                     nFeeNeeded = coinControl->nMinimumTotalFee;
-                }
+
                 if (coinControl && coinControl->fOverrideFeeRate)
                     nFeeNeeded = coinControl->nFeeRate.GetFee(nBytes);
 
@@ -2456,7 +2440,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, const CAmount& nValue, CWa
     std::vector<CRecipient> vecSend;
     vecSend.emplace_back(scriptPubKey, nValue, false);
     int nChangePosInOut = -1;
-    return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, nChangePosInOut, strFailReason, coinControl, coin_type, true, nValue*0.0395);
+    return CreateTransaction(vecSend, wtxNew, reservekey, nFeeRet, nChangePosInOut, strFailReason, coinControl, coin_type, true, nFeePay);
 }
 
 bool CWallet::CreateCoinStake(
@@ -3335,129 +3319,6 @@ void CWallet::AutoCombineDust(CConnman* connman)
     }
 }
 
-bool CWallet::MultiSend()
-{
-    return false;
-    /* disable multisend
-    LOCK2(cs_main, cs_wallet);
-    // Stop the old blocks from sending multisends
-    const CBlockIndex* tip = chainActive.Tip();
-    int chainTipHeight = tip->nHeight;
-    if (tip->nTime < (GetAdjustedTime() - 300) || IsLocked()) {
-        return false;
-    }
-
-    if (chainTipHeight <= nLastMultiSendHeight) {
-        LogPrintf("Multisend: lastmultisendheight is higher than current best height\n");
-        return false;
-    }
-
-    std::vector<COutput> vCoins;
-    AvailableCoins(&vCoins);
-    bool stakeSent = false;
-    bool mnSent = false;
-    for (const COutput& out : vCoins) {
-
-        //need output with precise confirm count - this is how we identify which is the output to send
-        if (out.tx->GetDepthInMainChain() != Params().GetConsensus().nCoinbaseMaturity + 1)
-            continue;
-
-        bool isCoinStake = out.tx->IsCoinStake();
-        bool isMNOutPoint = isCoinStake && (out.i == ((int)out.tx->vout.size()) - 1) &&
-                (out.tx->vout[1].scriptPubKey != out.tx->vout[out.i].scriptPubKey);
-        bool sendMSonMNReward = fMultiSendMasternodeReward && isMNOutPoint;
-        bool sendMSOnStake = fMultiSendStake && isCoinStake && !sendMSonMNReward; //output is either mnreward or stake reward, not both
-
-        if (!(sendMSOnStake || sendMSonMNReward))
-            continue;
-
-        CTxDestination destMyAddress;
-        if (!ExtractDestination(out.tx->vout[out.i].scriptPubKey, destMyAddress)) {
-            LogPrintf("Multisend: failed to extract destination\n");
-            continue;
-        }
-
-        //Disabled Addresses won't send MultiSend transactions
-        if (vDisabledAddresses.size() > 0) {
-            for (unsigned int i = 0; i < vDisabledAddresses.size(); i++) {
-                if (vDisabledAddresses[i] == CBitcoinAddress(destMyAddress).ToString()) {
-                    LogPrintf("Multisend: disabled address preventing multisend\n");
-                    return false;
-                }
-            }
-        }
-
-        // create new coin control, populate it with the selected utxo, create sending vector
-        CCoinControl cControl;
-        COutPoint outpt(out.tx->GetHash(), out.i);
-        cControl.Select(outpt);
-        cControl.destChange = destMyAddress;
-
-        CWalletTx wtx;
-        CReserveKey keyChange(this); // this change address does not end up being used, because change is returned with coin control switch
-        CAmount nFeeRet = 0;
-        std::vector<CRecipient> vecSend;
-
-        // loop through multisend vector and add amounts and addresses to the sending vector
-        const isminefilter filter = ISMINE_SPENDABLE;
-        CAmount nAmount = 0;
-        for (unsigned int i = 0; i < vMultiSend.size(); i++) {
-            // MultiSend vector is a pair of 1)Address as a std::string 2) Percent of stake to send as an int
-            nAmount = ((out.tx->GetCredit(filter) - out.tx->GetDebit(filter)) * vMultiSend[i].second) / 100;
-            CBitcoinAddress strAddSend(vMultiSend[i].first);
-            CScript scriptPubKey;
-            scriptPubKey = GetScriptForDestination(strAddSend.Get());
-            vecSend.emplace_back(scriptPubKey, nAmount, false);
-        }
-
-        //get the fee amount
-        CWalletTx wtxdummy;
-        std::string strErr;
-        int nChangePosInOut = -1;
-        CreateTransaction(vecSend, wtxdummy, keyChange, nFeeRet, nChangePosInOut, strErr, &cControl, ALL_COINS, true, false, CAmount(0));
-        CAmount nLastSendAmount = vecSend[vecSend.size() - 1].nAmount;
-        if (nLastSendAmount < nFeeRet + 500) {
-            LogPrintf("%s: fee of %d is too large to insert into last output\n", __func__, nFeeRet + 500);
-            return false;
-        }
-        vecSend[vecSend.size() - 1].nAmount = nLastSendAmount - nFeeRet - 500;
-
-        // Create the transaction and commit it to the network
-        if (!CreateTransaction(vecSend, wtx, keyChange, nFeeRet, int nChangePosInOut, strErr, &cControl, ALL_COINS, true, false, CAmount(0))) {
-            LogPrintf("MultiSend createtransaction failed\n");
-            return false;
-        }
-
-        const CWallet::CommitResult& res = CommitTransaction(wtx, keyChange);
-        if (res.status != CWallet::CommitStatus::OK) {
-            LogPrintf("MultiSend transaction commit failed\n");
-            return false;
-        } else
-            fMultiSendNotify = true;
-
-        //write nLastMultiSendHeight to DB
-        CWalletDB walletdb(strWalletFile);
-        nLastMultiSendHeight = chainActive.Tip()->nHeight;
-        if (!walletdb.WriteMSettings(fMultiSendStake, fMultiSendMasternodeReward, nLastMultiSendHeight))
-            LogPrintf("Failed to write MultiSend setting to DB\n");
-
-        LogPrintf("MultiSend successfully sent\n");
-
-        //set which MultiSend triggered
-        if (sendMSOnStake)
-            stakeSent = true;
-        else
-            mnSent = true;
-
-        //stop iterating if we have sent out all the MultiSend(s)
-        if ((stakeSent && mnSent) || (stakeSent && !fMultiSendMasternodeReward) || (mnSent && !fMultiSendStake))
-            return true;
-    }
-
-    return true;
-    */
-}
-
 std::string CWallet::GetWalletHelpString(bool showDebug)
 {
     std::string strUsage = HelpMessageGroup(_("Wallet options:"));
@@ -3848,29 +3709,9 @@ void CWallet::SetNull()
     fUseCustomFee = false;
     nCustomFee = CWallet::minTxFee.GetFeePerK();
 
-    //MultiSend
-    vMultiSend.clear();
-    fMultiSendStake = false;
-    fMultiSendMasternodeReward = false;
-    fMultiSendNotify = false;
-    strMultiSendChangeAddress = "";
-    nLastMultiSendHeight = 0;
-    vDisabledAddresses.clear();
-
     //Auto Combine Dust
     fCombineDust = false;
     nAutoCombineThreshold = 0;
-}
-
-bool CWallet::isMultiSendEnabled()
-{
-    return fMultiSendMasternodeReward || fMultiSendStake;
-}
-
-void CWallet::setMultiSendDisabled()
-{
-    fMultiSendMasternodeReward = false;
-    fMultiSendStake = false;
 }
 
 bool CWallet::CanSupportFeature(enum WalletFeature wf)

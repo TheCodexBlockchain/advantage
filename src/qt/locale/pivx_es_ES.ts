@@ -1776,10 +1776,6 @@ MAESTROS</translation>
         <translation>Mensaje de Sistema</translation>
     </message>
     <message>
-        <source>Sent MultiSend transaction</source>
-        <translation>Transacción MultiEnvío emitida</translation>
-    </message>
-    <message>
         <source>Sent transaction</source>
         <translation>Transacción enviada</translation>
     </message>
@@ -3689,160 +3685,6 @@ Are you sure?
     </message>
 </context>
 <context>
-    <name>SettingsMultisendDialog</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulario</translation>
-    </message>
-    <message>
-        <source>Transaction Details</source>
-        <translation>Detalles de Transacción</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>EtiquetaDeTexto</translation>
-    </message>
-    <message>
-        <source>CANCEL</source>
-        <translation>CANCELAR</translation>
-    </message>
-    <message>
-        <source>SAVE</source>
-        <translation>GUARDAR</translation>
-    </message>
-    <message>
-        <source>New recipient for multisend</source>
-        <translation>Nuevo destinatario para multisend</translation>
-    </message>
-    <message>
-        <source>Address Label (optional)</source>
-        <translation>Etiqueta de Dirección (opcional)</translation>
-    </message>
-    <message>
-        <source>Enter label to be saved with this address</source>
-        <translation>Introduce una etiqueta para guardar esta dirección</translation>
-    </message>
-    <message>
-        <source>Percentage</source>
-        <translation>Porcentaje</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsMultisendWidget</name>
-    <message>
-        <source>Form</source>
-        <translation>Formulario</translation>
-    </message>
-    <message>
-        <source>TextLabel</source>
-        <translation>EtiquetaDeTexto</translation>
-    </message>
-    <message>
-        <source>N/A</source>
-        <translation>N/A</translation>
-    </message>
-    <message>
-        <source>CheckBox</source>
-        <translation>CheckBox</translation>
-    </message>
-    <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other USDX addresses after it matures.</source>
-        <translation>MultiSend le permite enviar automáticamente hasta el 100% de tus stakes o recompensas masternode a una lista de otras direcciones USDX después de que madurar.</translation>
-    </message>
-    <message>
-        <source>Active</source>
-        <translation>Activo</translation>
-    </message>
-    <message>
-        <source>Disable</source>
-        <translation>Deshabilitar</translation>
-    </message>
-    <message>
-        <source>No active recipient yet</source>
-        <translation>Ningún destinatario activo todavía</translation>
-    </message>
-    <message>
-        <source>Send stakes</source>
-        <translation>Enviar stakes</translation>
-    </message>
-    <message>
-        <source>Send masternode rewards</source>
-        <translation>Enviar recompensas de masternode</translation>
-    </message>
-    <message>
-        <source>ADD RECIPIENT</source>
-        <translation>AÑADIR DESTINATARIO</translation>
-    </message>
-    <message>
-        <source>CLEAR ALL</source>
-        <translation>BORRAR TODO</translation>
-    </message>
-    <message>
-        <source>Cannot perform operation, wallet locked</source>
-        <translation>No se puede realizar la operación, la wallet está bloqueada</translation>
-    </message>
-    <message>
-        <source>Clear succeed</source>
-        <translation>Borrado con éxito</translation>
-    </message>
-    <message>
-        <source>Clear all failed, could not locate address in wallet file</source>
-        <translation>Borrar todos los errores, no se pudo localizar la dirección en el archivo de la wallet</translation>
-    </message>
-    <message>
-        <source>Cannot add multisend recipient, wallet locked</source>
-        <translation>No se puede agregar la destinatario de multisend, la wallet está bloqueada</translation>
-    </message>
-    <message>
-        <source>The entered address: %1 is invalid.
-Please check the address and try again.</source>
-        <translation>La dirección introducida: %1 es inválida.
-Por favor comprueba la dirección e inténtalo nuevamente.</translation>
-    </message>
-    <message>
-        <source>Invalid percentage, please enter values from 1 to 100.</source>
-        <translation>Porcentaje inválido, por favor ingresa valores desde 1 hasta 100.</translation>
-    </message>
-    <message>
-        <source>The total amount of your MultiSend vector is over 100% of your stake reward</source>
-        <translation>La cantidad total de tu vector de MultiEnvío es superior al 100% de tu recompensa de Stake</translation>
-    </message>
-    <message>
-        <source>Error saving  MultiSend, failed saving properties to the database.</source>
-        <translation>Error al guardar MultiSend, ha fallado el guardado de las propiedades en la base de datos.</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend, no available recipients</source>
-        <translation>No se puede activar MultiSend, no hay destinatarios disponibles</translation>
-    </message>
-    <message>
-        <source>Unable to activate MultiSend
-Check one or both of the check boxes to send on stake and/or masternode rewards</source>
-        <translation>No se puede activar MultiSend
-Marque una o ambas casillas de verificación para enviar recompensas de stake y/o masternode</translation>
-    </message>
-    <message>
-        <source>MultiSend activated but writing settings to DB failed</source>
-        <translation>MultiSend activado pero la configuración de escritura en la DB falló</translation>
-    </message>
-    <message>
-        <source>MultiSend activated</source>
-        <translation>MultiSend activado</translation>
-    </message>
-    <message>
-        <source>First multiSend address invalid</source>
-        <translation>La primera dirección de envío múltiple no es válida</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated but writing settings to DB failed</source>
-        <translation>MultiSend desactivado pero la configuración de escritura en la BD falló</translation>
-    </message>
-    <message>
-        <source>MultiSend deactivated</source>
-        <translation>MultiSend desactivado</translation>
-    </message>
-</context>
-<context>
     <name>SettingsSignMessageWidgets</name>
     <message>
         <source>Form</source>
@@ -4088,10 +3930,6 @@ Marque una o ambas casillas de verificación para enviar recompensas de stake y/
     <message>
         <source>Wallet</source>
         <translation>Wallet</translation>
-    </message>
-    <message>
-        <source>Multisend</source>
-        <translation>Multisend</translation>
     </message>
     <message>
         <source>Export Accounting</source>

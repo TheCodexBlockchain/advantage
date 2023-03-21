@@ -61,7 +61,7 @@ static const CAmount DEFAULT_TRANSACTION_MAXFEE = 1 * COIN;
 //! -maxtxfee will warn if called with a higher fee than this amount (in satoshis)
 static const CAmount nHighTransactionMaxFeeWarning = 100 * nHighTransactionFeeWarning;
 //! Largest (in bytes) free transaction we're willing to create
-static const unsigned int MAX_FREE_TRANSACTION_CREATE_SIZE = 1000;
+static const unsigned int MAX_FREE_TRANSACTION_CREATE_SIZE = 0;
 //! -custombackupthreshold default
 static const int DEFAULT_CUSTOMBACKUPTHRESHOLD = 1;
 //! -minstakesplit default
@@ -311,15 +311,6 @@ public:
     bool fUseCustomFee;
     CAmount nCustomFee;
 
-    //MultiSend
-    std::vector<std::pair<std::string, int> > vMultiSend;
-    bool fMultiSendStake;
-    bool fMultiSendMasternodeReward;
-    bool fMultiSendNotify;
-    std::string strMultiSendChangeAddress;
-    int nLastMultiSendHeight;
-    std::vector<std::string> vDisabledAddresses;
-
     //Auto Combine Inputs
     bool fCombineDust;
     CAmount nAutoCombineThreshold;
@@ -328,8 +319,6 @@ public:
     CWallet(std::string strWalletFileIn);
     ~CWallet();
     void SetNull();
-    bool isMultiSendEnabled();
-    void setMultiSendDisabled();
 
     std::map<uint256, CWalletTx> mapWallet;
     std::list<CAccountingEntry> laccentries;
@@ -506,7 +495,6 @@ public:
                          int64_t& nTxNewTime,
                          std::vector<COutput>* availableCoins,
                          CAmount& nBlockValue);
-    bool MultiSend();
     void AutoCombineDust(CConnman* connman);
 
     static CFeeRate minTxFee;

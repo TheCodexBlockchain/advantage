@@ -1,4 +1,4 @@
-
+.gitignore
 *.sublime-project
 *.sublime-workspace
 todo.txt
@@ -6,6 +6,7 @@ reset-files.bash
 *.tar.gz
 *.exe
 configure~
+
 # Advantage
 src/advantage
 src/advantaged
@@ -14,7 +15,6 @@ src/advantage-tx
 src/bench/bench_advantage
 src/test/test_advantage
 src/qt/test/test_advantage-qt
-
 
 ##########################################
 # clear this section when it's fixed
