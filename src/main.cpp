@@ -2193,7 +2193,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     }
 
     //Check for treasury payment
-    if (consensus.nTreasuryActivationHeight <= pindex->nHeight) {
+    if (consensus.nTreasuryActivationHeight <= pindex->nHeight && nExpectedMint > 0) {
         const CTransaction& txNew = (isPoSActive ? block.vtx[1] : block.vtx[0]);
         bool found = false;
         CTxDestination treasuryDest = DecodeDestination(consensus.strTreasuryAddress);
