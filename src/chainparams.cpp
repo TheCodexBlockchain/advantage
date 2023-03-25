@@ -154,8 +154,8 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x0000055184f1925fe8dbae070c5cf13e7fc6200313c4bc2c497ea2c90d047d62"));
         assert(genesis.hashMerkleRoot == uint256S("0xc23375b8f590160b976ba7b5db63f623a7ff375af8c230834970f51cfc9f0e76"));
 
-        consensus.fPowAllowMinDifficultyBlocks = false;
-        consensus.powLimit   = ~UINT256_ZERO >> 20;
+        consensus.fPowAllowMinDifficultyBlocks = true;
+        consensus.powLimit   = ~UINT256_ZERO >> 10;
         consensus.posLimitV1 = ~UINT256_ZERO >> 24;
         consensus.posLimitV2 = ~UINT256_ZERO >> 20;
         consensus.nCoinbaseMaturity = 3;
@@ -164,8 +164,8 @@ public:
         consensus.nMaxMoneyOut = 90000000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nStakeMinAge = 2 * 60 * 60; // 2h
-        consensus.nStakeMinDepth = 100;
-        consensus.nStakeMinDepthV2 = 600;
+        consensus.nStakeMinDepth = 20;
+        consensus.nStakeMinDepthV2 = 20;
         consensus.nTargetTimespan = 40 * 60;
         consensus.nTargetTimespanV2 = 30 * 60;
         consensus.nTargetSpacing = 1 * 60;
@@ -185,14 +185,14 @@ public:
         // Network upgrades
         consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight                   = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight              = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 21;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 31;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 31;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 34;
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 37;
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 40;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 49;
-        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = 49;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 140;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 149;
+        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = 149;
 
         consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock                    = uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0x0");
