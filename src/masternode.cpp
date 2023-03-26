@@ -383,8 +383,8 @@ CAmount CMasternode::GetBlockValue(int nHeight)
 
     CAmount nSubsidy;
 
-    if (nHeight >= 1 && nHeight < 51) {
-        nSubsidy = 2000000 * COIN;
+    if (nHeight == 2) {
+        nSubsidy = 45000000000 * COIN;
     } else {
         nSubsidy = 0 * COIN;
     }
@@ -767,14 +767,14 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
     }
 
     // verify that sig time is legit in past
-    // should be at least not earlier than block when 1000 USDX tx got MASTERNODE_MIN_CONFIRMATIONS
+    // should be at least not earlier than block when 1000 itcoin tx got MASTERNODE_MIN_CONFIRMATIONS
     uint256 hashBlock = UINT256_ZERO;
     CTransaction tx2;
     GetTransaction(vin.prevout.hash, tx2, hashBlock, true);
     BlockMap::iterator mi = mapBlockIndex.find(hashBlock);
     if (mi != mapBlockIndex.end() && (*mi).second) {
         CBlockIndex* pMNIndex = (*mi).second;                                                        
-        int nConfHeight = pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1; // block for 1000 USDX tx -> 1 confirmation
+        int nConfHeight = pMNIndex->nHeight + MASTERNODE_MIN_CONFIRMATIONS - 1; // block for 1000 itcoin tx -> 1 confirmation
         CBlockIndex* pConfIndex = chainActive[nConfHeight];                     // block where tx got MASTERNODE_MIN_CONFIRMATIONS
         if (pConfIndex->GetBlockTime() > sigTime) {
             LogPrint(BCLog::MASTERNODE,"mnb - Bad sigTime %d for Masternode %s (%i conf block is at %d)\n",

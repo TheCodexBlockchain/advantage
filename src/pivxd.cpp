@@ -29,8 +29,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Advantage (https://www.advantageblockchain.com/),
- * which enables instant payments to anyone, anywhere in the world. Advantage uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called itcoin (https://www.advantageblockchain.com/),
+ * which enables instant payments to anyone, anywhere in the world. itcoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -68,13 +68,13 @@ bool AppInit(int argc, char* argv[])
 
     // Process help and version before taking care about datadir
     if (mapArgs.count("-?") || mapArgs.count("-help") || mapArgs.count("-version")) {
-        std::string strUsage = _("Advantage Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
+        std::string strUsage = _("itcoin Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n";
 
         if (mapArgs.count("-version")) {
             strUsage += LicenseInfo();
         } else {
             strUsage += "\n" + _("Usage:") + "\n" +
-                        "  advantaged [options]                     " + _("Start Advantage Daemon") + "\n";
+                        "  itcoind [options]                     " + _("Start itcoin Daemon") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
         }
@@ -110,17 +110,17 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "advantage:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "itcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine) {
-            fprintf(stderr, "Error: There is no RPC client functionality in advantaged anymore. Use the advantage-cli utility instead.\n");
+            fprintf(stderr, "Error: There is no RPC client functionality in itcoind anymore. Use the itcoin-cli utility instead.\n");
             exit(1);
         }
 #ifndef WIN32
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon) {
-            fprintf(stdout, "Advantage server starting\n");
+            fprintf(stdout, "itcoin server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -166,7 +166,7 @@ int main(int argc, char* argv[])
 {
     SetupEnvironment();
 
-    // Connect advantaged signal handlers
+    // Connect itcoind signal handlers
     noui_connect();
 
     return (AppInit(argc, argv) ? 0 : 1);

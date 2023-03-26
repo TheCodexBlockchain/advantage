@@ -122,12 +122,12 @@
         <translation>Adrese za primanje</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>To su vaše USDX adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>To su vaše itcoin adrese za slanje plaćanja. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To su vaše USDX adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To su vaše itcoin adrese za primanje uplata. Preporuča se upotreba nove adrese primatelja za svaku transakciju.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -360,8 +360,8 @@ za staking</translation>
         <translation>PONIŠTI</translation>
     </message>
     <message>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
-        <translation>USDX će se sada zatvoriti kako bi se dovršio proces šifriranja. Ne zaboravite da šifriranje Vašeg novčanika ne može u potpunosti zaštititi vaše USDX od krađje zlonamjernog softvera koji zarazi vaše računalo.</translation>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
+        <translation>itcoin će se sada zatvoriti kako bi se dovršio proces šifriranja. Ne zaboravite da šifriranje Vašeg novčanika ne može u potpunosti zaštititi vaše itcoin od krađje zlonamjernog softvera koji zarazi vaše računalo.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -457,8 +457,8 @@ za staking</translation>
         <translation>Odabir novčića</translation>
     </message>
     <message>
-        <source>Select USDX Outputs to Spend</source>
-        <translation>Odaberi USDX za potrošiti</translation>
+        <source>Select itcoin Outputs to Spend</source>
+        <translation>Odaberi itcoin za potrošiti</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -485,8 +485,8 @@ za staking</translation>
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>0.00 USDX</source>
-        <translation>0.00 USDX</translation>
+        <source>0.00 itcoin</source>
+        <translation>0.00 itcoin</translation>
     </message>
     <message>
         <source>0</source>
@@ -707,8 +707,8 @@ za staking</translation>
         <translation>Statistika stakinga</translation>
     </message>
     <message>
-        <source>How to get USDX</source>
-        <translation>Kako dobiti USDX</translation>
+        <source>How to get itcoin</source>
+        <translation>Kako dobiti itcoin</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -731,8 +731,8 @@ za staking</translation>
         <translation>Filtriraj prema</translation>
     </message>
     <message>
-        <source>Amount of USDX staked.</source>
-        <translation>Iznos USDX koji se stakea.</translation>
+        <source>Amount of itcoin staked.</source>
+        <translation>Iznos itcoin koji se stakea.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -827,8 +827,8 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Uredi adresu pošiljatelja</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid USDX address.</source>
-        <translation>Unesena adresa "%1" nije ispravna USDX adresa.</translation>
+        <source>The entered address "%1" is not a valid itcoin address.</source>
+        <translation>Unesena adresa "%1" nije ispravna itcoin adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -880,16 +880,16 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>verzija</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Advantage</source>
-        <translation>O Advantage-u</translation>
+        <source>About itcoin</source>
+        <translation>O itcoin-u</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -943,16 +943,16 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Dobrodošli</translation>
     </message>
     <message>
-        <source>Welcome to Advantage.</source>
-        <translation>Dobrodošli u Advantage.</translation>
+        <source>Welcome to itcoin.</source>
+        <translation>Dobrodošli u itcoin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
-        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će Advantage pohraniti svoje podatke.</translation>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
+        <translation>Budući da je prvi put pokrenut program, možete odabrati gdje će itcoin pohraniti svoje podatke.</translation>
     </message>
     <message>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Advantage preuzima i pohranjuje kopiju USDX blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>itcoin preuzima i pohranjuje kopiju itcoin blok-lanca. Barem će %1GB podataka biti pohranjeno u ovom direktoriju i to će s vremenom rasti. Novčanik će također biti pohranjena u ovom direktoriju.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -971,8 +971,8 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>OK</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1075,8 +1075,8 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
         <translation>Stvori novi Masternode Controller</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a USDX Masternode you must dedicate a collateral amount of USDX (the unit of USDX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Da biste stvoriti USDX Masternode, morate odvojiti 10,000 USDX (jedinica USDX-a) prema mreži (međjutim, ti novčići su i dalje vaši i nikad neće napustiti vaše vlasništvo). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Možete isključiti node i otključati novčiće u bilo kojem trenutku.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a itcoin Masternode you must dedicate a collateral amount of itcoin (the unit of itcoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Da biste stvoriti itcoin Masternode, morate odvojiti 10,000 itcoin (jedinica itcoin-a) prema mreži (međjutim, ti novčići su i dalje vaši i nikad neće napustiti vaše vlasništvo). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt; Možete isključiti node i otključati novčiće u bilo kojem trenutku.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1096,7 +1096,7 @@ Automatski će se pokrenuti čim novčanik dobije dovoljno potvrda o neiskorišt
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Transakcija od 10,000 USDX će biti napravljena&lt;/p&gt;&lt;p&gt;u novu praznu adresu u Vašem novčaniku.&lt;/p&gt;&lt;p&gt;Adresa je označena pod imenom Masternode-a.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Transakcija od 10,000 itcoin će biti napravljena&lt;/p&gt;&lt;p&gt;u novu praznu adresu u Vašem novčaniku.&lt;/p&gt;&lt;p&gt;Adresa je označena pod imenom Masternode-a.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1286,7 +1286,7 @@ Molimo pričekajte nekoliko minuta (zalog za Masternode zahtjeva %1 potvrda).</t
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1294,7 +1294,7 @@ this controller wallet (select the Masternode in the list and press "start").
 na udaljenom poslužitelju u medjuspremnik.
 
 
-Podatke ćete morati zalijepiti u datoteku advantage.conf
+Podatke ćete morati zalijepiti u datoteku itcoin.conf
 na udaljenom poslužitelju i pokrenuti ga, a zatim pokrenite Masternode
 koristeći ovaj controller novčanik (na popisu odaberite Masternode i pritisnite "start").
 </translation>
@@ -1474,8 +1474,8 @@ NODEOVI</translation>
         <translation>Parsirani podaci preveliki</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "advantage" prefix</source>
-        <translation>Nevažeći URI, ne počinje "advantage" prefiksom</translation>
+        <source>Invalid URI, not starting with "itcoin" prefix</source>
+        <translation>Nevažeći URI, ne počinje "itcoin" prefiksom</translation>
     </message>
 </context>
 <context>
@@ -1520,8 +1520,8 @@ NODEOVI</translation>
         <translation>Ako onemogućite potrošnju nepotvrđjenog ostatka, ostatak od transakcije &lt;br/&gt;ne može se koristiti dok ta transakcija nema barem jednu potvrdu. &lt;br/&gt;Ovo takođjer utječe na izračun vašeg salda.</translation>
     </message>
     <message>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvorite USDX klijentski ulaz na ruteru. To funkcionira samo kada vaš ruter podržava UPnP i omogućen je.</translation>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvorite itcoin klijentski ulaz na ruteru. To funkcionira samo kada vaš ruter podržava UPnP i omogućen je.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1540,12 +1540,12 @@ NODEOVI</translation>
         <translation>Stručnjak</translation>
     </message>
     <message>
-        <source>Automatically start USDX after logging in to the system.</source>
-        <translation>Automatski pokrenite USDX nakon prijave u sustav.</translation>
+        <source>Automatically start itcoin after logging in to the system.</source>
+        <translation>Automatski pokrenite itcoin nakon prijave u sustav.</translation>
     </message>
     <message>
-        <source>&amp;Start USDX on system login</source>
-        <translation>&amp;Pokrenite USDX pri pokretanju sustava</translation>
+        <source>&amp;Start itcoin on system login</source>
+        <translation>&amp;Pokrenite itcoin pri pokretanju sustava</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1572,8 +1572,8 @@ NODEOVI</translation>
         <translation>&amp;Mreža</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
-        <translation>Jezik korisničkog sučelja možete postaviti ovdje. Postavke će stupiti na snagu nakon ponovnog pokretanja USDX novčanika.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
+        <translation>Jezik korisničkog sučelja možete postaviti ovdje. Postavke će stupiti na snagu nakon ponovnog pokretanja itcoin novčanika.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1594,8 +1594,8 @@ NODEOVI</translation>
         <translation>Prag razdvajanja Stake-a:</translation>
     </message>
     <message>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
-        <translation>Povežite se s USDX mrežom putem SOCKS5 proxy poslužitelja.</translation>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
+        <translation>Povežite se s itcoin mrežom putem SOCKS5 proxy poslužitelja.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1741,8 +1741,8 @@ NODEOVI</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1769,8 +1769,8 @@ NODEOVI</translation>
         <translation>Napusti aplikaciju</translation>
     </message>
     <message>
-        <source>Advantage client</source>
-        <translation>Advantage Klijent</translation>
+        <source>itcoin client</source>
+        <translation>itcoin Klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1832,12 +1832,12 @@ Adresa: %4
         <translation>Nevažeća adresa za plaćanje %1</translation>
     </message>
     <message>
-        <source>Cannot start advantage: click-to-pay handler</source>
-        <translation>Ne može se pokrenuti advantage: clik-to-pay handler</translation>
+        <source>Cannot start itcoin: click-to-pay handler</source>
+        <translation>Ne može se pokrenuti itcoin: clik-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
-        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom USDX adresom ili nepravilnim URI parametrima.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
+        <translation>URI se ne može analizirati! To može biti uzrokovana nevažećom itcoin adresom ili nepravilnim URI parametrima.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1926,8 +1926,8 @@ Adresa: %4
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>Enter USDX address (e.g. %1)</source>
-        <translation>Upišite USDX adresu (npr. %1)</translation>
+        <source>Enter itcoin address (e.g. %1)</source>
+        <translation>Upišite itcoin adresu (npr. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1970,12 +1970,12 @@ Adresa: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
-        <translation>Dogodila se fatalna pogreška. USDX ne može sigurno nastaviti i izaći će.</translation>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
+        <translation>Dogodila se fatalna pogreška. itcoin ne može sigurno nastaviti i izaći će.</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1994,8 +1994,8 @@ Adresa: %4
         <translation>Greška pri čitanju masternode konfiguracijske datoteke: %1</translation>
     </message>
     <message>
-        <source>Advantage didn't yet exit safely...</source>
-        <translation>Advantage nije ugašen sigurno...</translation>
+        <source>itcoin didn't yet exit safely...</source>
+        <translation>itcoin nije ugašen sigurno...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2205,8 +2205,8 @@ Adresa: %4
         <translation>Block chain</translation>
     </message>
     <message>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorite USDX debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorite itcoin debug log datoteku iz aktualnog direktorija podataka. To može potrajati nekoliko sekundi za velike datoteke zapisnika.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2425,8 +2425,8 @@ Adresa: %4
         <translation>Iz:</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Dobrodošli na USDX RPC konzolu.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Dobrodošli na itcoin RPC konzolu.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2689,8 +2689,8 @@ Adresa: %4
         <translation>Iznos</translation>
     </message>
     <message>
-        <source>USDX</source>
-        <translation>USDX</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2768,8 +2768,8 @@ Adresa: %4
         <translation>Prilagođjena adresa za ostatak</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" USDX address</source>
-        <translation>Ostatak vrijednosti koja proizlazi iz ulaza umanjen za izlaznu vrijednost ide na USDX adresu za "ostatak"</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" itcoin address</source>
+        <translation>Ostatak vrijednosti koja proizlazi iz ulaza umanjen za izlaznu vrijednost ide na itcoin adresu za "ostatak"</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2795,8 +2795,8 @@ Adresa: %4
         <translation>Preporučeno</translation>
     </message>
     <message>
-        <source>USDX/kilobyte</source>
-        <translation>USDX/kilobajt</translation>
+        <source>itcoin/kilobyte</source>
+        <translation>itcoin/kilobajt</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3079,8 +3079,8 @@ Do you want to continue?</source>
         <translation>DEŠIFRIRAJ KLJUČ</translation>
     </message>
     <message>
-        <source>USDX address</source>
-        <translation>USDX adresa</translation>
+        <source>itcoin address</source>
+        <translation>itcoin adresa</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3212,8 +3212,8 @@ Verify that you have installed a predetermined text editor.</source>
 Provjerite jeste li instalirali unaprijed određjeni uređjivač teksta.</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Dobrodošli na USDX RPC konzolu.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Dobrodošli na itcoin RPC konzolu.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3397,12 +3397,12 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>Obrazac</translation>
     </message>
     <message>
-        <source>1) What is USDX?</source>
-        <translation>1) Što je USDX?</translation>
+        <source>1) What is itcoin?</source>
+        <translation>1) Što je itcoin?</translation>
     </message>
     <message>
-        <source>2) Why are my USDX unspendable?</source>
-        <translation>2) Zašto se moji USDX ne mogu potrošiti?</translation>
+        <source>2) Why are my itcoin unspendable?</source>
+        <translation>2) Zašto se moji itcoin ne mogu potrošiti?</translation>
     </message>
     <message>
         <source>https://www.advantageblockchain.com/</source>
@@ -3413,31 +3413,31 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
         <translation>1</translation>
     </message>
     <message>
-        <source>What is USDX?</source>
-        <translation>Što je USDX?</translation>
+        <source>What is itcoin?</source>
+        <translation>Što je itcoin?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           USDX is a form of digital online money using blockchain technology
+                           itcoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  USDX incorporates market leading security &amp;
+                           zero fees.  itcoin incorporates market leading security &amp;
                            privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of USDX to participate in earning block rewards
+                           itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of itcoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-USDX je oblik digitalnog online novca koji koristi blockchain tehnologiju
+itcoin je oblik digitalnog online novca koji koristi blockchain tehnologiju
 koji se lako može slati i primati globalno, trenutno, i gotovo bez naknade.
-USDX uključuje vodeću sigurnost i privatnost.
+itcoin uključuje vodeću sigurnost i privatnost.
 &lt;/p&gt;&lt;p align="justify"&gt;
-USDX koristi algoritam konsenzusa Proof of Stake (PoS),
-omogućujući svim vlasnicima USDX-a sudjelovanje u zarađi blokovih nagrada
+itcoin koristi algoritam konsenzusa Proof of Stake (PoS),
+omogućujući svim vlasnicima itcoin-a sudjelovanje u zarađi blokovih nagrada
 dok osiguravaju mrežu full node novčanicima, kao i
 vodjenje Masternode-ova za stvaranje i glasanje o prijedlozima.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3448,25 +3448,25 @@ vodjenje Masternode-ova za stvaranje i glasanje o prijedlozima.
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my USDX unspendable?</source>
-        <translation>Zašto se moji USDX ne mogu potrošiti?</translation>
+        <source>Why are my itcoin unspendable?</source>
+        <translation>Zašto se moji itcoin ne mogu potrošiti?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received USDX requires 6 confirmations on the network
+                           Newly received itcoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your USDX wallet also needs to be completely synchronized
+                           Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Novoprimljeni USDX zahtjeva 6 potvrda na mreži
+Novoprimljeni itcoin zahtjeva 6 potvrda na mreži
 da bi se mogao potrošiti što može potrajati ~6 minuta.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Vaš USDX novčanik takođjer treba biti u potpunosti sinkroniziran
+Vaš itcoin novčanik takođjer treba biti u potpunosti sinkroniziran
 da biste vidjeli i mogli potrošiti sredstva na mreži.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -3476,8 +3476,8 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake USDX?</source>
-        <translation>Kako stakeat USDX?</translation>
+        <source>How do I stake itcoin?</source>
+        <translation>Kako stakeat itcoin?</translation>
     </message>
     <message>
         <source>4</source>
@@ -3505,12 +3505,12 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the collateral amount can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Controller novčanik je mjesto gdje zalog od 10,000 USDX može stajati tijekom Controller-Remote podešavanja masternode-a. To je novčanik koji može aktivirati Remote masternode novčanik(e) i omogućiti Vam držanje zaloga novčića offline dok Remote masternode novčanik ostaje online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Masternode Controller novčanik je mjesto gdje zalog od 10,000 itcoin može stajati tijekom Controller-Remote podešavanja masternode-a. To je novčanik koji može aktivirati Remote masternode novčanik(e) i omogućiti Vam držanje zaloga novčića offline dok Remote masternode novčanik ostaje online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node USDX wallet with a
+                           A masternode is a computer running a full node itcoin wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3530,10 +3530,10 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in USDX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in itcoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the USDX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the itcoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3549,8 +3549,8 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Masternode je računalo koje pokreće full node Advantage novčanik sa
-zahtjevanih 10,000 USDX-a osiguranog zaloga da pruži dodatne usluge
+Masternode je računalo koje pokreće full node itcoin novčanik sa
+zahtjevanih 10,000 itcoin-a osiguranog zaloga da pruži dodatne usluge
 mreži, i zauzvrat redovito primi dio nagrade blokova.
 Te usluge uključuju:
 &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3569,17 +3569,17 @@ vlasnicima masternode-ova umanjeno za troškove održavanja.
 Povlastice masternode-ova:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;Sudjelovanje u upravljanju USDX-a&lt;/li&gt;
+&lt;li&gt;Sudjelovanje u upravljanju itcoin-a&lt;/li&gt;
 &lt;li&gt;Zaradjivanje Masternode nagrada&lt;/li&gt;
 &lt;li&gt;Robna opcija za buduću prodaju&lt;/li&gt;
-&lt;li&gt;Pomaže u osiguravanju USDX mreže&lt;/li&gt;
+&lt;li&gt;Pomaže u osiguravanju itcoin mreže&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 Zahtjevi:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;10,000 USDX po svakom Masternode-u&lt;/li&gt;
+&lt;li&gt;10,000 itcoin po svakom Masternode-u&lt;/li&gt;
 &lt;li&gt;Mora biti pohranjem u Core novčaniku&lt;/li&gt;
 &lt;li&gt;Mora biti jedinstvena IP adresa&lt;/li&gt;
 &lt;li&gt;Masternode novčanik treba ostati online&lt;/li&gt;
@@ -3699,8 +3699,8 @@ Zahtjevi:
         <translation>Ne može se otvoriti mapa sigurnosne kopije</translation>
     </message>
     <message>
-        <source>Unable to open advantage.conf with default application</source>
-        <translation>Nije moguće otvoriti advantage.conf sa zadanom aplikacijom</translation>
+        <source>Unable to open itcoin.conf with default application</source>
+        <translation>Nije moguće otvoriti itcoin.conf sa zadanom aplikacijom</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3754,8 +3754,8 @@ Zahtjevi:
         <translation>Number of script verification threads</translation>
     </message>
     <message>
-        <source>Start USDX on system login</source>
-        <translation>Pokrenite USDX pri pokretanju računala</translation>
+        <source>Start itcoin on system login</source>
+        <translation>Pokrenite itcoin pri pokretanju računala</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3811,8 +3811,8 @@ Jeste li sigurni?
         <translation>Poruka</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX adresa ili naziv kontakta</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin adresa ili naziv kontakta</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4092,8 +4092,8 @@ Jeste li sigurni?
         <translation>Najčešće postavljena pitanja</translation>
     </message>
     <message>
-        <source>About USDX</source>
-        <translation>O USDX-u</translation>
+        <source>About itcoin</source>
+        <translation>O itcoin-u</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4159,8 +4159,8 @@ Jeste li sigurni?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Advantage is shutting down...</source>
-        <translation>Advantage se zatvara...</translation>
+        <source>itcoin is shutting down...</source>
+        <translation>itcoin se zatvara...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4189,8 +4189,8 @@ Jeste li sigurni?
         <translation>Učitavanje...</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
 </context>
 <context>
@@ -4699,25 +4699,25 @@ se nova sigurnosna kopija.
     </message>
     <message>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation>Dobrodošli u
-        Advantage temeljni novčanik</translation>
+        itcoin temeljni novčanik</translation>
     </message>
     <message>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>USDX je najinovativnija blockchain tehnologija na svijetu bazirana na Proof of Stake tehnologiji. Razvijena je od strane vrlo iskusnih programera i kriptografa.</translation>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>itcoin je najinovativnija blockchain tehnologija na svijetu bazirana na Proof of Stake tehnologiji. Razvijena je od strane vrlo iskusnih programera i kriptografa.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kao što kaže naš manifest: Privatnost je temeljno ljudsko pravo o kojemu se ne pregovara; korisnicima daje slobodu dijeljenja svojih podataka kad god i s kim god žele - USDX vjeruje u suverenitet.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kao što kaže naš manifest: Privatnost je temeljno ljudsko pravo o kojemu se ne pregovara; korisnicima daje slobodu dijeljenja svojih podataka kad god i s kim god žele - itcoin vjeruje u suverenitet.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is USDX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Masternode mreža je mreža drugog sloja USDX-a na vrhu blockchaina koja omogućuje našem DAO-u pružanje decentraliziranog upravljanja i riznice.</translation>
+        <source>The masternode network is itcoin's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Masternode mreža je mreža drugog sloja itcoin-a na vrhu blockchaina koja omogućuje našem DAO-u pružanje decentraliziranog upravljanja i riznice.</translation>
     </message>
     <message>
-        <source>How USDX respects your privacy?</source>
-        <translation>Kako USDX poštuje Vašu privatnost?</translation>
+        <source>How itcoin respects your privacy?</source>
+        <translation>Kako itcoin poštuje Vašu privatnost?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4751,8 +4751,8 @@ Advantage Wallet</source>
         <translation>Pridržavajte se na navedenu adresu da biste slušali veze JSON-RPC. Koristite [host]: port notation za IPv6. Ova se opcija može odrediti više puta (zadano: vezati se na sva sučelja)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
-        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Advantage vjerojatno već radi.</translation>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
+        <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. itcoin vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -4903,8 +4903,8 @@ Advantage Wallet</source>
         <translation>Ukupna duljina teksta mrežne verzije (%i) prelazi maksimalnu duljinu (%i). Smanjite broj ili veličinu uacommentsa.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
-        <translation>Nije moguće vezati se na %s na ovom računalu. Advantage vjerojatno već radi.</translation>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
+        <translation>Nije moguće vezati se na %s na ovom računalu. itcoin vjerojatno već radi.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4919,8 +4919,8 @@ Advantage Wallet</source>
         <translation>Upozorenje: -paytxfee je vrlo visoka! To je transakcijska naknada koju ćete platiti ako šaljete transakciju.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Advantage neće raditi ispravno.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Upozorenje: Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, itcoin neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5124,8 +5124,8 @@ Advantage Wallet</source>
         <translation>Informacije</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
-        <translation>Provjera ispravnosti inicijalizacije nije uspjela. Advantage se zatvara.</translation>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
+        <translation>Provjera ispravnosti inicijalizacije nije uspjela. itcoin se zatvara.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5156,8 +5156,8 @@ Advantage Wallet</source>
         <translation>Nevažeća mrežna maska specificirana u kategoriji -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating USDX supply...</source>
-        <translation>Preračunavanje USDX-a u optjecaju...</translation>
+        <source>Recalculating itcoin supply...</source>
+        <translation>Preračunavanje itcoin-a u optjecaju...</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
@@ -5168,8 +5168,8 @@ Advantage Wallet</source>
         <translation>Ovo je priprema za testiranje prije puštanja - upotrebljavajte na vlastiti rizik - nemojte ga koristiti za staking ili trgovinske aplikacije!</translation>
     </message>
     <message>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije USDX (Masternodes) (0-1, zadano: %u)</translation>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije itcoin (Masternodes) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5392,8 +5392,8 @@ Advantage Wallet</source>
         <translation>Priprema za resinkronizaciju...</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, Advantage neće raditi ispravno.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Provjerite jesu li datum i vrijeme vašeg računala točni! Ako je vaš sat pogrešan, itcoin neće raditi ispravno.</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -5714,8 +5714,8 @@ Advantage Wallet</source>
         <translation>Novčanik %s nalazi se izvan direktorija podataka %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
-        <translation>Potrebno je prepisati novčanik: ponovo pokrenite Advantage</translation>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
+        <translation>Potrebno je prepisati novčanik: ponovo pokrenite itcoin</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5769,12 +5769,12 @@ Advantage Wallet</source>
         <translation>Pošalji</translation>
     </message>
     <message>
-        <source>Send public coins (USDX)</source>
-        <translation>Pošalji javne novčiće (USDX)</translation>
+        <source>Send public coins (itcoin)</source>
+        <translation>Pošalji javne novčiće (itcoin)</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX adresa ili naziv kontakta</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin adresa ili naziv kontakta</translation>
     </message>
     <message>
         <source>Amount</source>

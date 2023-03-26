@@ -12,8 +12,8 @@
 #include <stdint.h>
 
 /** The maximum allowed size for a block, in bytes (only for buffer size limits) */
-static const unsigned int MAX_BLOCK_SIZE_CURRENT = 10000000;
-static const unsigned int MAX_BLOCK_SIZE_LEGACY = 1000000;
+static const unsigned int MAX_BLOCK_SIZE_CURRENT =50000000;
+static const unsigned int MAX_BLOCK_SIZE_LEGACY = 5000000;
 
 /** The maximum allowed number of signature check operations in a block (network rule) */
 static const unsigned int MAX_BLOCK_SIGOPS_CURRENT = MAX_BLOCK_SIZE_CURRENT / 50;

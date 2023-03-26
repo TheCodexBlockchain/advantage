@@ -7,11 +7,11 @@ then
 fi
 
 # Clone code from official Github repository
-    rm -rf Advantage
+    rm -rf itcoin
     git clone https://github.com/TheCodexBlockchain/Advantage.git
 
 # Entering directory
-    cd Advantage
+    cd itcoin
 
 # Compile dependencies
     cd depends
@@ -31,6 +31,6 @@ fi
     cd ..
 
 # Create zip file of binaries
-    cp Advantage/src/advantaged Advantage/src/advantage-cli Advantage/src/advantage-tx Advantage/src/qt/advantage-qt Advantage/Advantage-Core.dmg .
-    zip USDX-MacOS.zip advantaged advantage-cli advantage-tx advantage-qt Advantage-Core.dmg
-    rm -f advantaged advantage-cli advantage-tx advantage-qt Advantage-Core.dmg
+    cp itcoin/src/itcoind itcoin/src/itcoin-cli itcoin/src/itcoin-tx itcoin/src/qt/itcoin-qt itcoin/itcoin-Core.dmg .
+    zip itcoin-MacOS.zip itcoind itcoin-cli itcoin-tx itcoin-qt itcoin-Core.dmg
+    rm -f itcoind itcoin-cli itcoin-tx itcoin-qt itcoin-Core.dmg

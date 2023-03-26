@@ -1,6 +1,6 @@
 [Protocol]
-exec=advantage-qt '%u'
-protocol=advantage
+exec=itcoin-qt '%u'
+protocol=itcoin
 input=none
 output=none
 helper=true

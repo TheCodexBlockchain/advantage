@@ -54,7 +54,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of USDX earned via Staking & Masternodes"));
+    ui->labelMessage->setText(tr("Amount of itcoin earned via Staking & Masternodes"));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelPiv, "text-chart-piv");
@@ -69,7 +69,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
-	ui->labelAmountMNRewards->setText("0 USDX");
+	ui->labelAmountMNRewards->setText("0 itcoin");
 	setCssProperty(ui->labelAmountMNRewards, "text-stake-mnrewards-disable");
 
 
@@ -109,6 +109,7 @@ DashboardWidget::DashboardWidget(PIVXGUI* parent) :
     // Transactions
     setCssProperty(ui->listTransactions, "container");
     ui->listTransactions->setItemDelegate(txViewDelegate);
+ //   ui->listTransactions->setStyleSheet("QListView { font-size: 11px; } ");
     ui->listTransactions->setIconSize(QSize(DECORATION_SIZE, DECORATION_SIZE));
     ui->listTransactions->setMinimumHeight(NUM_ITEMS * (DECORATION_SIZE + 2));
     ui->listTransactions->setAttribute(Qt::WA_MacShowFocusRect, false);
@@ -228,7 +229,7 @@ void DashboardWidget::loadWalletModel()
         connect(walletModel->getOptionsModel(), &OptionsModel::hideChartsChanged, this, &DashboardWidget::onHideChartsChanged);
 #endif
     }
-    // update the display unit, to not use the default ("USDX")
+    // update the display unit, to not use the default ("itcoin")
     updateDisplayUnit();
 }
 
@@ -313,6 +314,10 @@ void DashboardWidget::changeSort(int nSortIndex)
     ui->comboBoxSort->setCurrentIndex(nSortIndex);
     filter->sort(nColumnIndex, order);
     ui->listTransactions->update();
+
+    // Store settings
+    QSettings settings;
+    settings.setValue("transactionSort", nSortIndex);
 }
 
 void DashboardWidget::onSortTypeChanged(const QString& value)
@@ -330,6 +335,10 @@ void DashboardWidget::onSortTypeChanged(const QString& value)
     } else {
         showList();
     }
+
+    // Store settings
+    QSettings settings;
+    settings.setValue("transactionType", filterByType);
 }
 
 void DashboardWidget::walletSynced(bool sync)
@@ -455,7 +464,7 @@ void DashboardWidget::initChart()
     ui->chartContainer->setContentsMargins(0,0,0,0);
     setCssProperty(ui->chartContainer, "container-chart");
 
-    setPrivacy(fPrivacyMode);
+
 }
 
 void DashboardWidget::changeChartColors()
@@ -467,11 +476,11 @@ void DashboardWidget::changeChartColors()
     if (isLightTheme()) {
         gridLineColor = QColor("#1a000000");
         labelsColor = QColor("#77000000");
-        backgroundColor = QColor(255,255,255);
+        backgroundColor = QColor(252,252,252);
     } else {
         gridLineColor = QColor("#40ffffff");
         labelsColor = QColor("#a0ffffff");
-        backgroundColor = QColor(15,11,22);
+        backgroundColor = QColor(31,32,33);
     }
 
     axisX->setGridLineColor(backgroundColor);
@@ -521,7 +530,7 @@ void DashboardWidget::updateStakeFilter()
     }
 }
 
-// pair USDX
+// pair itcoin
 const QMap<int, QMap<QString, qint64>> DashboardWidget::getAmountBy()
 {
     updateStakeFilter();
@@ -582,7 +591,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames)
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair USDX
+    chartData->amountsByCache = getAmountBy(); // pair itcoin
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -669,8 +678,8 @@ void DashboardWidget::onChartRefreshed()
     // init sets
     set0 = new QBarSet(CURRENCY_UNIT.c_str());
 	set1 = new QBarSet("MN_" + QString(CURRENCY_UNIT.c_str()));
-    set0->setColor(QColor(221,139,20));
-	set1->setColor(QColor(192,100,22));
+    set0->setColor(QColor(34,172,209));		// masternode graph
+	set1->setColor(QColor(49,163,255));	// staking graph
 
     if (!series) {
         series = new QBarSeries();

@@ -54,7 +54,7 @@ private:
     Qt::SortOrder order;
 };
 
-/** Model for list of recently generated payment requests / advantage: URIs.
+/** Model for list of recently generated payment requests / itcoin: URIs.
  * Part of wallet model.
  */
 class RecentRequestsTableModel : public QAbstractTableModel

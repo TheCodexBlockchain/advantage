@@ -152,12 +152,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -448,7 +448,7 @@ for staking</source>
     </message>
     <message>
         <location line="+161"/>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -579,7 +579,7 @@ for staking</source>
     </message>
     <message>
         <location line="+81"/>
-        <source>Select USDX Outputs to Spend</source>
+        <source>Select itcoin Outputs to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -617,7 +617,7 @@ for staking</source>
         <location line="-393"/>
         <location line="+124"/>
         <location line="+461"/>
-        <source>0.00 USDX</source>
+        <source>0.00 itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -910,7 +910,7 @@ for staking</source>
     </message>
     <message>
         <location line="+357"/>
-        <source>How to get USDX</source>
+        <source>How to get itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -940,7 +940,7 @@ for staking</source>
     </message>
     <message>
         <location line="-558"/>
-        <source>Amount of USDX staked.</source>
+        <source>Amount of itcoin staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1060,7 +1060,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid USDX address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid itcoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1124,7 +1124,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+0"/>
-        <source>Advantage</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1135,7 +1135,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+6"/>
-        <source>About Advantage</source>
+        <source>About itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1203,17 +1203,17 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+90"/>
-        <source>Welcome to Advantage.</source>
+        <source>Welcome to itcoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+35"/>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1238,7 +1238,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location filename="../intro.cpp" line="+100"/>
-        <source>Advantage</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1370,7 +1370,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <location line="+23"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a USDX Masternode you must dedicate a collateral amount of USDX (the unit of USDX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a itcoin Masternode you must dedicate a collateral amount of itcoin (the unit of itcoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1640,7 +1640,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press &quot;start&quot;).
 </source>
@@ -1854,7 +1854,7 @@ NODES</source>
     </message>
     <message>
         <location line="+6"/>
-        <source>Invalid URI, not starting with &quot;advantage&quot; prefix</source>
+        <source>Invalid URI, not starting with &quot;itcoin&quot; prefix</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1910,7 +1910,7 @@ NODES</source>
     </message>
     <message>
         <location line="+33"/>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1935,12 +1935,12 @@ NODES</source>
     </message>
     <message>
         <location line="-236"/>
-        <source>Automatically start USDX after logging in to the system.</source>
+        <source>Automatically start itcoin after logging in to the system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start USDX on system login</source>
+        <source>&amp;Start itcoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1975,7 +1975,7 @@ NODES</source>
     </message>
     <message>
         <location line="+192"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2001,7 +2001,7 @@ NODES</source>
     </message>
     <message>
         <location line="+98"/>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2189,7 +2189,7 @@ NODES</source>
         <location filename="../pivx/pivxgui.cpp" line="+69"/>
         <location line="+298"/>
         <location line="+69"/>
-        <source>Advantage</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2224,7 +2224,7 @@ NODES</source>
     </message>
     <message>
         <location line="+39"/>
-        <source>Advantage client</source>
+        <source>itcoin client</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2307,12 +2307,12 @@ Address: %4
     </message>
     <message>
         <location line="-101"/>
-        <source>Cannot start advantage: click-to-pay handler</source>
+        <source>Cannot start itcoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+107"/>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2425,11 +2425,11 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+138"/>
-        <source>Enter USDX address (e.g. %1)</source>
+        <source>Enter itcoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+USDX"/>
+        <location line="+itcoin"/>
         <source>%1 d</source>
         <translation>%1 d</translation>
     </message>
@@ -2481,7 +2481,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx.cpp" line="+518"/>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2489,7 +2489,7 @@ Address: %4
         <location line="+7"/>
         <location line="+13"/>
         <location line="+19"/>
-        <source>Advantage</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2514,7 +2514,7 @@ Address: %4
     </message>
     <message>
         <location line="+64"/>
-        <source>Advantage didn&apos;t yet exit safely...</source>
+        <source>itcoin didn&apos;t yet exit safely...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2806,7 +2806,7 @@ Address: %4
     </message>
     <message>
         <location line="+93"/>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3083,7 +3083,7 @@ Address: %4
     </message>
     <message>
         <location line="-39"/>
-        <source>Welcome to the USDX RPC console.</source>
+        <source>Welcome to the itcoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3264,7 +3264,7 @@ Address: %4
     </message>
     <message>
         <location filename="../pivx/forms/receivewidget.ui" line="+61"/>
-        <source>Scan the QR code or copy the address to receive USDX</source>
+        <source>Scan the QR code or copy the address to receive itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3427,12 +3427,12 @@ Address: %4
     </message>
     <message>
         <location line="+74"/>
-        <source>USDX</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-117"/>
-        <source>Instead of sharing only a USDX address, you can create a payment request, bundling up more information</source>
+        <source>Instead of sharing only a itcoin address, you can create a payment request, bundling up more information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3531,7 +3531,7 @@ Address: %4
     </message>
     <message>
         <location line="+72"/>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; USDX address</source>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the &quot;change&quot; itcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3564,7 +3564,7 @@ Address: %4
     </message>
     <message>
         <location line="+86"/>
-        <source>USDX/kilobyte</source>
+        <source>itcoin/kilobyte</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3897,7 +3897,7 @@ Remember to write it down and store it safely, otherwise you might lose access t
     </message>
     <message>
         <location line="+7"/>
-        <source>Encrypt your USDX addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your itcoin addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3944,7 +3944,7 @@ Using this mechanism you can share your keys without middle-man risk, only need 
     </message>
     <message>
         <location line="+77"/>
-        <source>USDX address</source>
+        <source>itcoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4111,7 +4111,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+148"/>
-        <source>Welcome to the USDX RPC console.</source>
+        <source>Welcome to the itcoin RPC console.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4339,12 +4339,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+152"/>
-        <source>1) What is USDX?</source>
+        <source>1) What is itcoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>2) Why are my USDX unspendable?</source>
+        <source>2) Why are my itcoin unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4359,20 +4359,20 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>What is USDX?</source>
+        <source>What is itcoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           USDX is a form of digital online money using blockchain technology
+                           itcoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  USDX incorporates market leading security &amp;
+                           zero fees.  itcoin incorporates market leading security &amp;
                            privacy.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of USDX to participate in earning block rewards
+                           itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of itcoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4386,17 +4386,17 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+21"/>
-        <source>Why are my USDX unspendable?</source>
+        <source>Why are my itcoin unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received USDX requires 6 confirmations on the network
+                           Newly received itcoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Your USDX wallet also needs to be completely synchronized
+                           Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4409,12 +4409,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake USDX?</source>
+        <source>How do I stake itcoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of USDX with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (advantage-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You must have a balance of itcoin with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (itcoin-cli); the command &lt;span style=&quot; font-style:italic;&quot;&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4467,7 +4467,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <location line="-131"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           A masternode is a computer running a full node USDX wallet with a
+                           A masternode is a computer running a full node itcoin wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -4487,10 +4487,10 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in USDX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in itcoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the USDX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the itcoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
 
@@ -4513,7 +4513,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+158"/>
-        <source>3) How do I stake USDX?</source>
+        <source>3) How do I stake itcoin?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4666,7 +4666,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+4"/>
-        <source>Unable to open advantage.conf with default application</source>
+        <source>Unable to open itcoin.conf with default application</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4734,7 +4734,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location filename="../pivx/settings/settingsmainoptionswidget.cpp" line="+57"/>
-        <source>Start USDX on system login</source>
+        <source>Start itcoin on system login</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4805,7 +4805,7 @@ Are you sure?
     </message>
     <message>
         <location line="-62"/>
-        <source>USDX address or contact label</source>
+        <source>itcoin address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5210,7 +5210,7 @@ Are you sure?
     </message>
     <message>
         <location line="+31"/>
-        <source>About USDX</source>
+        <source>About itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5292,7 +5292,7 @@ Are you sure?
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+71"/>
-        <source>Advantage is shutting down...</source>
+        <source>itcoin is shutting down...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5328,7 +5328,7 @@ Are you sure?
     </message>
     <message>
         <location filename="../pivx/splash.cpp" line="+30"/>
-        <source>Advantage</source>
+        <source>itcoin</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -6025,27 +6025,27 @@ Select fewer inputs with coin control.</source>
     <message>
         <location line="+89"/>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+83"/>
-        <source>The masternode network is USDX&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <source>The masternode network is itcoin&apos;s second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-103"/>
-        <source>How USDX respects your privacy?</source>
+        <source>How itcoin respects your privacy?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6060,7 +6060,7 @@ Advantage Wallet</source>
     </message>
 </context>
 <context>
-    <name>advantage</name>
+    <name>itcoin</name>
     <message>
         <location filename="../pivxstrings.cpp" line="+12"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
@@ -6093,7 +6093,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6283,7 +6283,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6303,7 +6303,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Advantage will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong itcoin will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6558,7 +6558,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6598,7 +6598,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+50"/>
-        <source>Recalculating USDX supply...</source>
+        <source>Recalculating itcoin supply...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6623,7 +6623,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="-144"/>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6968,12 +6968,12 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+37"/>
-        <source>Minimum positive amount (in USDX) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <source>Minimum positive amount (in itcoin) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong Advantage will not work properly.</source>
+        <source>Please check that your computer&apos;s date and time are correct! If your clock is wrong itcoin will not work properly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7028,7 +7028,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading %s: Wallet requires newer version of Advantage</source>
+        <source>Error loading %s: Wallet requires newer version of itcoin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7510,7 +7510,7 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7579,12 +7579,12 @@ Advantage Wallet</source>
     </message>
     <message>
         <location line="-505"/>
-        <source>Send public coins (USDX)</source>
+        <source>Send public coins (itcoin)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+60"/>
-        <source>USDX address or contact label</source>
+        <source>itcoin address or contact label</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -33,11 +33,11 @@ esac
 	sudo apt install git zip unzip build-essential libtool bsdmainutils autotools-dev autoconf pkg-config automake python3 libqt5svg5-dev -y
 
 # Clone code from official Github repository
-	rm -rf Advantage
+	rm -rf itcoin
 	git clone https://github.com/TheCodexBlockchain/Advantage.git
 
 # Entering directory
-	cd Advantage
+	cd itcoin
 
 # Compile dependencies
 	cd depends
@@ -51,6 +51,6 @@ esac
 	cd ..
 
 # Create zip file of binaries
-	cp Advantage/src/advantaged Advantage/src/advantage-cli Advantage/src/advantage-tx Advantage/src/qt/advantage-qt .
-	zip USDX-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip advantaged advantage-cli advantage-tx advantage-qt
-	rm -f advantaged advantage-cli advantage-tx advantage-qt
+	cp itcoin/src/itcoind itcoin/src/itcoin-cli itcoin/src/itcoin-tx itcoin/src/qt/itcoin-qt .
+	zip itcoin-$(git describe --abbrev=0 --tags | sed s/v//)-Linux.zip itcoind itcoin-cli itcoin-tx itcoin-qt
+	rm -f itcoind itcoin-cli itcoin-tx itcoin-qt

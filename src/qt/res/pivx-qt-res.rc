@@ -19,14 +19,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Advantage"
-            VALUE "FileDescription",    "Advantage Core (OSS GUI client for Advantage)"
+            VALUE "CompanyName",        "itcoin"
+            VALUE "FileDescription",    "itcoin blockchain (OSS GUI client for itcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "advantage-qt"
+            VALUE "InternalName",       "itcoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "advantage-qt.exe"
-            VALUE "ProductName",        "Advantage Core"
+            VALUE "OriginalFilename",   "itcoin-qt.exe"
+            VALUE "ProductName",        "itcoin blockchain"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

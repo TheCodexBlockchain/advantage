@@ -65,15 +65,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += advantaged
+  bin_PROGRAMS += itcoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += advantage-cli advantage-tx
+  bin_PROGRAMS += itcoin-cli itcoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
-# advantage core #
+# itcoin blockchain #
 BITCOIN_CORE_H = \
   activemasternode.h \
   activemasternodeman.h \
@@ -212,7 +212,7 @@ obj/build.h: FORCE
 	  "$(abs_top_srcdir)"
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between advantaged and advantage-qt
+# server: shared between itcoind and itcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_server_a_SOURCES = \
@@ -263,7 +263,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between advantaged and advantage-qt, but only linked
+# wallet: shared between itcoind and itcoin-qt, but only linked
 # when wallet enabled
 libbitcoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
@@ -355,7 +355,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/fugue.c \
   crypto/sph_sha2big.c
 
-# common: shared between advantaged, and advantage-qt and non-server tools
+# common: shared between itcoind, and itcoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_common_a_SOURCES = \
@@ -427,7 +427,7 @@ if GLIBC_BACK_COMPAT
 AM_LDFLAGS += $(COMPAT_LDFLAGS)
 endif
 
-# cli: shared between advantage-cli and advantage-qt
+# cli: shared between itcoin-cli and itcoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 libbitcoin_cli_a_SOURCES = \
@@ -437,16 +437,16 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# advantaged binary #
-advantaged_SOURCES = pivxd.cpp
-advantaged_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-advantaged_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-advantaged_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# itcoind binary #
+itcoind_SOURCES = pivxd.cpp
+itcoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+itcoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+itcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-advantaged_SOURCES += pivxd-res.rc
+itcoind_SOURCES += pivxd-res.rc
 endif
-advantaged_LDADD = \
+itcoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_WALLET) \
   $(LIBBITCOIN_COMMON) \
@@ -459,45 +459,45 @@ advantaged_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-advantaged_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+itcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# advantage-cli binary #
-advantage_cli_SOURCES = pivx-cli.cpp
-advantage_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-advantage_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-advantage_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# itcoin-cli binary #
+itcoin_cli_SOURCES = pivx-cli.cpp
+itcoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+itcoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+itcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-advantage_cli_SOURCES += pivx-cli-res.rc
+itcoin_cli_SOURCES += pivx-cli-res.rc
 endif
 
-advantage_cli_LDADD = \
+itcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-advantage_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+itcoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
-# advantage-tx binary #
-advantage_tx_SOURCES = pivx-tx.cpp
-advantage_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-advantage_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-advantage_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# itcoin-tx binary #
+itcoin_tx_SOURCES = pivx-tx.cpp
+itcoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+itcoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+itcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-advantage_tx_SOURCES += pivx-tx-res.rc
+itcoin_tx_SOURCES += pivx-tx-res.rc
 endif
 
-advantage_tx_LDADD = \
+itcoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-advantage_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+itcoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

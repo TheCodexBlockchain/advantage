@@ -114,12 +114,12 @@
         <translation>받을 주소</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 송금할 USDX 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 송금할 itcoin 주소입니다. 송금하기 전 항상 금액과 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 입금 받을 USDX 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 입금 받을 itcoin 주소입니다. 매 거래마다 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -345,8 +345,8 @@ for staking</source>
         <translation>취소</translation>
     </message>
     <message>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
-        <translation>USDX는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 USDXs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
+        <translation>itcoin는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 itcoins 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -430,8 +430,8 @@ for staking</source>
         <translation>코인 선택</translation>
     </message>
     <message>
-        <source>Select USDX Outputs to Spend</source>
-        <translation>사용할 USDX 아웃풋 선택</translation>
+        <source>Select itcoin Outputs to Spend</source>
+        <translation>사용할 itcoin 아웃풋 선택</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -458,8 +458,8 @@ for staking</source>
         <translation>금액</translation>
     </message>
     <message>
-        <source>0.00 USDX</source>
-        <translation>0.00 USDX</translation>
+        <source>0.00 itcoin</source>
+        <translation>0.00 itcoin</translation>
     </message>
     <message>
         <source>0</source>
@@ -700,8 +700,8 @@ for staking</source>
         <translation>Filter by</translation>
     </message>
     <message>
-        <source>Amount of USDX staked.</source>
-        <translation>스테이킹 된 USDX양</translation>
+        <source>Amount of itcoin staked.</source>
+        <translation>스테이킹 된 itcoin양</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -795,8 +795,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid USDX address.</source>
-        <translation>입력된 주소 "%1"는 올바른 USDX 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid itcoin address.</source>
+        <translation>입력된 주소 "%1"는 올바른 itcoin 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -848,16 +848,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>버전</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Advantage</source>
-        <translation>Advantage 정보</translation>
+        <source>About itcoin</source>
+        <translation>itcoin 정보</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -911,16 +911,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>환영합니다</translation>
     </message>
     <message>
-        <source>Welcome to Advantage.</source>
-        <translation>Advantage에 오신 것을 환영합니다.</translation>
+        <source>Welcome to itcoin.</source>
+        <translation>itcoin에 오신 것을 환영합니다.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
-        <translation>이 프로그램이 처음 실행되었으므로 Advantage가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
+        <translation>이 프로그램이 처음 실행되었으므로 itcoin가 데이터를 저장할 위치를 선택할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Advantage는 USDX 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>itcoin는 itcoin 블록체인을 다운로드하여 저장합니다. 최소 %1GB의 데이터가 디렉토리에 저장되며 시간이 지날수록 증가합니다. 또한 지갑도 해당 디렉토리에 저장됩니다.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -939,8 +939,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>선택</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1039,8 +1039,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>새로운 마스터노드 컨트롤러 만들기</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a USDX Masternode you must dedicate a collateral amount of USDX (the unit of USDX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;USDX 마스터노드를 생성하기 위해서는 10,000 USDX (USDX 단위)를 네트워크에 예치해야 합니다. (예치한 코인은 계속 본인의 소유입니다.) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;언제든지 노드를 비활성화 시키고 코인을 잠금해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a itcoin Masternode you must dedicate a collateral amount of itcoin (the unit of itcoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;itcoin 마스터노드를 생성하기 위해서는 10,000 itcoin (itcoin 단위)를 네트워크에 예치해야 합니다. (예치한 코인은 계속 본인의 소유입니다.) &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;언제든지 노드를 비활성화 시키고 코인을 잠금해제할 수 있습니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1060,7 +1060,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10,000 USDX의 트랜잭션은&lt;/p&gt;&lt;p&gt;지갑의 새로운 빈 주소로 만들어질 것입니다.&lt;/p&gt;&lt;p&gt;그 주소는 마스터노드 이름에 따라 레이블링됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;10,000 itcoin의 트랜잭션은&lt;/p&gt;&lt;p&gt;지갑의 새로운 빈 주소로 만들어질 것입니다.&lt;/p&gt;&lt;p&gt;그 주소는 마스터노드 이름에 따라 레이블링됩니다.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1241,7 +1241,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1249,7 +1249,7 @@ this controller wallet (select the Masternode in the list and press "start").
 클립보드로 내보내려고 합니다.
 
 
-그 데이터를 리모트 서버의 advantage.conf 파일에
+그 데이터를 리모트 서버의 itcoin.conf 파일에
 붙여넣고 시작합니다. 그리고 컨트롤러 지갑에서 마스터노드를
 시작합니다. (리스트에서 마스터노드를 선택하고 "시작"을 누르십시오.)
 </translation>
@@ -1388,8 +1388,8 @@ Are you sure?</source>
         <translation>구문 분석된 데이터가 너무 큽니다.</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "advantage" prefix</source>
-        <translation>"advantage"로 시작하지 않아 유효하지 않은 URI</translation>
+        <source>Invalid URI, not starting with "itcoin" prefix</source>
+        <translation>"itcoin"로 시작하지 않아 유효하지 않은 URI</translation>
     </message>
 </context>
 <context>
@@ -1434,8 +1434,8 @@ Are you sure?</source>
         <translation>확인되지 않은 잔엑을 사용하지 않도록 설정하면 해당 트랜잭션에 하나 이상의 컨펌이 진행되야&lt;br/&gt;트랜잭션의 잔액을 전송할 수 있습니다.&lt;br/&gt;또한 이것은 잔액 계산 방식에도 영향을 줍니다.</translation>
     </message>
     <message>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>라우터에서 USDX 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>라우터에서 itcoin 클라이언트 포트를 자동으로 엽니다. 이 기능은 라우터가 UPnP를 지원하고 활성화 된 경우에만 사용할 수 있습니다.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1454,12 +1454,12 @@ Are you sure?</source>
         <translation>전문적</translation>
     </message>
     <message>
-        <source>Automatically start USDX after logging in to the system.</source>
-        <translation>시스템 로그인 후 USDX을 자동으로 시작합니다.</translation>
+        <source>Automatically start itcoin after logging in to the system.</source>
+        <translation>시스템 로그인 후 itcoin을 자동으로 시작합니다.</translation>
     </message>
     <message>
-        <source>&amp;Start USDX on system login</source>
-        <translation>&amp;시스템 로그인시 USDX 시작</translation>
+        <source>&amp;Start itcoin on system login</source>
+        <translation>&amp;시스템 로그인시 itcoin 시작</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1486,8 +1486,8 @@ Are you sure?</source>
         <translation>&amp;네트워크</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
-        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 USDX을 다시 시작한 후에 적용됩니다.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
+        <translation>사용자 인터페이스 언어를 설정할 수 있습니다. 이 설정은 itcoin을 다시 시작한 후에 적용됩니다.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1508,8 +1508,8 @@ Are you sure?</source>
         <translation>Stake split threshold:</translation>
     </message>
     <message>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 USDX 네트워크에 연결해주세요.</translation>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
+        <translation>SOCKS5 프록시를 통해 itcoin 네트워크에 연결해주세요.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1655,8 +1655,8 @@ Are you sure?</source>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1683,8 +1683,8 @@ Are you sure?</source>
         <translation>어플리케이션 종료</translation>
     </message>
     <message>
-        <source>Advantage client</source>
-        <translation>Advantage 클라이언트</translation>
+        <source>itcoin client</source>
+        <translation>itcoin 클라이언트</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1746,12 +1746,12 @@ Address: %4
         <translation>잘못된 결제 주소 %1</translation>
     </message>
     <message>
-        <source>Cannot start advantage: click-to-pay handler</source>
-        <translation>advantage을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
+        <source>Cannot start itcoin: click-to-pay handler</source>
+        <translation>itcoin을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 USDX 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 itcoin 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1836,8 +1836,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter USDX address (e.g. %1)</source>
-        <translation>USDX 주소 입력(예 : %1)</translation>
+        <source>Enter itcoin address (e.g. %1)</source>
+        <translation>itcoin 주소 입력(예 : %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1880,20 +1880,20 @@ Address: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
-        <translation>치명적인 오류가 발생하였습니다. USDX는 더 이상 안전하게 계속될 수 없으며, 곧 종료됩니다.</translation>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
+        <translation>치명적인 오류가 발생하였습니다. itcoin는 더 이상 안전하게 계속될 수 없으며, 곧 종료됩니다.</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
         <translation>Error: Specified data directory "%1" does not exist.</translation>
     </message>
     <message>
-        <source>Advantage didn't yet exit safely...</source>
-        <translation>Advantage가 아직 안전하게 종료되지 않았습니다....</translation>
+        <source>itcoin didn't yet exit safely...</source>
+        <translation>itcoin가 아직 안전하게 종료되지 않았습니다....</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2035,8 +2035,8 @@ Address: %4
         <translation>블록체인</translation>
     </message>
     <message>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>현재 데이터 디렉토리에서 USDX 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>현재 데이터 디렉토리에서 itcoin 디버그 로그 파일을 엽니다. 로그 파일이 클 경우, 약간의 시간이 걸릴 수 있습니다.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2256,8 +2256,8 @@ Address: %4
         <translation>출력:</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>USDX RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>itcoin RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2504,8 +2504,8 @@ Address: %4
         <translation>금액</translation>
     </message>
     <message>
-        <source>USDX</source>
-        <translation>USDX</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2590,8 +2590,8 @@ Address: %4
         <translation>권장</translation>
     </message>
     <message>
-        <source>USDX/kilobyte</source>
-        <translation>USDX/Kilobyte</translation>
+        <source>itcoin/kilobyte</source>
+        <translation>itcoin/Kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -2826,8 +2826,8 @@ Address: %4
         <translation>키 암호 해재</translation>
     </message>
     <message>
-        <source>USDX address</source>
-        <translation>USDX 주소</translation>
+        <source>itcoin address</source>
+        <translation>itcoin 주소</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -2943,8 +2943,8 @@ Verify that you have installed a predetermined text editor.</source>
 미리 결정된 텍스트 에디터를 인스톨했는지 확인하세요.</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>USDX RPC 콘솔에 오신 것을 환영합니다.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>itcoin RPC 콘솔에 오신 것을 환영합니다.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3207,8 +3207,8 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>백업 폴더를 열 수 없습니다.</translation>
     </message>
     <message>
-        <source>Unable to open advantage.conf with default application</source>
-        <translation>advantage.conf 파일을 기본 앱으로 열 수 없습니다.</translation>
+        <source>Unable to open itcoin.conf with default application</source>
+        <translation>itcoin.conf 파일을 기본 앱으로 열 수 없습니다.</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3258,8 +3258,8 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>스크립트 검증 스레드 개수</translation>
     </message>
     <message>
-        <source>Start USDX on system login</source>
-        <translation>시스템 로그인시 USDX 지갑 시작</translation>
+        <source>Start itcoin on system login</source>
+        <translation>시스템 로그인시 itcoin 지갑 시작</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3315,8 +3315,8 @@ Are you sure?
         <translation>메세지</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX 주소 / 연락처 라벨</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin 주소 / 연락처 라벨</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3580,8 +3580,8 @@ Are you sure?
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About USDX</source>
-        <translation>USDX 정보</translation>
+        <source>About itcoin</source>
+        <translation>itcoin 정보</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3647,8 +3647,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Advantage is shutting down...</source>
-        <translation>Advantage가 종료됩니다...</translation>
+        <source>itcoin is shutting down...</source>
+        <translation>itcoin가 종료됩니다...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3677,8 +3677,8 @@ Are you sure?
         <translation>로딩중...</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
 </context>
 <context>
@@ -4099,21 +4099,21 @@ NOTE: 업그레이드 이후에는
     </message>
     <message>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation>환영합니다.
-Advantage Wallet</translation>
+itcoin Wallet</translation>
     </message>
     <message>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>USDX 는 많은 경험과 뛰어난 실력을 겸비한 개발자와 암호학자로 구성된 팀이 개발하는 연신적인 Proof of Stake 블록체인 기술을 자랑하는 오픈소스 프로젝트 입니다. </translation>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>itcoin 는 많은 경험과 뛰어난 실력을 겸비한 개발자와 암호학자로 구성된 팀이 개발하는 연신적인 Proof of Stake 블록체인 기술을 자랑하는 오픈소스 프로젝트 입니다. </translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;USDX 는 Manifesto 선언서에 적힌대로: 프라이버시는 협상이 불가능한 인간의 기본적인 인권중 하나이다. 이로 인해 그 언제나 그 누구에게나 데이터를 공유할수 있는 자유를 얻게 될것이다. USDX 프로젝트는 개인 독립을 추구한다. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;itcoin 는 Manifesto 선언서에 적힌대로: 프라이버시는 협상이 불가능한 인간의 기본적인 인권중 하나이다. 이로 인해 그 언제나 그 누구에게나 데이터를 공유할수 있는 자유를 얻게 될것이다. itcoin 프로젝트는 개인 독립을 추구한다. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>How USDX respects your privacy?</source>
-        <translation>USDX 가 당신의 프라이버시를 존중하는 방법은?</translation>
+        <source>How itcoin respects your privacy?</source>
+        <translation>itcoin 가 당신의 프라이버시를 존중하는 방법은?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4147,8 +4147,8 @@ Advantage Wallet</translation>
         <translation>JSON-RPC연결 수신을 위해 주어진 주소를 지정합니다. [host]: IPv6 포트 표기법 사용. 이 옵션은 여러번 지정할 수 있습니다. (기본값 : 모든 인터페이스에 지정)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
-        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Advantage는 이미 실행 중입니다.</translation>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
+        <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. itcoin는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -4279,8 +4279,8 @@ Advantage Wallet</translation>
         <translation>이 제품은 OpenSSL이 개발한 Open SSL 툴킷 &lt;https://www.openssl.org/&gt; 에서 사용하기 위한 프로젝트 소프트웨어, Eric Young이 개발한 암호화 소프트웨어, Thomas Bernard가 개발한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
-        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Advantage는 이미 실행 중입니다.</translation>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
+        <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. itcoin는 이미 실행 중입니다.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4295,8 +4295,8 @@ Advantage Wallet</translation>
         <translation>경고 : -paytxfee가 매우 높게 설정되었습니다! 이것은 전송할 경우 지불 할 트랜잭션 수수료입니다.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 Advantage 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>경고: 컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 itcoin 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4495,8 +4495,8 @@ Advantage Wallet</translation>
         <translation>정보</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
-        <translation>초기화 정확성 검사에 실패 했습니다. Advantage가 종료됩니다.</translation>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
+        <translation>초기화 정확성 검사에 실패 했습니다. itcoin가 종료됩니다.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4527,8 +4527,8 @@ Advantage Wallet</translation>
         <translation>-whitelist: '%s' 에 지정된 넷마스크가 유효하지 않습니다.</translation>
     </message>
     <message>
-        <source>Recalculating USDX supply...</source>
-        <translation>USDX 공급 재계산중...</translation>
+        <source>Recalculating itcoin supply...</source>
+        <translation>itcoin 공급 재계산중...</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
@@ -4539,8 +4539,8 @@ Advantage Wallet</translation>
         <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
     </message>
     <message>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
-        <translation>USDX의 모든 특정 기능들을 비활성화합니다(마스터노드) (0-1, 기본값: %u)</translation>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>itcoin의 모든 특정 기능들을 비활성화합니다(마스터노드) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -4743,8 +4743,8 @@ Advantage Wallet</translation>
         <translation>재동기화 준비중...</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 Advantage 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>컴퓨터의 날짜와 시간이 올바르게 설정되어 있는지 확인해 주세요! 만일 시계가 잘못되어 있다면 itcoin 코어는 정상적으로 작동하지 않을 수 있습니다.</translation>
     </message>
     <message>
         <source>Cannot resolve -%s address: '%s'</source>
@@ -5019,8 +5019,8 @@ Advantage Wallet</translation>
         <translation>지갑 %s 가 데이터 디렉토리 외부에 존재합니다 %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
-        <translation>지갑을 다시 작성해야 합니다: 완료하려면 Advantage 코어를 재시작해야 합니다</translation>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
+        <translation>지갑을 다시 작성해야 합니다: 완료하려면 itcoin 코어를 재시작해야 합니다</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5074,8 +5074,8 @@ Advantage Wallet</translation>
         <translation>보내기</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX 주소 / 연락처 라벨</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin 주소 / 연락처 라벨</translation>
     </message>
     <message>
         <source>Amount</source>

@@ -34,7 +34,7 @@ class WalletModel;
 
 
 /**
-  Advantage GUI main class. This class represents the main window of the Advantage UI. It communicates with both the client and
+  itcoin GUI main class. This class represents the main window of the itcoin UI. It communicates with both the client and
   wallet models to give the user an up-to-date view of the current core state.
 */
 class PIVXGUI : public QMainWindow

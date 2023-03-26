@@ -266,11 +266,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop Advantage server.");
+            "\nStop itcoin server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "Advantage server stopping";
+    return "itcoin server stopping";
 }
 
 
@@ -359,22 +359,22 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
-        /* USDX features */
-        {"advantage", "listmasternodes", &listmasternodes, true },
-        {"advantage", "getmasternodecount", &getmasternodecount, true },
-        {"advantage", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"advantage", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"advantage", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"advantage", "masternodecurrent", &masternodecurrent, true },
-        {"advantage", "startmasternode", &startmasternode, true },
-        {"advantage", "createmasternodekey", &createmasternodekey, true },
-        {"advantage", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"advantage", "listmasternodeconf", &listmasternodeconf, true },
-        {"advantage", "getmasternodestatus", &getmasternodestatus, true },
-        {"advantage", "getmasternodewinners", &getmasternodewinners, true },
-        {"advantage", "getmasternodescores", &getmasternodescores, true },
-        {"advantage", "mnsync", &mnsync, true },
-        {"advantage", "spork", &spork, true },
+        /* itcoin features */
+        {"itcoin", "listmasternodes", &listmasternodes, true },
+        {"itcoin", "getmasternodecount", &getmasternodecount, true },
+        {"itcoin", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"itcoin", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"itcoin", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"itcoin", "masternodecurrent", &masternodecurrent, true },
+        {"itcoin", "startmasternode", &startmasternode, true },
+        {"itcoin", "createmasternodekey", &createmasternodekey, true },
+        {"itcoin", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"itcoin", "listmasternodeconf", &listmasternodeconf, true },
+        {"itcoin", "getmasternodestatus", &getmasternodestatus, true },
+        {"itcoin", "getmasternodewinners", &getmasternodewinners, true },
+        {"itcoin", "getmasternodescores", &getmasternodescores, true },
+        {"itcoin", "mnsync", &mnsync, true },
+        {"itcoin", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -571,7 +571,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> advantage-cli " + methodname + " " + args + "\n";
+    return "> itcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

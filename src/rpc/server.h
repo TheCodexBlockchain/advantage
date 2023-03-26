@@ -128,7 +128,7 @@ public:
 };
 
 /**
- * USDX RPC command dispatcher.
+ * itcoin RPC command dispatcher.
  */
 class CRPCTable
 {

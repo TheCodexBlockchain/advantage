@@ -236,6 +236,10 @@
         <file alias="Montserrat-SemiBold.ttf">pivx/res/font/Montserrat-SemiBold.ttf</file>
         <file alias="Montserrat-SemiBoldItalic.ttf">pivx/res/font/Montserrat-SemiBoldItalic.ttf</file>
         <file alias="Montserrat-Thin.ttf">pivx/res/font/Montserrat-Thin.ttf</file>
-        <file alias="Montserrat-ThinItalic.ttf">pivx/res/font/Montserrat-ThinItalic.ttf</file>        
+        <file alias="Montserrat-ThinItalic.ttf">pivx/res/font/Montserrat-ThinItalic.ttf</file>
+        <file alias="Nevan.ttf">pivx/res/font/Nevan.ttf</file>
+        <file alias="Azonix.otf">pivx/res/font/Azonix.otf</file>
+        <file alias="GoodTiming.ttf">pivx/res/font/GoodTiming.ttf</file>
+        <file alias="BankGothicLight.otf">pivx/res/font/BankGothicLight.otf</file>
     </qresource>
 </RCC>

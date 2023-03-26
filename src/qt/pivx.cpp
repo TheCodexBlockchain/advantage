@@ -151,7 +151,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
     }
 }
 
-/** Class encapsulating Advantage Core startup and shutdown.
+/** Class encapsulating itcoin blockchain startup and shutdown.
  * Allows running startup and shutdown in a different thread from the UI thread.
  */
 class BitcoinCore : public QObject
@@ -178,7 +178,7 @@ private:
     void handleRunawayException(const std::exception* e);
 };
 
-/** Main USDX application object */
+/** Main itcoin application object */
 class BitcoinApplication : public QApplication
 {
     Q_OBJECT
@@ -497,7 +497,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // Advantage: URIs or payment requests:
+        // itcoin: URIs or payment requests:
         //connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &PIVXGUI::handlePaymentRequest);
         connect(window, &PIVXGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
         connect(paymentServer, &PaymentServer::message, [this](const QString& title, const QString& message, unsigned int style) {
@@ -518,7 +518,7 @@ void BitcoinApplication::shutdownResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString& message)
 {
-    QMessageBox::critical(0, "Runaway exception", QObject::tr("A fatal error occurred. Advantage can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", QObject::tr("A fatal error occurred. itcoin can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(1);
 }
 
@@ -590,6 +590,11 @@ int main(int argc, char* argv[])
     QFontDatabase::addApplicationFont(":/font/Montserrat-Thin.ttf");
     QFontDatabase::addApplicationFont(":/font/Montserrat-ThinItalic.ttf");
 
+    QFontDatabase::addApplicationFont(":/font/Nevan.ttf");
+    QFontDatabase::addApplicationFont(":/font/Azonix.otf");
+    QFontDatabase::addApplicationFont(":/font/GoodTiming.ttf");
+    QFontDatabase::addApplicationFont(":/font/BankGothicLight.otf");
+
     // Register meta types used for QMetaObject::invokeMethod
     qRegisterMetaType<bool*>();
     //   Need to pass name here as CAmount is a typedef (see http://qt-project.org/doc/qt-5/qmetatype.html#qRegisterMetaType)
@@ -623,17 +628,17 @@ int main(int argc, char* argv[])
     if (!Intro::pickDataDirectory())
         return 0;
 
-    /// 6. Determine availability of data directory and parse advantage.conf
+    /// 6. Determine availability of data directory and parse itcoin.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!fs::is_directory(GetDataDir(false))) {
-        QMessageBox::critical(0, QObject::tr("Advantage"),
+        QMessageBox::critical(0, QObject::tr("itcoin"),
             QObject::tr("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
     } catch (const std::exception& e) {
-        QMessageBox::critical(0, QObject::tr("Advantage"),
+        QMessageBox::critical(0, QObject::tr("itcoin"),
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return 0;
     }
@@ -646,7 +651,7 @@ int main(int argc, char* argv[])
 
     // Check for -testnet or -regtest parameter (Params() calls are only valid after this clause)
     if (!SelectParamsFromCommandLine()) {
-        QMessageBox::critical(0, QObject::tr("Advantage"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
+        QMessageBox::critical(0, QObject::tr("itcoin"), QObject::tr("Error: Invalid combination of -regtest and -testnet."));
         return 1;
     }
 #ifdef ENABLE_WALLET
@@ -665,7 +670,7 @@ int main(int argc, char* argv[])
     /// 7a. parse masternode.conf
     std::string strErr;
     if (!masternodeConfig.read(strErr)) {
-        QMessageBox::critical(0, QObject::tr("Advantage"),
+        QMessageBox::critical(0, QObject::tr("itcoin"),
             QObject::tr("Error reading masternode configuration file: %1").arg(strErr.c_str()));
         return 0;
     }
@@ -680,7 +685,7 @@ int main(int argc, char* argv[])
         exit(0);
 
     // Start up the payment server early, too, so impatient users that click on
-    // advantage: links repeatedly have their payment requests routed to this process:
+    // itcoin: links repeatedly have their payment requests routed to this process:
     app.createPaymentServer();
 #endif
 
@@ -730,7 +735,7 @@ int main(int argc, char* argv[])
         app.createWindow(networkStyle.data());
         app.requestInitialize();
 #if defined(Q_OS_WIN)
-        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("Advantage didn't yet exit safely..."), (HWND)app.getMainWinId());
+        WinShutdownMonitor::registerShutdownBlockReason(QObject::tr("itcoin didn't yet exit safely..."), (HWND)app.getMainWinId());
 #endif
         app.exec();
         app.requestShutdown();

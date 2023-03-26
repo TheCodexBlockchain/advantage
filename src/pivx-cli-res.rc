@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Advantage"
-            VALUE "FileDescription",    "Advantage-cli (OSS RPC client for Advantage)"
+            VALUE "CompanyName",        "itcoin"
+            VALUE "FileDescription",    "itcoin-cli (OSS RPC client for itcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "advantage-cli"
+            VALUE "InternalName",       "itcoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "advantage-cli.exe"
-            VALUE "ProductName",        "Advantage-cli"
+            VALUE "OriginalFilename",   "itcoin-cli.exe"
+            VALUE "ProductName",        "itcoin-cli"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

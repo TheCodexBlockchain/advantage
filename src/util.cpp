@@ -86,13 +86,13 @@
 #include <openssl/crypto.h>
 #include <openssl/rand.h>
 
-const char * const PIVX_CONF_FILENAME = "advantage.conf";
-const char * const PIVX_PID_FILENAME = "advantage.pid";
+const char * const PIVX_CONF_FILENAME = "itcoin.conf";
+const char * const PIVX_PID_FILENAME = "itcoin.pid";
 const char * const PIVX_MASTERNODE_CONF_FILENAME = "masternode.conf";
 const char * const PIVX_ACTIVE_MASTERNODE_CONF_FILENAME = "activemasternode.conf";
 
 
-// Advantage only features
+// itcoin only features
 // Masternode
 bool fMasterNode = false;
 bool fStaking = false;
@@ -270,7 +270,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "advantage";
+    const char* pszModule = "itcoin";
 #endif
     if (pex)
         return strprintf(
@@ -290,13 +290,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\advantage
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\advantage
-// Mac: ~/Library/Application Support/advantage
-// Unix: ~/.advantage
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\itcoin
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\itcoin
+// Mac: ~/Library/Application Support/itcoin
+// Unix: ~/.itcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Advantage";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "itcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -308,10 +308,10 @@ fs::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "Advantage";
+    return pathRet / "itcoin";
 #else
     // Unix
-    return pathRet / ".advantage";
+    return pathRet / ".itcoin";
 #endif
 #endif
 }
@@ -377,10 +377,31 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     fs::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty advantage.conf if it does not exist
+        // Create empty tecsatether.conf if it does not exist
         FILE* configFile = fsbridge::fopen(GetConfigFile(), "a");
-        if (configFile != NULL)
+        if (configFile != NULL){
+            std::string strHeader = "# itcoin config file\n"
+                          "rpcuser=username\n"
+                          "rpcpassword=password\n"
+                          "server=1\n"
+                          "listen=1\n"
+                          "daemon=1\n"
+                          "port=8338\n"
+                          "rpcport=8339\n"
+                          "fallbackfee=0.001\n"
+                          "rpcbind=127.0.0.1\n"
+                          "maxconnections=20\n"
+                          "rpcallowip=127.0.0.1\n"
+                          "\n"
+                          "# ADDNODES:\n"
+                          "addnode=seed01.advantageblockchain.com\n"
+                          "addnode=seed02.advantageblockchain.com\n"
+                          "addnode=seed03.advantageblockchain.com\n"
+                          "addnode=seed04.advantageblockchain.com\n"
+                          "\n";
+            fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
+        }
         return; // Nothing to read, so just return
     }
 
@@ -388,7 +409,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override advantage.conf
+        // Don't overwrite existing settings so command line settings override itcoin.conf
         std::string strKey = std::string("-") + it->string_key;
         std::string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

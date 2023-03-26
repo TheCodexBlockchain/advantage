@@ -72,7 +72,6 @@ private Q_SLOTS:
     void openLockUnlock();
     void onBtnConfClicked();
     void onBtnMasternodesClicked();
-    void onBtnPrivacyClicked();
     void refreshProgressBarSize();
     void expandSync();
 
@@ -86,7 +85,6 @@ private:
     bool isInitializing = true;
 
     void updateTorIcon();
-    void privacyUpdate();
 };
 
 #endif // TOPBAR_H

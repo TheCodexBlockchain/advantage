@@ -103,7 +103,7 @@ public:
     }
 };
 
-/** Interface to USDX wallet from Qt view code. */
+/** Interface to itcoin wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

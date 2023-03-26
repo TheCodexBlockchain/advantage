@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
-Name=Advantage 
-Comment=Advantage P2P Cryptocurrency
-Comment[fr]=Advantage, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Advantage, eşten eşe kriptografik sanal para birimi
-Exec=advantage-qt %u
+Name=itcoin 
+Comment=itcoin P2P Cryptocurrency
+Comment[fr]=itcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=itcoin, eşten eşe kriptografik sanal para birimi
+Exec=itcoin-qt %u
 Terminal=false
 Type=Application
 Icon=pivx128
-MimeType=x-scheme-handler/advantage;
+MimeType=x-scheme-handler/itcoin;
 Categories=Office;Finance;
-StartupWMClass=advantage-qt
+StartupWMClass=itcoin-qt

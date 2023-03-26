@@ -207,19 +207,20 @@ QColor getRowColor(bool isLightTheme, bool isHovered, bool isSelected)
 {
     if (isLightTheme) {
         if (isSelected) {
-            return QColor("#f9f9f9");
-        } else if (isHovered) {
-            return QColor("#f9f9f9");
-        } else {
             return QColor("#ffffff");
+        } else if (isHovered) {
+            return QColor("#ffffff");
+        } else {
+            return QColor("#f9f9f9");
+
         }
     } else {
         if (isSelected) {
-            return QColor("#212121");
+            return QColor("#22262A");
         } else if (isHovered) {
-            return QColor("#212121");
+            return QColor("#22262A");
         } else {
-            return QColor("#4b1452");
+            return QColor("#1F2021");
         }
     }
 }

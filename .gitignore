@@ -7,14 +7,14 @@ reset-files.bash
 *.exe
 configure~
 
-# Advantage
-src/advantage
-src/advantaged
-src/advantage-cli
-src/advantage-tx
-src/bench/bench_advantage
-src/test/test_advantage
-src/qt/test/test_advantage-qt
+# itcoin
+src/itcoin
+src/itcoind
+src/itcoin-cli
+src/itcoin-tx
+src/bench/bench_itcoin
+src/test/test_itcoin
+src/qt/test/test_itcoin-qt
 
 ##########################################
 # clear this section when it's fixed
@@ -76,7 +76,7 @@ src/qt/test/moc*.cpp
 *.o-*
 *.patch
 .pivx
-.advantage
+.itcoin
 *.a
 *.pb.cc
 *.pb.h
@@ -96,7 +96,7 @@ src/qt/test/moc*.cpp
 *.qm
 Makefile
 pivx-qt
-advantage-qt
+itcoin-qt
 Jackpot-Qt.app
 background.tiff*
 
@@ -108,7 +108,7 @@ target/
 # Unit-tests
 Makefile.test
 pivx-qt_test
-advantage-qt_test
+itcoin-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -125,7 +125,7 @@ build
 *.gcno
 /*.info
 test_pivx.coverage/
-test_advantage.coverage/
+test_itcoin.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -157,9 +157,9 @@ moc_*
 ui_*
 build*
 pivxd.*
-advantaged.*
+itcoind.*
 pivxd-new-gui.*
-advantaged-new-gui.*
+itcoind-new-gui.*
 
 # for Visual Studio Code
 
