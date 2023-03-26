@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Advantage"
-            VALUE "FileDescription",    "advantaged (OSS daemon/client for Advantage)"
+            VALUE "CompanyName",        "itcoin"
+            VALUE "FileDescription",    "itcoind (OSS daemon/client for itcoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "advantaged"
+            VALUE "InternalName",       "itcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "advantaged.exe"
-            VALUE "ProductName",        "advantaged"
+            VALUE "OriginalFilename",   "itcoind.exe"
+            VALUE "ProductName",        "itcoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

@@ -15,7 +15,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.advantage.Advantage-Qt";
+        return @"io.itcoin.itcoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

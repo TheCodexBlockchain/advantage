@@ -39,7 +39,7 @@ extern const char * const PIVX_PID_FILENAME;
 extern const char * const PIVX_MASTERNODE_CONF_FILENAME;
 extern const char * const DEFAULT_DEBUGLOGFILE;
 
-//USDX only features
+//itcoin only features
 
 extern bool fMasterNode;
 extern bool fStaking;
@@ -180,7 +180,7 @@ void SetThreadPriority(int nPriority);
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("advantage-%s", name);
+    std::string s = strprintf("itcoin-%s", name);
     util::ThreadRename(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

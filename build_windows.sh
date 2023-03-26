@@ -33,9 +33,9 @@ fi
 	cd ..
 
 # Create zip file of binaries
-	cp $PROJECT_ROOT/src/advantaged.exe $PROJECT_ROOT/src/advantage-cli.exe $PROJECT_ROOT/src/advantage-tx.exe $PROJECT_ROOT/src/qt/advantage-qt.exe .
-	zip USDX-Windows.zip advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
-	rm -f advantaged.exe advantage-cli.exe advantage-tx.exe advantage-qt.exe
+	cp $PROJECT_ROOT/src/itcoind.exe $PROJECT_ROOT/src/itcoin-cli.exe $PROJECT_ROOT/src/itcoin-tx.exe $PROJECT_ROOT/src/qt/itcoin-qt.exe .
+	zip itcoin-Windows.zip itcoind.exe itcoin-cli.exe itcoin-tx.exe itcoin-qt.exe
+	rm -f itcoind.exe itcoin-cli.exe itcoin-tx.exe itcoin-qt.exe
 
 # Restore original path environment variable
 	PATH=$PATH_OLD

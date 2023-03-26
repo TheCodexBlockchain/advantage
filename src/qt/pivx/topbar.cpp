@@ -37,8 +37,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
 {
     ui->setupUi(this);
 
-    QSettings settings;
-    fPrivacyMode = settings.value("fPrivacyMode", false).toBool();
+
 
     // Set parent stylesheet
     this->setStyleSheet(_mainWindow->styleSheet());
@@ -78,8 +77,6 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     progressBar->raise();
     progressBar->move(0, 34);
 
-    ui->pushButtonFAQ->setButtonClassStyle("cssClass", "btn-check-faq");
-    ui->pushButtonFAQ->setButtonText(tr("FAQ"));
 
     ui->pushButtonHDUpgrade->setButtonClassStyle("cssClass", "btn-check-hd-upgrade");
     ui->pushButtonHDUpgrade->setButtonText(tr("Upgrade to HD Wallet"));
@@ -97,7 +94,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     ui->pushButtonStack->setButtonText(tr("Staking Disabled"));
 
     ui->pushButtonConf->setButtonClassStyle("cssClass", "btn-check-conf");
-    ui->pushButtonConf->setButtonText("advantage.conf");
+    ui->pushButtonConf->setButtonText("itcoin.conf");
     ui->pushButtonConf->setChecked(false);
 
     ui->pushButtonMasternodes->setButtonClassStyle("cssClass", "btn-check-masternodes");
@@ -140,7 +137,6 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     connect(ui->btnQr, &QPushButton::clicked, this, &TopBar::onBtnReceiveClicked);
     connect(ui->pushButtonLock, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnLockClicked);
     connect(ui->pushButtonTheme, &ExpandableButton::Mouse_Pressed, this, &TopBar::onThemeClicked);
-    connect(ui->pushButtonFAQ, &ExpandableButton::Mouse_Pressed, [this]() { window->openFAQ(); });
     connect(ui->pushButtonConf, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnConfClicked);
     connect(ui->pushButtonMasternodes, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnMasternodesClicked);
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_HoverLeave, this, &TopBar::refreshProgressBarSize);
@@ -149,9 +145,9 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     connect(ui->pushButtonConsole, &ExpandableButton::Mouse_Pressed, [this]() { window->goToDebugConsole(); });
     connect(ui->pushButtonConnection, &ExpandableButton::Mouse_Pressed, [this]() { window->showPeers(); });
     connect(ui->pushButtonStack, &ExpandableButton::Mouse_Pressed, this, &TopBar::onStakingBtnClicked);
-    connect(ui->pushButtonPrivacy, &ExpandableButton::Mouse_Pressed, this, &TopBar::onBtnPrivacyClicked);
 
-    privacyUpdate();
+
+
 
     refreshStatus();
 }
@@ -372,7 +368,7 @@ void TopBar::onBtnConfClicked()
     ui->pushButtonConf->setChecked(false);
 
     if (!GUIUtil::openConfigfile())
-        inform(tr("Unable to open advantage.conf with default application"));
+        inform(tr("Unable to open itcoin.conf with default application"));
 }
 
 void TopBar::onBtnMasternodesClicked()
@@ -383,39 +379,7 @@ void TopBar::onBtnMasternodesClicked()
         inform(tr("Unable to open masternode.conf with default application"));
 }
 
-void TopBar::privacyUpdate()
-{
-    if (fPrivacyMode) {
-        ui->pushButtonPrivacy->setButtonClassStyle("cssClass", "btn-check-privacy-inactive", true);
-        ui->pushButtonPrivacy->setButtonText(tr("Discreet"));
-    } else {
-        ui->pushButtonPrivacy->setButtonClassStyle("cssClass", "btn-check-privacy", true);
-        ui->pushButtonPrivacy->setButtonText(tr("All Visible"));
-    }
 
-    if(QWidget::window() != Q_NULLPTR) {
-        for (auto widget : QWidget::window()->findChildren<PrivateQLabel*>()) {
-            widget->setIsPrivate(fPrivacyMode);
-        }
-
-        auto dashboardList = QWidget::window()->findChildren<DashboardWidget*>();
-
-        if(dashboardList.size()) {
-            auto dashboard = dashboardList[0];
-            dashboard->setPrivacy(fPrivacyMode);
-        }
-    }
-}
-
-void TopBar::onBtnPrivacyClicked()
-{
-    fPrivacyMode = !fPrivacyMode;
-
-    QSettings settings;
-    settings.setValue("fPrivacyMode", fPrivacyMode);
-
-    privacyUpdate();
-}
 
 TopBar::~TopBar()
 {
@@ -457,7 +421,7 @@ void TopBar::updateStakingStatus()
                            !walletModel->isWalletLocked() &&
                            fStakingActive);
 
-    // Taking advantage of this timer to update Tor status if needed.
+    // Taking itcoin of this timer to update Tor status if needed.
     updateTorIcon();
 
     if(fStakingActive && fStakingStatus && pwalletMain->pStakerStatus->GetLastValue() > 100) {
@@ -610,7 +574,7 @@ void TopBar::loadWalletModel()
     connect(walletModel, &WalletModel::encryptionStatusChanged, this, &TopBar::refreshStatus);
     // Ask for passphrase if needed
     connect(walletModel, &WalletModel::requireUnlock, this, &TopBar::unlockWallet);
-    // update the display unit, to not use the default ("USDX")
+    // update the display unit, to not use the default ("itcoin")
     updateDisplayUnit();
 
     refreshStatus();
@@ -741,7 +705,7 @@ void TopBar::updateBalances(const interfaces::WalletBalances& newBalance)
 
     CAmount nAvailableBalance = newBalance.balance - nLockedBalance;
 
-    // USDX
+    // itcoin
     // Top
     ui->labelAmountTopPiv->setText(GUIUtil::formatBalance(nAvailableBalance, nDisplayUnit));
     // Expanded

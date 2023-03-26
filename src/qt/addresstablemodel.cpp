@@ -378,7 +378,7 @@ void AddressTableModel::updateEntry(const QString& address,
     const QString& purpose,
     int status)
 {
-    // Update address book model from Advantage core
+    // Update address book model from itcoin blockchain
     priv->updateEntry(address, label, isMine, purpose, status);
 }
 

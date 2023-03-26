@@ -1,4 +1,4 @@
-Source: advantage
+Source: itcoin
 Section: utils
 Priority: optional
 Maintainer: Fuzzbawls <fuzzbawls@gmail.com>
@@ -32,11 +32,11 @@ Homepage: https://www.advantageblockchain.com
 Vcs-Git: git://github.com/TheCodexBlockchain/Advantage.git
 Vcs-Browser: https://github.com/TheCodexBlockchain/Advantage
 
-Package: advantaged
+Package: itcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Advantage is a free, open source peer-to-peer electronic cash system that
+ itcoin is a free, open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -45,14 +45,14 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 18.5+ GB of space, slowly growing.
  .
- This package provides the daemon, advantaged, and the CLI tool
- advantage-cli to interact with the daemon.
+ This package provides the daemon, itcoind, and the CLI tool
+ itcoin-cli to interact with the daemon.
 
-Package: advantage-qt
+Package: itcoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Advantage is a free, open source peer-to-peer electronic cash system that
+ itcoin is a free, open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -61,4 +61,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 18.5+ GB of space, slowly growing.
  .
- This package provides Advantage-Qt, a GUI for Advantage based on Qt.
+ This package provides itcoin-Qt, a GUI for itcoin based on Qt.

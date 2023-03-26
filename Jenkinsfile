@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     environment {
-        NAME = 'Advantage'
-        BASE_NAME = 'advantage'
-        ZIP_NAME = 'USDX'
+        NAME = 'itcoin'
+        BASE_NAME = 'itcoin'
+        ZIP_NAME = 'itcoin'
     }
 
     stages {

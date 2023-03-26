@@ -95,11 +95,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送USDX coin的地址</translation>
+        <translation>选择发送itcoin coin的地址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收USDX coin的地址</translation>
+        <translation>选择接收itcoin coin的地址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -114,12 +114,12 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是用于发送USDX的地址。在发送USDX之前，请认真核查发送金额和接收地址。</translation>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这是用于发送itcoin的地址。在发送itcoin之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是用于接收USDX的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这是用于接收itcoin的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -348,8 +348,8 @@ for staking</source>
         <translation>删除</translation>
     </message>
     <message>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
-        <translation>USDX将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取USDXs。</translation>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
+        <translation>itcoin将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取itcoins。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -433,8 +433,8 @@ for staking</source>
         <translation>币选择</translation>
     </message>
     <message>
-        <source>Select USDX Outputs to Spend</source>
-        <translation>选择USDX支出花费</translation>
+        <source>Select itcoin Outputs to Spend</source>
+        <translation>选择itcoin支出花费</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -461,8 +461,8 @@ for staking</source>
         <translation>金额</translation>
     </message>
     <message>
-        <source>0.00 USDX</source>
-        <translation>0.00 USDX</translation>
+        <source>0.00 itcoin</source>
+        <translation>0.00 itcoin</translation>
     </message>
     <message>
         <source>0</source>
@@ -703,8 +703,8 @@ for staking</source>
         <translation>过滤</translation>
     </message>
     <message>
-        <source>Amount of USDX staked.</source>
-        <translation>已加注的USDX 金额</translation>
+        <source>Amount of itcoin staked.</source>
+        <translation>已加注的itcoin 金额</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -799,8 +799,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>编辑发送地址</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid USDX address.</source>
-        <translation>所输入的地址“%1”不是有效的USDX地址。</translation>
+        <source>The entered address "%1" is not a valid itcoin address.</source>
+        <translation>所输入的地址“%1”不是有效的itcoin地址。</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -852,16 +852,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>版本</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-位)</translation>
     </message>
     <message>
-        <source>About Advantage</source>
-        <translation>关于Advantage</translation>
+        <source>About itcoin</source>
+        <translation>关于itcoin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,16 +915,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>欢迎</translation>
     </message>
     <message>
-        <source>Welcome to Advantage.</source>
-        <translation>欢迎使用 Advantage</translation>
+        <source>Welcome to itcoin.</source>
+        <translation>欢迎使用 itcoin</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储Advantage 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储itcoin 数据的位置。</translation>
     </message>
     <message>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Advantage将下载并存储USDX区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>itcoin将下载并存储itcoin区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -943,8 +943,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>好的</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1043,8 +1043,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>创建新的主节点控制器</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a USDX Masternode you must dedicate a collateral amount of USDX (the unit of USDX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个USDX主节点，你必须奉献10,000 USDX（USDX的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a itcoin Masternode you must dedicate a collateral amount of itcoin (the unit of itcoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;要去创建一个itcoin主节点，你必须奉献10,000 itcoin（itcoin的单位）到网络（但是这些币还是属于你的，一直为你所有）。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;你可以在任何时候关闭该节点并解锁币。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1064,7 +1064,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 USDX的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;将进行10,000 itcoin的交易&lt;/p&gt;&lt;p&gt;到您的钱包空地址&lt;/p&gt;&lt;p&gt;地址被标记在主节点的名称之下&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1246,7 +1246,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1254,7 +1254,7 @@ this controller wallet (select the Masternode in the list and press "start").
 到剪贴板的远程服务器上。
 
 
-您只需将数据粘贴到advantage.conf文件中
+您只需将数据粘贴到itcoin.conf文件中
 ，然后使用主节点启动它
 这个控制器钱包(在列表中选择主节点并按“开始”)。
 </translation>
@@ -1394,8 +1394,8 @@ Are you sure?</source>
         <translation>解析的数据太大</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "advantage" prefix</source>
-        <translation>无效的URI，不是以“ advantage”前缀开头</translation>
+        <source>Invalid URI, not starting with "itcoin" prefix</source>
+        <translation>无效的URI，不是以“ itcoin”前缀开头</translation>
     </message>
 </context>
 <context>
@@ -1440,8 +1440,8 @@ Are you sure?</source>
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动打开路由器上的USDX钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动打开路由器上的itcoin钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1460,12 +1460,12 @@ Are you sure?</source>
         <translation>专家</translation>
     </message>
     <message>
-        <source>Automatically start USDX after logging in to the system.</source>
-        <translation>登录系统后自动启动USDX。</translation>
+        <source>Automatically start itcoin after logging in to the system.</source>
+        <translation>登录系统后自动启动itcoin。</translation>
     </message>
     <message>
-        <source>&amp;Start USDX on system login</source>
-        <translation>&amp;开机启动USDX</translation>
+        <source>&amp;Start itcoin on system login</source>
+        <translation>&amp;开机启动itcoin</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1492,8 +1492,8 @@ Are you sure?</source>
         <translation>&amp;网络</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
-        <translation>可以在这里设置用户界面语言。此设置将在重新启动USDX后生效。</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
+        <translation>可以在这里设置用户界面语言。此设置将在重新启动itcoin后生效。</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1514,8 +1514,8 @@ Are you sure?</source>
         <translation>股权分割阈值:</translation>
     </message>
     <message>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
-        <translation>通过SOCKS5代理连接到USDX网络。</translation>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
+        <translation>通过SOCKS5代理连接到itcoin网络。</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1571,7 +1571,7 @@ Are you sure?</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择显示发送USDX的默认单位。</translation>
+        <translation>选择显示发送itcoin的默认单位。</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1661,8 +1661,8 @@ Are you sure?</source>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1689,8 +1689,8 @@ Are you sure?</source>
         <translation>关闭应用</translation>
     </message>
     <message>
-        <source>Advantage client</source>
-        <translation>Advantage 客户端</translation>
+        <source>itcoin client</source>
+        <translation>itcoin 客户端</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1752,12 +1752,12 @@ Address: %4
         <translation>无效支付地址%1</translation>
     </message>
     <message>
-        <source>Cannot start advantage: click-to-pay handler</source>
-        <translation>无法启动advantage:点击支付处理程序</translation>
+        <source>Cannot start itcoin: click-to-pay handler</source>
+        <translation>无法启动itcoin:点击支付处理程序</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
-        <translation>URI不能被解析!这可能是由无效的USDX地址或格式错误的URI参数造成的。</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
+        <translation>URI不能被解析!这可能是由无效的itcoin地址或格式错误的URI参数造成的。</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1842,8 +1842,8 @@ Address: %4
         <translation>金额</translation>
     </message>
     <message>
-        <source>Enter USDX address (e.g. %1)</source>
-        <translation>输入USDX a地址(e.g. %1)</translation>
+        <source>Enter itcoin address (e.g. %1)</source>
+        <translation>输入itcoin a地址(e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1886,12 +1886,12 @@ Address: %4
         <translation>%1 毫秒</translation>
     </message>
     <message>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
-        <translation>发生了一个致命的错误。USDX不能继续安全，将退出。</translation>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
+        <translation>发生了一个致命的错误。itcoin不能继续安全，将退出。</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -1910,8 +1910,8 @@ Address: %4
         <translation>读取主节点配置文件出错:%1</translation>
     </message>
     <message>
-        <source>Advantage didn't yet exit safely...</source>
-        <translation>Advantage心尚未安全退出……</translation>
+        <source>itcoin didn't yet exit safely...</source>
+        <translation>itcoin心尚未安全退出……</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2069,8 +2069,8 @@ Address: %4
         <translation>区块链</translation>
     </message>
     <message>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>从当前数据目录打开USDX调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>从当前数据目录打开itcoin调试日志文件。对于大型日志文件，这可能需要几秒钟。</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2289,8 +2289,8 @@ Address: %4
         <translation>出：</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>欢迎访问USDX RPC控制台</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>欢迎访问itcoin RPC控制台</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2537,8 +2537,8 @@ Address: %4
         <translation>金额</translation>
     </message>
     <message>
-        <source>USDX</source>
-        <translation>USDX</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2608,8 +2608,8 @@ Address: %4
         <translation>自定义更改地址</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" USDX address</source>
-        <translation>输入值减去输出值所得的值的其余部分归为“更改”USDX地址</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" itcoin address</source>
+        <translation>输入值减去输出值所得的值的其余部分归为“更改”itcoin地址</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2635,8 +2635,8 @@ Address: %4
         <translation>已推荐</translation>
     </message>
     <message>
-        <source>USDX/kilobyte</source>
-        <translation>USDX/k字节</translation>
+        <source>itcoin/kilobyte</source>
+        <translation>itcoin/k字节</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -2887,8 +2887,8 @@ Do you want to continue?</source>
         <translation>解密钥匙</translation>
     </message>
     <message>
-        <source>USDX address</source>
-        <translation>USDX地址</translation>
+        <source>itcoin address</source>
+        <translation>itcoin地址</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3012,8 +3012,8 @@ Verify that you have installed a predetermined text editor.</source>
 确认您已经安装了预定的文本编辑器</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>欢迎访问USDX RPC控制台</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>欢迎访问itcoin RPC控制台</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3197,44 +3197,44 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>来自</translation>
     </message>
     <message>
-        <source>1) What is USDX?</source>
-        <translation>1）什么是USDX?</translation>
+        <source>1) What is itcoin?</source>
+        <translation>1）什么是itcoin?</translation>
     </message>
     <message>
-        <source>2) Why are my USDX unspendable?</source>
-        <translation>2) 我的USDX为什么不能用？</translation>
+        <source>2) Why are my itcoin unspendable?</source>
+        <translation>2) 我的itcoin为什么不能用？</translation>
     </message>
     <message>
         <source>1</source>
         <translation>1</translation>
     </message>
     <message>
-        <source>What is USDX?</source>
-        <translation>USDX是什么?</translation>
+        <source>What is itcoin?</source>
+        <translation>itcoin是什么?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           USDX is a form of digital online money using blockchain technology
+                           itcoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  USDX incorporates market leading security &amp;
+                           zero fees.  itcoin incorporates market leading security &amp;
                            privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of USDX to participate in earning block rewards
+                           itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of itcoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-USDX is a form of digital online money using blockchain technology
+itcoin is a form of digital online money using blockchain technology
 that can be easily transferred globally, instantly, and with near
-zero fees.  USDX incorporates market leading security &amp;
+zero fees.  itcoin incorporates market leading security &amp;
 privacy.
 &lt;/p&gt;&lt;p align="justify"&gt;
-USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-allowing all owners of USDX to participate in earning block rewards
+itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+allowing all owners of itcoin to participate in earning block rewards
 while securing the network with full node wallets, as well as to
 run Masternodes to create and vote on proposals</translation>
     </message>
@@ -3243,25 +3243,25 @@ run Masternodes to create and vote on proposals</translation>
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my USDX unspendable?</source>
-        <translation>我的USDX为什么不能用？</translation>
+        <source>Why are my itcoin unspendable?</source>
+        <translation>我的itcoin为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received USDX requires 6 confirmations on the network
+                           Newly received itcoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your USDX wallet also needs to be completely synchronized
+                           Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-接收到的USDX需要网络上的6个确认
+接收到的itcoin需要网络上的6个确认
 才能成为有资格的花费，可以花~6分钟。
 &lt;/p&gt;&lt;p align="justify"&gt;
-您的USDX钱包也需要完全同步
+您的itcoin钱包也需要完全同步
 查看网络收支余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -3296,12 +3296,12 @@ run Masternodes to create and vote on proposals</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the collateral amount can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是控制器-远程主节点建立期间10,000 USDX抵押可以驻留的地方。这是一个可以激活远程主节点钱包(s)的钱包，可以让你的抵押币离线但远程主节点保持在线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;主节点控制器钱包是控制器-远程主节点建立期间10,000 itcoin抵押可以驻留的地方。这是一个可以激活远程主节点钱包(s)的钱包，可以让你的抵押币离线但远程主节点保持在线。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node USDX wallet with a
+                           A masternode is a computer running a full node itcoin wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3321,10 +3321,10 @@ run Masternodes to create and vote on proposals</translation>
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in USDX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in itcoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the USDX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the itcoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3340,8 +3340,8 @@ run Masternodes to create and vote on proposals</translation>
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-主节点是运行完整节点USDX核心钱包的计算机
-需要10,000个USDX作抵押以提供额外服务
+主节点是运行完整节点itcoin核心钱包的计算机
+需要10,000个itcoin作抵押以提供额外服务
 到网络，会收到一部分的区块奖励作为定期
 回报
 这些服务包括:
@@ -3360,17 +3360,17 @@ run Masternodes to create and vote on proposals</translation>
 主节点福利：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;参与USDX治理&lt;/li&gt;
+&lt;li&gt;参与itcoin治理&lt;/li&gt;
 &lt;li&gt;赢取主节点奖励&lt;/li&gt;
 &lt;li&gt;商品期货期权&lt;/li&gt;
-&lt;li&gt;帮助保护USDX网络&lt;/li&gt;
+&lt;li&gt;帮助保护itcoin网络&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 要求：
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;每个主节点实例有10,000 USDX&lt;/li&gt;
+&lt;li&gt;每个主节点实例有10,000 itcoin&lt;/li&gt;
 &lt;li&gt;必须存储在核心钱包&lt;/li&gt;
 &lt;li&gt;需要专用IP地址&lt;/li&gt;
 主节点钱包保持在线&lt;li&gt;
@@ -3491,8 +3491,8 @@ run Masternodes to create and vote on proposals</translation>
         <translation>无法打开备份文件夹</translation>
     </message>
     <message>
-        <source>Unable to open advantage.conf with default application</source>
-        <translation>无法使用默认应用程序打开advantage.conf</translation>
+        <source>Unable to open itcoin.conf with default application</source>
+        <translation>无法使用默认应用程序打开itcoin.conf</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3542,8 +3542,8 @@ run Masternodes to create and vote on proposals</translation>
         <translation>脚本&amp;验证线程数</translation>
     </message>
     <message>
-        <source>Start USDX on system login</source>
-        <translation>开机启动USDX</translation>
+        <source>Start itcoin on system login</source>
+        <translation>开机启动itcoin</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3599,8 +3599,8 @@ Are you sure?
         <translation>消息 </translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX 地址或者联系人标签</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3872,8 +3872,8 @@ Are you sure?
         <translation>常见问题</translation>
     </message>
     <message>
-        <source>About USDX</source>
-        <translation>关于USDX </translation>
+        <source>About itcoin</source>
+        <translation>关于itcoin </translation>
     </message>
     <message>
         <source>Settings</source>
@@ -3939,8 +3939,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Advantage is shutting down...</source>
-        <translation>Advantage 核心正在关闭...</translation>
+        <source>itcoin is shutting down...</source>
+        <translation>itcoin 核心正在关闭...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3969,8 +3969,8 @@ Are you sure?
         <translation>正在下载…</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
 </context>
 <context>
@@ -4405,25 +4405,25 @@ backup will be created.
     </message>
     <message>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation>欢迎
-Advantage心钱包</translation>
+itcoin心钱包</translation>
     </message>
     <message>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>USDX是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>itcoin是世界上最先进的隐私保护技术，由经验丰富的开发人员和密码专家开发。</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——USDX相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;正如我们的宣言所说:隐私是一项不容协商的基本人权;它赋予用户随时随地与任何人共享数据的自由——itcoin相信自我主权&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is USDX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>主节点网络是USDX在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
+        <source>The masternode network is itcoin's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>主节点网络是itcoin在区块链之上的第二层网络，它使我们的DAO能够提供去中心的治理。</translation>
     </message>
     <message>
-        <source>How USDX respects your privacy?</source>
-        <translation>USDX 到底是怎么尊重你的隐私的？</translation>
+        <source>How itcoin respects your privacy?</source>
+        <translation>itcoin 到底是怎么尊重你的隐私的？</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4457,8 +4457,8 @@ Advantage心钱包</translation>
         <translation>绑定到给定地址监听JSON-RPC连接。使用[主机]: IPv6的端口符号。可以多次指定此选项(默认:绑定到所有接口)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
-        <translation>无法获取数据目录%s锁。Advantage心可能已经在运行了。</translation>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
+        <translation>无法获取数据目录%s锁。itcoin心可能已经在运行了。</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -4609,8 +4609,8 @@ Advantage心钱包</translation>
         <translation>网络版本字符串的总长度(%i)超过最大长度(%i)。减少任务的数量或大小。</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
-        <translation>无法绑定到此计算机上的%s。Advantage心可能已经在运行了。</translation>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
+        <translation>无法绑定到此计算机上的%s。itcoin心可能已经在运行了。</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4625,8 +4625,8 @@ Advantage心钱包</translation>
         <translation>警告:-支付tx费用设置的非常高!这是您发送交易时要支付的交易费。</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，Advantage将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，itcoin将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -4829,8 +4829,8 @@ Advantage心钱包</translation>
         <translation>信息</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
-        <translation>初始化完整性检查失败。Advantage心快要关闭了。</translation>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
+        <translation>初始化完整性检查失败。itcoin心快要关闭了。</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -4861,8 +4861,8 @@ Advantage心钱包</translation>
         <translation>白名单中指定的无效网络掩码:'%s'</translation>
     </message>
     <message>
-        <source>Recalculating USDX supply...</source>
-        <translation>重新计算USDX供应量……</translation>
+        <source>Recalculating itcoin supply...</source>
+        <translation>重新计算itcoin供应量……</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
@@ -4873,8 +4873,8 @@ Advantage心钱包</translation>
         <translation>这是一个预发行测试版本 - 您自己承担风险 - 不要用于商业应用！</translation>
     </message>
     <message>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
-        <translation>禁用所有USDX特定功能(主节点)(0-1，默认值:%u)</translation>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>禁用所有itcoin特定功能(主节点)(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5097,8 +5097,8 @@ Advantage心钱包</translation>
         <translation>准备重新同步……</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>请检查您的电脑的日期和时间是否正确!如果你的时间错误，Advantage将无法正常工作。</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>请检查您的电脑的日期和时间是否正确!如果你的时间错误，itcoin将无法正常工作。</translation>
     </message>
     <message>
         <source>Specify location of debug log file: this can be an absolute path or a path relative to the data directory (default: %s)</source>
@@ -5389,8 +5389,8 @@ Advantage心钱包</translation>
         <translation>钱包%s驻留在数据目录%s之外</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
-        <translation>钱包需要重写:重新启动Advantage心完成</translation>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
+        <translation>钱包需要重写:重新启动itcoin心完成</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5444,8 +5444,8 @@ Advantage心钱包</translation>
         <translation>发送</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX 地址或者联系人标签</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin 地址或者联系人标签</translation>
     </message>
     <message>
         <source>Amount</source>

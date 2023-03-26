@@ -5,42 +5,42 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the advantaged tests manually, launch `src/test/test_advantage`. To recompile
+To run the itcoind tests manually, launch `src/test/test_itcoin`. To recompile
 after a test file was modified, run `make` and then run the test again. If you
 modify a non-test file, use `make -C src/test` to recompile only what's needed
-to run the advantaged tests.
+to run the itcoind tests.
 
-To add more advantaged tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more itcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_FIXTURE_TEST_SUITE sections.
 
-To run the advantage-qt tests manually, launch `src/qt/test/test_advantage-qt`
+To run the itcoin-qt tests manually, launch `src/qt/test/test_itcoin-qt`
 
-To add more advantage-qt tests, add them to the `src/qt/test/` directory and
+To add more itcoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.
 
 ### Running individual tests
 
-test_advantage has some built-in command-line arguments; for
+test_itcoin has some built-in command-line arguments; for
 example, to run just the getarg_tests verbosely:
 
-    test_advantage --log_level=all --run_test=getarg_tests
+    test_itcoin --log_level=all --run_test=getarg_tests
 
 ... or to run just the doubledash test:
 
-    test_advantage --run_test=getarg_tests/doubledash
+    test_itcoin --run_test=getarg_tests/doubledash
 
-Run `test_advantage --help` for the full list.
+Run `test_itcoin --help` for the full list.
 
 ### Note on adding test cases
 
 The sources in this directory are unit test cases.  Boost includes a
-unit testing framework, and since advantage already uses boost, it makes
+unit testing framework, and since itcoin already uses boost, it makes
 sense to simply use this framework rather than require developers to
 configure some other framework (we want as few impediments to creating
 unit tests as possible).
 
-The build system is setup to compile an executable called `test_advantage`
+The build system is setup to compile an executable called `test_itcoin`
 that runs all of the unit tests.  The main source file is called
 test_pivx.cpp, which simply includes other files that contain the
 actual unit tests (outside of a couple required preprocessor

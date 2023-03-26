@@ -122,12 +122,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi USDX per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi itcoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi USDX per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi itcoin per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -364,8 +364,8 @@ per lo staking</translation>
         <translation>CANCELLA</translation>
     </message>
     <message>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
-        <translation>USDX verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi USDX dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
+        <translation>itcoin verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi itcoin dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -465,8 +465,8 @@ per lo staking</translation>
         <translation>Selezione valuta</translation>
     </message>
     <message>
-        <source>Select USDX Outputs to Spend</source>
-        <translation>Seleziona USDX da spendere</translation>
+        <source>Select itcoin Outputs to Spend</source>
+        <translation>Seleziona itcoin da spendere</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -493,8 +493,8 @@ per lo staking</translation>
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>0.00 USDX</source>
-        <translation>0.00 USDX</translation>
+        <source>0.00 itcoin</source>
+        <translation>0.00 itcoin</translation>
     </message>
     <message>
         <source>0</source>
@@ -723,8 +723,8 @@ per lo staking</translation>
         <translation>Guarda la cronologia del tuo account</translation>
     </message>
     <message>
-        <source>How to get USDX</source>
-        <translation>Come ottenere USDX</translation>
+        <source>How to get itcoin</source>
+        <translation>Come ottenere itcoin</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -747,8 +747,8 @@ per lo staking</translation>
         <translation>Filtra per</translation>
     </message>
     <message>
-        <source>Amount of USDX staked.</source>
-        <translation>Quantità di USDX in staking.</translation>
+        <source>Amount of itcoin staked.</source>
+        <translation>Quantità di itcoin in staking.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -843,8 +843,8 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Modifica indirizzo di invio</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid USDX address.</source>
-        <translation>L'indirizzo inserito "%1" non è un indirizzo USDX valido.</translation>
+        <source>The entered address "%1" is not a valid itcoin address.</source>
+        <translation>L'indirizzo inserito "%1" non è un indirizzo itcoin valido.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -896,16 +896,16 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>versione</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About Advantage</source>
-        <translation>Informazioni su Advantage</translation>
+        <source>About itcoin</source>
+        <translation>Informazioni su itcoin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -959,16 +959,16 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>Welcome to Advantage.</source>
-        <translation>Benvenuto in Advantage.</translation>
+        <source>Welcome to itcoin.</source>
+        <translation>Benvenuto in itcoin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
-        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove Advantage salverà i propri dati.</translation>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
+        <translation>Essendo il primo avvio dell'applicazione, puoi scegliere dove itcoin salverà i propri dati.</translation>
     </message>
     <message>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Advantage scaricherà e salverà una copia della blockchain USDX. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>itcoin scaricherà e salverà una copia della blockchain itcoin. Verranno salvati almeno %1GB di dati in questa cartella, che cresceranno nel tempo. In questa cartella verrà salvato anche il portafoglio.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -987,8 +987,8 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>OK</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1095,8 +1095,8 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
         <translation>Crea nuovo controller Masternode</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a USDX Masternode you must dedicate a collateral amount of USDX (the unit of USDX) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Per creare un Masternode USDX devi dedicare 10.000 USDX (l'unità di USDX) alla rete (tuttavia, queste coin sono ancora tue e saranno sempre in tuo possesso). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Puoi disattivare il nodo e sbloccare le valute in qualsiasi momento.</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To create a itcoin Masternode you must dedicate a collateral amount of itcoin (the unit of itcoin) to the network (however, these coins are still yours and will never leave your possession). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;You can deactivate the node and unlock the coins at any time.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Per creare un Masternode itcoin devi dedicare 10.000 itcoin (l'unità di itcoin) alla rete (tuttavia, queste coin sono ancora tue e saranno sempre in tuo possesso). &lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;Puoi disattivare il nodo e sbloccare le valute in qualsiasi momento.</translation>
     </message>
     <message>
         <source>Set Masternode Name</source>
@@ -1116,7 +1116,7 @@ Si avvierà automaticamente non appena il portafoglio avrà sufficienti conferme
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verrà effettuata una transazione di 10.000 USDX&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo è etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verrà effettuata una transazione di 10.000 itcoin&lt;/p&gt;&lt;p&gt;a un nuovo indirizzo vuoto nel tuo portafoglio.&lt;p&gt;L'indirizzo è etichettato con il nome del Masternode.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1322,7 +1322,7 @@ Per favore, attendi qualche minuto (il collaterale del masternode richiede %1 co
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1330,7 +1330,7 @@ this controller wallet (select the Masternode in the list and press "start").
 un Masternode su un server remoto .
 
 
-Dovrai solo incollare i dati nel file advantage.conf del server remoto
+Dovrai solo incollare i dati nel file itcoin.conf del server remoto
 e avviarlo, quindi avviare il Masternode utilizzando questo portafoglio
 come controller (selezionare il Masternode nell'elenco e premere "start").
 </translation>
@@ -1514,8 +1514,8 @@ NODE</translation>
         <translation>Dati analizzati troppo grandi</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "advantage" prefix</source>
-        <translation>URI non valido, che non inizia con il prefisso "advantage"</translation>
+        <source>Invalid URI, not starting with "itcoin" prefix</source>
+        <translation>URI non valido, che non inizia con il prefisso "itcoin"</translation>
     </message>
 </context>
 <context>
@@ -1560,8 +1560,8 @@ NODE</translation>
         <translation>Se si disabilita la spesa per la modifica non confermata, la modifica da una transazione&lt;br/&gt;non può essere utilizzata fino a quando tale transazione non ha almeno una conferma.&lt;br/&gt;Ciò influisce anche sul modo in cui viene calcolato il saldo.</translation>
     </message>
     <message>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Apri automaticamente la porta client USDX sul router. Funziona solo quando il router supporta UPnP ed è abilitato.</translation>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Apri automaticamente la porta client itcoin sul router. Funziona solo quando il router supporta UPnP ed è abilitato.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1580,12 +1580,12 @@ NODE</translation>
         <translation>Esperto</translation>
     </message>
     <message>
-        <source>Automatically start USDX after logging in to the system.</source>
-        <translation>Avvia automaticamente USDX dopo aver effettuato l'accesso al sistema.</translation>
+        <source>Automatically start itcoin after logging in to the system.</source>
+        <translation>Avvia automaticamente itcoin dopo aver effettuato l'accesso al sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start USDX on system login</source>
-        <translation>&amp;Start USDX all'accesso al sistema</translation>
+        <source>&amp;Start itcoin on system login</source>
+        <translation>&amp;Start itcoin all'accesso al sistema</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1612,8 +1612,8 @@ NODE</translation>
         <translation>&amp;Network</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
-        <translation>La lingua dell'interfaccia utente può essere impostata qui. Questa impostazione avrà effetto dopo il riavvio di USDX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
+        <translation>La lingua dell'interfaccia utente può essere impostata qui. Questa impostazione avrà effetto dopo il riavvio di itcoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1634,8 +1634,8 @@ NODE</translation>
         <translation>Soglia di divisione dello stake</translation>
     </message>
     <message>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
-        <translation>Connettiti alla rete USDX tramite un proxy SOCKS5.</translation>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
+        <translation>Connettiti alla rete itcoin tramite un proxy SOCKS5.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1781,8 +1781,8 @@ NODE</translation>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1809,8 +1809,8 @@ NODE</translation>
         <translation>Chiude l'applicazione</translation>
     </message>
     <message>
-        <source>Advantage client</source>
-        <translation>Advantage</translation>
+        <source>itcoin client</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1872,12 +1872,12 @@ Indirizzo: %4
         <translation>Indirizzo di pagamento %1 invalido</translation>
     </message>
     <message>
-        <source>Cannot start advantage: click-to-pay handler</source>
-        <translation>Impossibile avviare advantage: gestore click-to-pay</translation>
+        <source>Cannot start itcoin: click-to-pay handler</source>
+        <translation>Impossibile avviare itcoin: gestore click-to-pay</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
-        <translation>Impossibile leggere il file della richiesta di pagamento! Ciò può essere causato da un indirizzo USDX non valido o parametri URI non validi.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
+        <translation>Impossibile leggere il file della richiesta di pagamento! Ciò può essere causato da un indirizzo itcoin non valido o parametri URI non validi.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1962,8 +1962,8 @@ Indirizzo: %4
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>Enter USDX address (e.g. %1)</source>
-        <translation>Inserisci un indirizzo USDX (ad es. %1)</translation>
+        <source>Enter itcoin address (e.g. %1)</source>
+        <translation>Inserisci un indirizzo itcoin (ad es. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2006,12 +2006,12 @@ Indirizzo: %4
         <translation>%1 ms</translation>
     </message>
     <message>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
-        <translation>Si è verificato un errore irreversibile. USDX non può più continuare in modo sicuro e verrà chiuso.</translation>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
+        <translation>Si è verificato un errore irreversibile. itcoin non può più continuare in modo sicuro e verrà chiuso.</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2030,8 +2030,8 @@ Indirizzo: %4
         <translation>Errore durante la lettura del file di configurazione del Masternode: %1</translation>
     </message>
     <message>
-        <source>Advantage didn't yet exit safely...</source>
-        <translation>Advantage non è ancora uscito in modo sicuro...</translation>
+        <source>itcoin didn't yet exit safely...</source>
+        <translation>itcoin non è ancora uscito in modo sicuro...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2241,8 +2241,8 @@ Indirizzo: %4
         <translation>Blockchain</translation>
     </message>
     <message>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aprire il file di registro di debug USDX dalla directory dei dati corrente. Questa operazione può richiedere alcuni secondi per file di registro di grandi dimensioni.</translation>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aprire il file di registro di debug itcoin dalla directory dei dati corrente. Questa operazione può richiedere alcuni secondi per file di registro di grandi dimensioni.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2461,8 +2461,8 @@ Indirizzo: %4
         <translation>Out:</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Benvenuti nella console RPC di USDX.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Benvenuti nella console RPC di itcoin.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2603,8 +2603,8 @@ Indirizzo: %4
         <translation>Nessun indirizzo</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive USDX</source>
-        <translation>Scansiona il codice QR o copia l'indirizzo per ricevere USDX</translation>
+        <source>Scan the QR code or copy the address to receive itcoin</source>
+        <translation>Scansiona il codice QR o copia l'indirizzo per ricevere itcoin</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -2733,12 +2733,12 @@ Indirizzo: %4
         <translation>Ammontare</translation>
     </message>
     <message>
-        <source>USDX</source>
-        <translation>USDX</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
-        <source>Instead of sharing only a USDX address, you can create a payment request, bundling up more information</source>
-        <translation>Invece di condividere solo un indirizzo USDX, è possibile creare un messaggio di richiesta pagamento, raccogliendo più informazioni</translation>
+        <source>Instead of sharing only a itcoin address, you can create a payment request, bundling up more information</source>
+        <translation>Invece di condividere solo un indirizzo itcoin, è possibile creare un messaggio di richiesta pagamento, raccogliendo più informazioni</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2816,8 +2816,8 @@ Indirizzo: %4
         <translation>Modifica indirizzo personalizzata</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" USDX address</source>
-        <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo USDX "cambio"</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" itcoin address</source>
+        <translation>Il resto del valore risultante dagli ingressi meno il valore delle uscite va all'indirizzo itcoin "cambio"</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2843,8 +2843,8 @@ Indirizzo: %4
         <translation>Raccomandato</translation>
     </message>
     <message>
-        <source>USDX/kilobyte</source>
-        <translation>USDX/kilobyte</translation>
+        <source>itcoin/kilobyte</source>
+        <translation>itcoin/kilobyte</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3115,9 +3115,9 @@ Ricordati di scriverla e conservarla in modo sicuro, altrimenti potresti perdere
         <translation>Strumenti BIP38</translation>
     </message>
     <message>
-        <source>Encrypt your USDX addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your itcoin addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Cifra gli indirizzi USDX (la coppia di chiavi) con la crittografia BIP38.
+        <translation>Cifra gli indirizzi itcoin (la coppia di chiavi) con la crittografia BIP38.
 Usando questo meccanismo è possibile condividere le chiavi senza rischi dell'intermediario, basta solo memorizzare la password in modo sicuro</translation>
     </message>
     <message>
@@ -3153,8 +3153,8 @@ Usando questo meccanismo è possibile condividere le chiavi senza rischi dell'in
         <translation>DECRITTOGRAFA LA CHIAVE</translation>
     </message>
     <message>
-        <source>USDX address</source>
-        <translation>Indirizzi USDX</translation>
+        <source>itcoin address</source>
+        <translation>Indirizzi itcoin</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3286,8 +3286,8 @@ Verify that you have installed a predetermined text editor.</source>
 Verifica di aver installato un editor di testo predeterminato.</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Benvenuti nella console RPC di USDX.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Benvenuti nella console RPC di itcoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3471,12 +3471,12 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
         <translation>Modulo</translation>
     </message>
     <message>
-        <source>1) What is USDX?</source>
-        <translation>1) Che cos'è USDX?</translation>
+        <source>1) What is itcoin?</source>
+        <translation>1) Che cos'è itcoin?</translation>
     </message>
     <message>
-        <source>2) Why are my USDX unspendable?</source>
-        <translation>2) Perché i miei USDX non sono spendibili?</translation>
+        <source>2) Why are my itcoin unspendable?</source>
+        <translation>2) Perché i miei itcoin non sono spendibili?</translation>
     </message>
     <message>
         <source>https://www.advantageblockchain.com/</source>
@@ -3487,31 +3487,31 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
         <translation>1</translation>
     </message>
     <message>
-        <source>What is USDX?</source>
-        <translation>Che cos'è USDX?</translation>
+        <source>What is itcoin?</source>
+        <translation>Che cos'è itcoin?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           USDX is a form of digital online money using blockchain technology
+                           itcoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  USDX incorporates market leading security &amp;
+                           zero fees.  itcoin incorporates market leading security &amp;
                            privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of USDX to participate in earning block rewards
+                           itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of itcoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-USDX è una forma di denaro online digitale che utilizza la tecnologia blockchain
+itcoin è una forma di denaro online digitale che utilizza la tecnologia blockchain
 che può essere facilmente trasferito a livello globale, istantaneamente e con quasi
-zero costi. USDX incorpora le tecniche di sicurezza e privacy.
+zero costi. itcoin incorpora le tecniche di sicurezza e privacy.
 &lt;/p&gt;&lt;p align="justify"&gt;
-USDX utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
-consentendo a tutti i proprietari di USDX di partecipare alle ricompense dei blocchi
+itcoin utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
+consentendo a tutti i proprietari di itcoin di partecipare alle ricompense dei blocchi
 proteggendo la rete con portafogli full node, oltre a
 eseguire Masternode per creare e votare proposte.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -3522,25 +3522,25 @@ eseguire Masternode per creare e votare proposte.
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my USDX unspendable?</source>
-        <translation>Perché i miei USDX non sono spendibili?</translation>
+        <source>Why are my itcoin unspendable?</source>
+        <translation>Perché i miei itcoin non sono spendibili?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received USDX requires 6 confirmations on the network
+                           Newly received itcoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your USDX wallet also needs to be completely synchronized
+                           Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           USDX appeni ricevuti richiedono 6 conferme sulla rete
+                           itcoin appeni ricevuti richiedono 6 conferme sulla rete
  per poter essere spendibili, cioè può richiedere ~6 minuti.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Anche il tuo portafoglio USDX deve essere completamente sincronizzato
+                           Anche il tuo portafoglio itcoin deve essere completamente sincronizzato
 per vedere e spendere i saldi sulla rete.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -3550,12 +3550,12 @@ per vedere e spendere i saldi sulla rete.
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake USDX?</source>
-        <translation>Come posso fare lo stake di USDX?</translation>
+        <source>How do I stake itcoin?</source>
+        <translation>Come posso fare lo stake di itcoin?</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of USDX with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (advantage-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Assicurati che il tuo wallet sia completamente sincronizzato e che tu stia usando l'ultima versione. 56Il bilancio dei tuoi USDX deve avere almeno 600 conferme. Per lo stacking il tuo wallet deve rimanere online e deve essere sbloccato. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Una volta portati a termine questi step, siete pronti per avviare lo stacking. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Potete vedere lo stato dello staking nel wallet, passando il mouse sull'icona del pacchetto nella riga in alto a sinistra dell'interfaccia del portafoglio. Il pacchetto sarà illuminato e indicherà &amp;quot;Staking Enabled&amp;quot; per indicare che lo staking è attivo. Usando nella riga di comando dell'interfaccia (advantage-cli); il comando &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; avrai conferma che lo staking è attivo. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Make sure your wallet is completely synchronized and you are using the latest release. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You must have a balance of itcoin with a minimum of 600 confirmations. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Your wallet must stay online and be unlocked for staking purposes. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Once all those steps are followed staking should be enabled. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &amp;quot;Staking Enabled&amp;quot; to indicate it is staking. Using the command line interface (itcoin-cli); the command &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; will confirm that staking is active. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;ol style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;"&gt;&lt;li align="justify" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Assicurati che il tuo wallet sia completamente sincronizzato e che tu stia usando l'ultima versione. 56Il bilancio dei tuoi itcoin deve avere almeno 600 conferme. Per lo stacking il tuo wallet deve rimanere online e deve essere sbloccato. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Una volta portati a termine questi step, siete pronti per avviare lo stacking. &lt;/li&gt;&lt;li align="justify" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;Potete vedere lo stato dello staking nel wallet, passando il mouse sull'icona del pacchetto nella riga in alto a sinistra dell'interfaccia del portafoglio. Il pacchetto sarà illuminato e indicherà &amp;quot;Staking Enabled&amp;quot; per indicare che lo staking è attivo. Usando nella riga di comando dell'interfaccia (itcoin-cli); il comando &lt;span style=" font-style:italic;"&gt;getstakingstatus&lt;/span&gt; avrai conferma che lo staking è attivo. &lt;/li&gt;&lt;/ol&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>4</source>
@@ -3599,12 +3599,12 @@ per vedere e spendere i saldi sulla rete.
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;A Masternode Controller wallet is where the collateral amount can reside during a Controller-Remote masternode setup. It is a wallet that can activate the remote masternode wallet(s) and allows you to keep your collateral coins offline while the remote masternode remains online. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Un Masternode Controller wallet è dove i 10.000 USDX collaterali possono risiedere durante l'impostazione del Masternode Controller remoto. È un portafoglio che può attivare uno o più portafogli masternode remoti e ti consente di mantenere offline le tue valute collaterali mentre il masternode remoto rimane online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;Un Masternode Controller wallet è dove i 10.000 itcoin collaterali possono risiedere durante l'impostazione del Masternode Controller remoto. È un portafoglio che può attivare uno o più portafogli masternode remoti e ti consente di mantenere offline le tue valute collaterali mentre il masternode remoto rimane online.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node USDX wallet with a
+                           A masternode is a computer running a full node itcoin wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3624,10 +3624,10 @@ per vedere e spendere i saldi sulla rete.
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in USDX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in itcoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the USDX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the itcoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3643,8 +3643,8 @@ per vedere e spendere i saldi sulla rete.
                          </source>
         <translation>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Un masternode è un computer che esegue un portafoglio core USDX a nodo completo
-con un requisito di 10.000 USDX a garanzia per fornire servizi extra
+                           Un masternode è un computer che esegue un portafoglio core itcoin a nodo completo
+con un requisito di 10.000 itcoin a garanzia per fornire servizi extra
 alla rete e, in cambio, riceve una parte del premio del blocco
 regolarmente. Questi servizi includono:
                            &lt;/p&gt;&lt;p align="justify"&gt;
@@ -3663,17 +3663,17 @@ regolarmente. Questi servizi includono:
                            Vantaggi del Masternode:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Partecipare alla Governance di USDX &lt;/li&gt;
+                           &lt;li&gt;Partecipare alla Governance di itcoin &lt;/li&gt;
                            &lt;li&gt;Guadagnare i premi del Masternode&lt;/li&gt;
                            &lt;li&gt;Opzione di una commodity per vendita futura&lt;/li&gt;
-                           &lt;li&gt;Aiuta a proteggere la rete USDX&lt;/li&gt;
+                           &lt;li&gt;Aiuta a proteggere la rete itcoin&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            Requisiti:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;10,000 USDX per singolo Masternode
+                           &lt;li&gt;10,000 itcoin per singolo Masternode
                            &lt;li&gt;Devono essere conservati in un portafoglio core&lt;/li&gt;
                            &lt;li&gt;Necessita un indirizzo IP dedicato&lt;/li&gt;
                            &lt;li&gt;Il portafoglio del Masternode deve rimanere online&lt;/li&gt;
@@ -3686,8 +3686,8 @@ regolarmente. Questi servizi includono:
         <translation>Domande frequenti</translation>
     </message>
     <message>
-        <source>3) How do I stake USDX?</source>
-        <translation>3) Come faccio lo staking di USDX?</translation>
+        <source>3) How do I stake itcoin?</source>
+        <translation>3) Come faccio lo staking di itcoin?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -3809,8 +3809,8 @@ regolarmente. Questi servizi includono:
         <translation>Impossibile aprire la cartella dei backup</translation>
     </message>
     <message>
-        <source>Unable to open advantage.conf with default application</source>
-        <translation>Impossibile aprire advantage.conf con l'applicazione predefinita</translation>
+        <source>Unable to open itcoin.conf with default application</source>
+        <translation>Impossibile aprire itcoin.conf con l'applicazione predefinita</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3864,8 +3864,8 @@ regolarmente. Questi servizi includono:
         <translation>Numero di script e processi di verifica</translation>
     </message>
     <message>
-        <source>Start USDX on system login</source>
-        <translation>Avvia USDX all'accesso al sistema</translation>
+        <source>Start itcoin on system login</source>
+        <translation>Avvia itcoin all'accesso al sistema</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3925,8 +3925,8 @@ Sei sicuro?
         <translation>Messaggio</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>Indirizzo USDX o etichetta contatto</translation>
+        <source>itcoin address or contact label</source>
+        <translation>Indirizzo itcoin o etichetta contatto</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4242,8 +4242,8 @@ Sei sicuro?
         <translation>FAQ</translation>
     </message>
     <message>
-        <source>About USDX</source>
-        <translation>Informazioni su USDX</translation>
+        <source>About itcoin</source>
+        <translation>Informazioni su itcoin</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4313,8 +4313,8 @@ Sei sicuro?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Advantage is shutting down...</source>
-        <translation>Advantage si sta spegnendo...</translation>
+        <source>itcoin is shutting down...</source>
+        <translation>itcoin si sta spegnendo...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4343,8 +4343,8 @@ Sei sicuro?
         <translation>Caricamento...</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
 </context>
 <context>
@@ -4863,25 +4863,25 @@ Selezionare meno ingressi con controllo coin.</translation>
     </message>
     <message>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation>Benvenuto in
-Portafoglio Advantage.</translation>
+Portafoglio itcoin.</translation>
     </message>
     <message>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>USDX è la tecnologia basata su blockchain Proof of Stake più innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>itcoin è la tecnologia basata su blockchain Proof of Stake più innovativa al mondo. Sviluppato da un team di sviluppatori e crittografi di grande esperienza.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy è un diritto umano di base non negoziabile; garantisce agli utenti la libertà di condividere i propri dati quando e con chi vuole - USDX crede nell'auto sovranità.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Come dice il nostro manifesto: la privacy è un diritto umano di base non negoziabile; garantisce agli utenti la libertà di condividere i propri dati quando e con chi vuole - itcoin crede nell'auto sovranità.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is USDX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>La rete masternode è la rete di secondo livello di USDX sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
+        <source>The masternode network is itcoin's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>La rete masternode è la rete di secondo livello di itcoin sopra alla blockchain che consente al nostro DAO di fornire governance decentralizzata e tesoreria.</translation>
     </message>
     <message>
-        <source>How USDX respects your privacy?</source>
-        <translation>In che modo USDX rispetta la tua privacy?</translation>
+        <source>How itcoin respects your privacy?</source>
+        <translation>In che modo itcoin rispetta la tua privacy?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4915,8 +4915,8 @@ Portafoglio Advantage.</translation>
         <translation>Associa l'indirizzo indicato per ascoltare le connessioni JSON-RPC. Usa la notazione [host]:porta per IPv6. Questa opzione può essere specificata più volte (impostazione predefinita: associa a tutte le interfacce)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
-        <translation>Impossibile allocare la directory di dati %s. Probabilmente Advantage è già in esecuzione.</translation>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
+        <translation>Impossibile allocare la directory di dati %s. Probabilmente itcoin è già in esecuzione.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -5067,8 +5067,8 @@ Portafoglio Advantage.</translation>
         <translation>La lunghezza totale della stringa della versione di rete (%i) supera la lunghezza massima (%i). Ridurre il numero o la dimensione degli uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
-        <translation>Impossibile associare %s su questo computer. Probabilmente Advantage è già in esecuzione.</translation>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
+        <translation>Impossibile associare %s su questo computer. Probabilmente itcoin è già in esecuzione.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5083,8 +5083,8 @@ Portafoglio Advantage.</translation>
         <translation>Attenzione: -paytxfee è impostato molto alto! Questa è la commissione di transazione che dovrai pagare se invii una transazione.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Avvertenza: verificare che la data e l'ora del computer siano corrette! Se l'orologio è sbagliato, Advantage non funzionerà correttamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Avvertenza: verificare che la data e l'ora del computer siano corrette! Se l'orologio è sbagliato, itcoin non funzionerà correttamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5287,8 +5287,8 @@ Portafoglio Advantage.</translation>
         <translation>Informazioni</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
-        <translation>Verifica dell'integrità dell'inizializzazione non riuscita. Advantage si sta spegnendo.</translation>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
+        <translation>Verifica dell'integrità dell'inizializzazione non riuscita. itcoin si sta spegnendo.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5319,8 +5319,8 @@ Portafoglio Advantage.</translation>
         <translation>Invalid netmask specificata in -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating USDX supply...</source>
-        <translation>Ricalcolo della supply USDX...</translation>
+        <source>Recalculating itcoin supply...</source>
+        <translation>Ricalcolo della supply itcoin...</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
@@ -5331,8 +5331,8 @@ Portafoglio Advantage.</translation>
         <translation>Questa è una build di test pre-release - utilizzare a proprio rischio - non utilizzare per staking o applicazioni commerciali!</translation>
     </message>
     <message>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
-        <translation>Disabilita tutte le funzionalità specifiche di USDX (Masternodes) (0-1, default: %u)</translation>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Disabilita tutte le funzionalità specifiche di itcoin (Masternodes) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5587,12 +5587,12 @@ Portafoglio Advantage.</translation>
         <translation>Le commissioni (in %s/Kb) inferiori a questa sono considerate zero per la creazione della transazione (default: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in USDX) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Importo positivo minimo (in USDX) consentito da GUI e RPC per la soglia di ripartizione della partecipazione (default: %s)</translation>
+        <source>Minimum positive amount (in itcoin) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Importo positivo minimo (in itcoin) consentito da GUI e RPC per la soglia di ripartizione della partecipazione (default: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Verificare che la data e l'ora del computer siano corrette! Se l'orologio sincronizzato, Advantage non funzionerà correttamente.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Verificare che la data e l'ora del computer siano corrette! Se l'orologio sincronizzato, itcoin non funzionerà correttamente.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
@@ -5989,8 +5989,8 @@ Portafoglio Advantage.</translation>
         <translation>Il portafoglio %s risiede al di fuori della directory di dati %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
-        <translation>Il portafoglio doveva essere riscritto: riavviare Advantage per completare</translation>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
+        <translation>Il portafoglio doveva essere riscritto: riavviare itcoin per completare</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -6044,12 +6044,12 @@ Portafoglio Advantage.</translation>
         <translation>Invia</translation>
     </message>
     <message>
-        <source>Send public coins (USDX)</source>
-        <translation>Inviare monete pubbliche (USDX)</translation>
+        <source>Send public coins (itcoin)</source>
+        <translation>Inviare monete pubbliche (itcoin)</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>Indirizzo USDX o etichetta contatto</translation>
+        <source>itcoin address or contact label</source>
+        <translation>Indirizzo itcoin o etichetta contatto</translation>
     </message>
     <message>
         <source>Amount</source>

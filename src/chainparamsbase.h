@@ -7,15 +7,15 @@
 #ifndef BITCOIN_CHAINPARAMSBASE_H
 #define BITCOIN_CHAINPARAMSBASE_H
 
-#define __RPCPORT_MAINNET__ 9998
-#define __RPCPORT_TESTNET__ 19998
+#define __RPCPORT_MAINNET__ 8339
+#define __RPCPORT_TESTNET__ 18339
 
 #include <string>
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between advantage-cli and advantaged)
- * of a given instance of the advantage system.
+ * CBaseChainParams defines the base parameters (shared between itcoin-cli and itcoind)
+ * of a given instance of the itcoin system.
  */
 class CBaseChainParams
 {

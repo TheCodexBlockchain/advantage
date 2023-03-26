@@ -122,12 +122,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши USDX-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your itcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши itcoin-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your USDX addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши USDX-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your itcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши itcoin-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -363,8 +363,8 @@ for staking</source>
         <translation>ОТМЕНА</translation>
     </message>
     <message>
-        <source>USDX will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your USDXs from being stolen by malware infecting your computer.</source>
-        <translation>USDX сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши USDX от кражи с использованием вредоносного ПО.</translation>
+        <source>itcoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your itcoins from being stolen by malware infecting your computer.</source>
+        <translation>itcoin сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши itcoin от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -464,8 +464,8 @@ for staking</source>
         <translation>Выбор монеты</translation>
     </message>
     <message>
-        <source>Select USDX Outputs to Spend</source>
-        <translation>Выберите USDX выходы для расходов</translation>
+        <source>Select itcoin Outputs to Spend</source>
+        <translation>Выберите itcoin выходы для расходов</translation>
     </message>
     <message>
         <source>Dust:</source>
@@ -492,8 +492,8 @@ for staking</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>0.00 USDX</source>
-        <translation>0.00 USDX </translation>
+        <source>0.00 itcoin</source>
+        <translation>0.00 itcoin </translation>
     </message>
     <message>
         <source>0</source>
@@ -722,8 +722,8 @@ for staking</source>
         <translation>Обзор истории вашего аккаунта</translation>
     </message>
     <message>
-        <source>How to get USDX</source>
-        <translation>Как получить USDX</translation>
+        <source>How to get itcoin</source>
+        <translation>Как получить itcoin</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -746,8 +746,8 @@ for staking</source>
         <translation>Сортировать по</translation>
     </message>
     <message>
-        <source>Amount of USDX staked.</source>
-        <translation>Сумма добытых USDX </translation>
+        <source>Amount of itcoin staked.</source>
+        <translation>Сумма добытых itcoin </translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -842,8 +842,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid USDX address.</source>
-        <translation>Введенный адрес "%1" не является USDX адресом.</translation>
+        <source>The entered address "%1" is not a valid itcoin address.</source>
+        <translation>Введенный адрес "%1" не является itcoin адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -895,16 +895,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>версия</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-бит)</translation>
     </message>
     <message>
-        <source>About Advantage</source>
-        <translation>О Advantage</translation>
+        <source>About itcoin</source>
+        <translation>О itcoin</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -958,16 +958,16 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>Добро пожаловать</translation>
     </message>
     <message>
-        <source>Welcome to Advantage.</source>
-        <translation>Добро пожаловать в Advantage.</translation>
+        <source>Welcome to itcoin.</source>
+        <translation>Добро пожаловать в itcoin.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where Advantage will store its data.</source>
-        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные Advantage.</translation>
+        <source>As this is the first time the program is launched, you can choose where itcoin will store its data.</source>
+        <translation>Поскольку это первый запуск программы, вы можете выбрать, где будут храниться данные itcoin.</translation>
     </message>
     <message>
-        <source>Advantage will download and store a copy of the USDX block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Advantage загрузит и сохранит копию цепочки блоков USDX. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
+        <source>itcoin will download and store a copy of the itcoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>itcoin загрузит и сохранит копию цепочки блоков itcoin. Каталог будет занимать около %1GB и со временем размер будет увеличиваться. Кроме того, в этом каталоге будет храниться кошелек.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -986,8 +986,8 @@ It will start automatically as soon as the wallet has enough confirmations on an
         <translation>ХОРОШО</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1111,7 +1111,7 @@ It will start automatically as soon as the wallet has enough confirmations on an
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A transaction of collateral amount will be made&lt;/p&gt;&lt;p&gt;to a new empty address in your wallet.&lt;/p&gt;&lt;p&gt;The Address is labeled under the master node's name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 USDX. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;На новый пустой адрес в вашем кошельке&lt;/p&gt;&lt;p&gt; будет сделана транзакция в 10 000 itcoin. &lt;/p&gt;&lt;p&gt;Адрес отмечен под именем мастерноды.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Address of the node that must always be online running the actual master node.</source>
@@ -1316,7 +1316,7 @@ Please wait few more minutes (masternode collaterals require %1 confirmations).<
 on a remote server to your clipboard.
 
 
-You will only have to paste the data in the advantage.conf file
+You will only have to paste the data in the itcoin.conf file
 of your remote server and start it, then start the Masternode using
 this controller wallet (select the Masternode in the list and press "start").
 </source>
@@ -1324,7 +1324,7 @@ this controller wallet (select the Masternode in the list and press "start").
 на удаленном сервере в буфер обмена.
 
 
-Вам необходимо только вставить данные в файл advantage.conf
+Вам необходимо только вставить данные в файл itcoin.conf
 вашего удаленного сервера и запустить его, а затем запустить мастерноду,
 используя этот кошелек контроллера (выберите мастерноду из списка и нажмите «Старт»).
 </translation>
@@ -1508,8 +1508,8 @@ NODES</source>
         <translation>Проанализированные данные слишком большие</translation>
     </message>
     <message>
-        <source>Invalid URI, not starting with "advantage" prefix</source>
-        <translation>Неверный URI, не начинается с префикса "advantage"</translation>
+        <source>Invalid URI, not starting with "itcoin" prefix</source>
+        <translation>Неверный URI, не начинается с префикса "itcoin"</translation>
     </message>
 </context>
 <context>
@@ -1554,8 +1554,8 @@ NODES</source>
         <translation>Отключив проведение неподтвержденных изменений все изменения о транзакции &lt;br/&gt;не будут использованы пока транзакция не получит хотя бы одно подтверждение.&lt;br/&gt;Также это влияет на расчет вашего баланса.</translation>
     </message>
     <message>
-        <source>Automatically open the USDX client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть клиентский порт USDX через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
+        <source>Automatically open the itcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть клиентский порт itcoin через роутер. Ваш роутер должен поддерживать UPnP, а сам сервис должен быть включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1574,12 +1574,12 @@ NODES</source>
         <translation>Эксперт</translation>
     </message>
     <message>
-        <source>Automatically start USDX after logging in to the system.</source>
-        <translation>Автоматически запускать USDX после входа в систему.</translation>
+        <source>Automatically start itcoin after logging in to the system.</source>
+        <translation>Автоматически запускать itcoin после входа в систему.</translation>
     </message>
     <message>
-        <source>&amp;Start USDX on system login</source>
-        <translation>&amp;Запускать USDX при входе в систему</translation>
+        <source>&amp;Start itcoin on system login</source>
+        <translation>&amp;Запускать itcoin при входе в систему</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1606,8 +1606,8 @@ NODES</source>
         <translation>&amp;Сеть</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting USDX.</source>
-        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска USDX.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting itcoin.</source>
+        <translation>Здесь можно выставить язык интерфейса. Изменения вступят в силу после перезапуска itcoin.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
@@ -1628,8 +1628,8 @@ NODES</source>
         <translation>Порог разделения доли:</translation>
     </message>
     <message>
-        <source>Connect to the USDX network through a SOCKS5 proxy.</source>
-        <translation>Подключиться к сети USDX через SOCKS5 прокси.</translation>
+        <source>Connect to the itcoin network through a SOCKS5 proxy.</source>
+        <translation>Подключиться к сети itcoin через SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1775,8 +1775,8 @@ NODES</source>
 <context>
     <name>PIVXGUI</name>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -1803,8 +1803,8 @@ NODES</source>
         <translation>Завершить работу</translation>
     </message>
     <message>
-        <source>Advantage client</source>
-        <translation>Клиент Advantage</translation>
+        <source>itcoin client</source>
+        <translation>Клиент itcoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1866,12 +1866,12 @@ Address: %4
         <translation>Неверный адрес оплаты %1</translation>
     </message>
     <message>
-        <source>Cannot start advantage: click-to-pay handler</source>
-        <translation>Не удалось запустить advantage: обработчик click-to-pay </translation>
+        <source>Cannot start itcoin: click-to-pay handler</source>
+        <translation>Не удалось запустить itcoin: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid USDX address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный USDX адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid itcoin address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный itcoin адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1956,8 +1956,8 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter USDX address (e.g. %1)</source>
-        <translation>Введите адрес USDX (например, %1)</translation>
+        <source>Enter itcoin address (e.g. %1)</source>
+        <translation>Введите адрес itcoin (например, %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2000,12 +2000,12 @@ Address: %4
         <translation>%1 мс</translation>
     </message>
     <message>
-        <source>A fatal error occurred. USDX can no longer continue safely and will quit.</source>
-        <translation>Произошла фатальная ошибка. USDX больше не может безопасно продолжать работу и завершит работу.</translation>
+        <source>A fatal error occurred. itcoin can no longer continue safely and will quit.</source>
+        <translation>Произошла фатальная ошибка. itcoin больше не может безопасно продолжать работу и завершит работу.</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" does not exist.</source>
@@ -2024,8 +2024,8 @@ Address: %4
         <translation>Ошибка чтения файла конфигурации мастерноды: %1</translation>
     </message>
     <message>
-        <source>Advantage didn't yet exit safely...</source>
-        <translation>Advantage еще не вышел безопасно...</translation>
+        <source>itcoin didn't yet exit safely...</source>
+        <translation>itcoin еще не вышел безопасно...</translation>
     </message>
     <message>
         <source>Contact</source>
@@ -2235,8 +2235,8 @@ Address: %4
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the USDX debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть протокол отладки USDX. Это может занять некоторе время, если файл протокола очень большой.</translation>
+        <source>Open the itcoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть протокол отладки itcoin. Это может занять некоторе время, если файл протокола очень большой.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2456,8 +2456,8 @@ Address: %4
         <translation>Вывод:</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Добро пожаловать в окружение USDX RPC.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Добро пожаловать в окружение itcoin RPC.</translation>
     </message>
     <message>
         <source>&amp;Disconnect Node</source>
@@ -2598,8 +2598,8 @@ Address: %4
         <translation>Нет адресов</translation>
     </message>
     <message>
-        <source>Scan the QR code or copy the address to receive USDX</source>
-        <translation>Сканируйте QR-код или скопируйте адрес для получения USDX</translation>
+        <source>Scan the QR code or copy the address to receive itcoin</source>
+        <translation>Сканируйте QR-код или скопируйте адрес для получения itcoin</translation>
     </message>
     <message>
         <source>Add Label</source>
@@ -2728,12 +2728,12 @@ Address: %4
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>USDX</source>
-        <translation>USDX</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
     <message>
-        <source>Instead of sharing only a USDX address, you can create a payment request, bundling up more information</source>
-        <translation>Вместо того, чтобы делиться только адресом USDX, вы можете создать запрос на оплату, связывая больше информации</translation>
+        <source>Instead of sharing only a itcoin address, you can create a payment request, bundling up more information</source>
+        <translation>Вместо того, чтобы делиться только адресом itcoin, вы можете создать запрос на оплату, связывая больше информации</translation>
     </message>
     <message>
         <source>D7VFR83SQbiezrW72hjcWJtcfip5krte2Z </source>
@@ -2811,8 +2811,8 @@ Address: %4
         <translation>Смена адреса</translation>
     </message>
     <message>
-        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" USDX address</source>
-        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса USDX</translation>
+        <source>The remainder of the value resultant from the inputs minus the outputs value goes to the "change" itcoin address</source>
+        <translation>Остаточная часть значения, полученного от значения входов минус выходов, идет на «изменение» адреса itcoin</translation>
     </message>
     <message>
         <source>SAVE</source>
@@ -2838,8 +2838,8 @@ Address: %4
         <translation>рекомендуемые</translation>
     </message>
     <message>
-        <source>USDX/kilobyte</source>
-        <translation>USDX/килобайт</translation>
+        <source>itcoin/kilobyte</source>
+        <translation>itcoin/килобайт</translation>
     </message>
     <message>
         <source>0.00 KB</source>
@@ -3110,9 +3110,9 @@ Remember to write it down and store it safely, otherwise you might lose access t
         <translation>Инструмент BIP38</translation>
     </message>
     <message>
-        <source>Encrypt your USDX addresses (key pair actually) using BIP38 encryption.
+        <source>Encrypt your itcoin addresses (key pair actually) using BIP38 encryption.
 Using this mechanism you can share your keys without middle-man risk, only need to store your passphrase safely</source>
-        <translation>Зашифруйте свои адреса USDX (фактически, пару ключей), используя шифрование BIP38.
+        <translation>Зашифруйте свои адреса itcoin (фактически, пару ключей), используя шифрование BIP38.
 С помощью этого механизма вы можете делиться своими ключами без риска посредника, вам нужно только безопасно хранить вашу парольную фразу</translation>
     </message>
     <message>
@@ -3148,8 +3148,8 @@ Using this mechanism you can share your keys without middle-man risk, only need 
         <translation>Расшифровать ключ</translation>
     </message>
     <message>
-        <source>USDX address</source>
-        <translation>Адрес USDX</translation>
+        <source>itcoin address</source>
+        <translation>Адрес itcoin</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -3281,8 +3281,8 @@ Verify that you have installed a predetermined text editor.</source>
 Убедитесь, что вы установили заранее установленный текстовый редактор.</translation>
     </message>
     <message>
-        <source>Welcome to the USDX RPC console.</source>
-        <translation>Добро пожаловать в окружение USDX RPC.</translation>
+        <source>Welcome to the itcoin RPC console.</source>
+        <translation>Добро пожаловать в окружение itcoin RPC.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and %1 to clear screen.</source>
@@ -3465,12 +3465,12 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>Вид</translation>
     </message>
     <message>
-        <source>1) What is USDX?</source>
-        <translation>1) Что такое USDX?</translation>
+        <source>1) What is itcoin?</source>
+        <translation>1) Что такое itcoin?</translation>
     </message>
     <message>
-        <source>2) Why are my USDX unspendable?</source>
-        <translation>2) Почему мои USDX невозможно потратить?</translation>
+        <source>2) Why are my itcoin unspendable?</source>
+        <translation>2) Почему мои itcoin невозможно потратить?</translation>
     </message>
     <message>
         <source>https://www.advantageblockchain.com/</source>
@@ -3481,31 +3481,31 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <translation>1</translation>
     </message>
     <message>
-        <source>What is USDX?</source>
-        <translation>Что такое USDX?</translation>
+        <source>What is itcoin?</source>
+        <translation>Что такое itcoin?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           USDX is a form of digital online money using blockchain technology
+                           itcoin is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
-                           zero fees.  USDX incorporates market leading security &amp;
+                           zero fees.  itcoin incorporates market leading security &amp;
                            privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           USDX utilizes a Proof of Stake (PoS) consensus system algorithm,
-                           allowing all owners of USDX to participate in earning block rewards
+                           itcoin utilizes a Proof of Stake (PoS) consensus system algorithm,
+                           allowing all owners of itcoin to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
                            run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-USDX - это форма цифровых онлайн-денег, использующая технологию блокчейн,
+itcoin - это форма цифровых онлайн-денег, использующая технологию блокчейн,
 которая может быть легко переведена по всему миру, мгновенно и с практически
-нулевой комиссией. USDX включает в себя лидирующую на рынке защиту и
+нулевой комиссией. itcoin включает в себя лидирующую на рынке защиту и
 «конфиденциальность».
 &lt;/p&gt;&lt;p align="justify"&gt;
-USDX использует консенсус PoS (Proof of Stake), позволяя всем владельцам USDX участвовать в заработке вознаграждений
+itcoin использует консенсус PoS (Proof of Stake), позволяя всем владельцам itcoin участвовать в заработке вознаграждений
 при этом обеспечивая безопасность сети с помощью кошельков с полными узлами, а также позволяет
 запускать мастерноды для создания предложений и голосования по ним.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -3515,25 +3515,25 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
         <translation>2</translation>
     </message>
     <message>
-        <source>Why are my USDX unspendable?</source>
-        <translation>Почему мои USDX невозможно потратить?</translation>
+        <source>Why are my itcoin unspendable?</source>
+        <translation>Почему мои itcoin невозможно потратить?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received USDX requires 6 confirmations on the network
+                           Newly received itcoin requires 6 confirmations on the network
                            to become eligible for spending which can take ~6 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           Your USDX wallet also needs to be completely synchronized
+                           Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-Недавно полученным USDX требуется 6 подтверждений в сети,
+Недавно полученным itcoin требуется 6 подтверждений в сети,
 чтобы получить право быть расходуемыми. Это может занять примерно 6 минут.
 &lt;/p&gt;&lt;p align="justify"&gt;
-Ваш кошелек USDX также должен быть полностью синхронизирован,
+Ваш кошелек itcoin также должен быть полностью синхронизирован,
 чтобы видеть баланс и расходовать его в сети.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -3542,8 +3542,8 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
         <translation>3</translation>
     </message>
     <message>
-        <source>How do I stake USDX?</source>
-        <translation>Как мне запустить стекинг USDX?</translation>
+        <source>How do I stake itcoin?</source>
+        <translation>Как мне запустить стекинг itcoin?</translation>
     </message>
     <message>
         <source>4</source>
@@ -3574,7 +3574,7 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           A masternode is a computer running a full node USDX wallet with a
+                           A masternode is a computer running a full node itcoin wallet with a
                            required amount of secured collateral to provide extra services
                            to the network and in return, receive a portion of the block reward
                            regularly.  These services include:
@@ -3594,10 +3594,10 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
                            Masternode Perks:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ul&gt;
-                           &lt;li&gt;Participate in USDX Governance&lt;/li&gt;
+                           &lt;li&gt;Participate in itcoin Governance&lt;/li&gt;
                            &lt;li&gt;Earn Masternode Rewards&lt;/li&gt;
                            &lt;li&gt;Commodity option for future sale&lt;/li&gt;
-                           &lt;li&gt;Help secure the USDX network&lt;/li&gt;
+                           &lt;li&gt;Help secure the itcoin network&lt;/li&gt;
                            &lt;/ul&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
@@ -3612,7 +3612,7 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
-Мастернода - это компьютер, на котором запущен базовый кошелек USDX с полным узлом и для которого требуется обеспечение в 10000 USDX для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
+Мастернода - это компьютер, на котором запущен базовый кошелек itcoin с полным узлом и для которого требуется обеспечение в 10000 itcoin для обеспечения дополнительных услуг сети и, в свою очередь, регулярного получения части вознаграждения за блок. Эти услуги в себя включают:
 
 Децентрализованное управление (Голосование по предложениям)
 Децентрализованная система бюджетирования (Казначейство)
@@ -3623,14 +3623,14 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
 
 Привилегии мастерноды:
 
-Участие в управлении USDX
+Участие в управлении itcoin
 Получение вознаграждений за мастерноду
 Товарные опционы для будущей продажи
-Помощь в защите сети USDX
+Помощь в защите сети itcoin
 
 Требования:
 
-10 000 USDX для каждой мастерноды
+10 000 itcoin для каждой мастерноды
 Должен храниться в основном кошельке
 Требуется выделенный IP-адрес
 Кошелек мастерноды должен оставаться в сети</translation>
@@ -3640,8 +3640,8 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
         <translation>Часто задаваемые вопросы</translation>
     </message>
     <message>
-        <source>3) How do I stake USDX?</source>
-        <translation>3) Как мне запустить стекинг USDX?</translation>
+        <source>3) How do I stake itcoin?</source>
+        <translation>3) Как мне запустить стекинг itcoin?</translation>
     </message>
     <message>
         <source>4) Where I should go if I need support?</source>
@@ -3763,8 +3763,8 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
         <translation>Невозможно открыть папку резервных копий</translation>
     </message>
     <message>
-        <source>Unable to open advantage.conf with default application</source>
-        <translation>Невозможно открыть advantage.conf с приложением по умолчанию</translation>
+        <source>Unable to open itcoin.conf with default application</source>
+        <translation>Невозможно открыть itcoin.conf с приложением по умолчанию</translation>
     </message>
     <message>
         <source>In:</source>
@@ -3818,8 +3818,8 @@ USDX использует консенсус PoS (Proof of Stake), позвол�
         <translation>Количество потоков проверки скрипта</translation>
     </message>
     <message>
-        <source>Start USDX on system login</source>
-        <translation>Запускать USDX при входе в систему</translation>
+        <source>Start itcoin on system login</source>
+        <translation>Запускать itcoin при входе в систему</translation>
     </message>
     <message>
         <source>Minimize to the tray instead of the taskbar</source>
@@ -3879,8 +3879,8 @@ Are you sure?
         <translation>Сообщение</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX адрес или лейбл контакта</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Enter address</source>
@@ -4196,8 +4196,8 @@ Are you sure?
         <translation>ЧаВо</translation>
     </message>
     <message>
-        <source>About USDX</source>
-        <translation>О USDX</translation>
+        <source>About itcoin</source>
+        <translation>О itcoin</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -4267,8 +4267,8 @@ Are you sure?
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>Advantage is shutting down...</source>
-        <translation>Advantage выключается...</translation>
+        <source>itcoin is shutting down...</source>
+        <translation>itcoin выключается...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -4297,8 +4297,8 @@ Are you sure?
         <translation>Загрузка...</translation>
     </message>
     <message>
-        <source>Advantage</source>
-        <translation>Advantage</translation>
+        <source>itcoin</source>
+        <translation>itcoin</translation>
     </message>
 </context>
 <context>
@@ -4816,25 +4816,25 @@ Select fewer inputs with coin control.</source>
     </message>
     <message>
         <source>Welcome to
-Advantage Wallet</source>
+itcoin Wallet</source>
         <translation>Добро пожаловать
-в основной кошелек Advantage</translation>
+в основной кошелек itcoin</translation>
     </message>
     <message>
-        <source>USDX is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
-        <translation>USDX - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
+        <source>itcoin is the world’s most innovative Proof of Stake blockchain based technology. Developed by a team of highly experienced developers and cryptographers.</source>
+        <translation>itcoin - самая инновационная в мире технология на основе блокчейна Proof of Stake. Разработана командой опытных разработчиков и криптографов.</translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - USDX believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь USDX верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;As our manifesto says: Privacy is a non-negotiable basic human right; it grants users the freedom to share their data whenever and with whomever they want - itcoin believes in self sovereignty.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Как говорится в нашем манифесте: конфиденциальность является не подлежащим обсуждению основным правом человека; это дает пользователям свободу делиться своими данными в любое время и с кем угодно, ведь itcoin верит в собственный суверенитет.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <source>The masternode network is USDX's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
-        <translation>Сеть мастернод - это сеть второго уровня USDX поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
+        <source>The masternode network is itcoin's second layer network on top of the blockchain that enables our DAO to provide decentralized governance and a treasury.</source>
+        <translation>Сеть мастернод - это сеть второго уровня itcoin поверх блокчейна, которая позволяет нашему ДАО обеспечивать децентрализованное управление и казначейство.</translation>
     </message>
     <message>
-        <source>How USDX respects your privacy?</source>
-        <translation>Как USDX уважает вашу конфиденциальность?</translation>
+        <source>How itcoin respects your privacy?</source>
+        <translation>Как itcoin уважает вашу конфиденциальность?</translation>
     </message>
     <message>
         <source>What is a Masternode?</source>
@@ -4868,8 +4868,8 @@ Advantage Wallet</source>
         <translation>Привяжите к указанному адресу для прослушивания соединений JSON-RPC. Используйте [host]: обозначение порта для IPv6. Эта опция может быть указана несколько раз (по умолчанию: привязка ко всем интерфейсам)</translation>
     </message>
     <message>
-        <source>Cannot obtain a lock on data directory %s. Advantage is probably already running.</source>
-        <translation>Не удается получить блокировку в каталоге данных %s. Advantage, вероятно, уже запущен.</translation>
+        <source>Cannot obtain a lock on data directory %s. itcoin is probably already running.</source>
+        <translation>Не удается получить блокировку в каталоге данных %s. itcoin, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
@@ -5020,8 +5020,8 @@ Advantage Wallet</source>
         <translation>Общая длина строки версии сети (%i) превышает максимальную длину (%i). Уменьшите количество или размер uacomments.</translation>
     </message>
     <message>
-        <source>Unable to bind to %s on this computer. Advantage is probably already running.</source>
-        <translation>Не удалось привязать к %s на этом компьютере. Advantage, вероятно, уже запущен.</translation>
+        <source>Unable to bind to %s on this computer. itcoin is probably already running.</source>
+        <translation>Не удалось привязать к %s на этом компьютере. itcoin, вероятно, уже запущен.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -5036,8 +5036,8 @@ Advantage Wallet</source>
         <translation>Предупреждение: -paytxfee установлен очень высоко! Это комиссия за транзакцию, которую вы заплатите, если вы отправляете транзакцию.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, Advantage не будет работать должным образом.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Внимание: проверьте правильность даты и времени вашего компьютера! Если ваши часы ошибочны, itcoin не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -5240,8 +5240,8 @@ Advantage Wallet</source>
         <translation>Информация</translation>
     </message>
     <message>
-        <source>Initialization sanity check failed. Advantage is shutting down.</source>
-        <translation>Инициализация проверки работоспособности не удалась. Advantage отключается.</translation>
+        <source>Initialization sanity check failed. itcoin is shutting down.</source>
+        <translation>Инициализация проверки работоспособности не удалась. itcoin отключается.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
@@ -5272,8 +5272,8 @@ Advantage Wallet</source>
         <translation>Недопустимая сетевая маска, указанная в -whitelist: '%s'</translation>
     </message>
     <message>
-        <source>Recalculating USDX supply...</source>
-        <translation>Перерасчет предложения USDX...</translation>
+        <source>Recalculating itcoin supply...</source>
+        <translation>Перерасчет предложения itcoin...</translation>
     </message>
     <message>
         <source>Selected coins value is less than payment target</source>
@@ -5284,8 +5284,8 @@ Advantage Wallet</source>
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source>Disable all USDX specific functionality (Masternodes) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции USDX (Masternodes) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all itcoin specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции itcoin (Masternodes) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5540,12 +5540,12 @@ Advantage Wallet</source>
         <translation>Комиссия (в %s/Кбайт) меньше этого значения считается с нулевой комиссией за создание транзакции (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Minimum positive amount (in USDX) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
-        <translation>Минимальная положительная сумма (в USDX), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
+        <source>Minimum positive amount (in itcoin) allowed by GUI and RPC for the stake split threshold (default: %s)</source>
+        <translation>Минимальная положительная сумма (в itcoin), разрешенная GUI и RPC для порога разделения стекинга (по умолчанию: %s)</translation>
     </message>
     <message>
-        <source>Please check that your computer's date and time are correct! If your clock is wrong Advantage will not work properly.</source>
-        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, Advantage не будет работать должным образом.</translation>
+        <source>Please check that your computer's date and time are correct! If your clock is wrong itcoin will not work properly.</source>
+        <translation>Пожалуйста, проверьте правильность даты и времени на вашем компьютере! Если ваши часы не точны, itcoin не будет работать должным образом.</translation>
     </message>
     <message>
         <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
@@ -5938,8 +5938,8 @@ Advantage Wallet</source>
         <translation>Кошелек %s находится за пределами каталога данных %s</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart Advantage to complete</source>
-        <translation>Кошелек необходимо переписать: перезапустите Advantage, чтобы завершить</translation>
+        <source>Wallet needed to be rewritten: restart itcoin to complete</source>
+        <translation>Кошелек необходимо переписать: перезапустите itcoin, чтобы завершить</translation>
     </message>
     <message>
         <source>Wallet options:</source>
@@ -5993,12 +5993,12 @@ Advantage Wallet</source>
         <translation>Отправить</translation>
     </message>
     <message>
-        <source>Send public coins (USDX)</source>
-        <translation>Отправить монеты (USDX)</translation>
+        <source>Send public coins (itcoin)</source>
+        <translation>Отправить монеты (itcoin)</translation>
     </message>
     <message>
-        <source>USDX address or contact label</source>
-        <translation>USDX адрес или лейбл контакта</translation>
+        <source>itcoin address or contact label</source>
+        <translation>itcoin адрес или лейбл контакта</translation>
     </message>
     <message>
         <source>Amount</source>
