@@ -47,6 +47,11 @@ $(eval $(1)_build_id_long:=$(1)-$($(1)_version)-$($(1)_recipe_hash)-$(release_ty
 $(eval $(1)_build_id:=$(shell echo -n "$($(1)_build_id_long)" | $(build_SHA256SUM) | cut -c-$(HASH_LENGTH)))
 final_build_id_long+=$($(package)_build_id_long)
 
+#override platform specific files and hashes
+$(eval $(1)_file_name=$(if $($(1)_exact_file_name),$($(1)_exact_file_name),$(if $($(1)_file_name_$(host_os)),$($(1)_file_name_$(host_os)),$($(1)_file_name))))
+$(eval $(1)_sha256_hash=$(if $($(1)_exact_sha256_hash),$($(1)_exact_sha256_hash),$(if $($(1)_sha256_hash_$(host_os)),$($(1)_sha256_hash_$(host_os)),$($(1)_sha256_hash))))
+
+
 #compute package-specific paths
 $(1)_build_subdir?=.
 $(1)_download_file?=$($(1)_file_name)
@@ -130,9 +135,9 @@ $(1)_config_env+=$($(1)_config_env_$(host_arch)_$(host_os)) $($(1)_config_env_$(
 
 $(1)_config_env+=PKG_CONFIG_LIBDIR=$($($(1)_type)_prefix)/lib/pkgconfig
 $(1)_config_env+=PKG_CONFIG_PATH=$($($(1)_type)_prefix)/share/pkgconfig
-$(1)_config_env+=PATH=$(build_prefix)/bin:$(PATH)
-$(1)_build_env+=PATH=$(build_prefix)/bin:$(PATH)
-$(1)_stage_env+=PATH=$(build_prefix)/bin:$(PATH)
+$(1)_config_env+=PATH="$(build_prefix)/bin:$(PATH)"
+$(1)_build_env+=PATH="$(build_prefix)/bin:$(PATH)"
+$(1)_stage_env+=PATH="$(build_prefix)/bin:$(PATH)"
 $(1)_autoconf=./configure --host=$($($(1)_type)_host) --disable-dependency-tracking --prefix=$($($(1)_type)_prefix) $$($(1)_config_opts) CC="$$($(1)_cc)" CXX="$$($(1)_cxx)"
 
 ifneq ($($(1)_nm),)
