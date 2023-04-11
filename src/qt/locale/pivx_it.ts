@@ -3479,8 +3479,8 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
         <translation>2) Perché i miei itcoin non sono spendibili?</translation>
     </message>
     <message>
-        <source>https://www.advantageblockchain.com/</source>
-        <translation>https://www.advantageblockchain.com/</translation>
+        <source>https://getitcoin.com/</source>
+        <translation>https://getitcoin.com/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3528,8 +3528,8 @@ eseguire Masternode per creare e votare proposte.
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received itcoin requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
+                           Newly received itcoin requires 3 confirmations on the network
+                           to become eligible for spending which can take ~3 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.

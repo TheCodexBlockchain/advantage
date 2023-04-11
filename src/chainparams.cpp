@@ -172,10 +172,10 @@ public:
         pchMessageStart[3] = 0xf4;
         nDefaultPort = __PORT_MAINNET__;
 
-        vSeeds.push_back(CDNSSeedData("seeder1", "seed01.advantageblockchain.com"));
-        vSeeds.push_back(CDNSSeedData("seeder2", "seed02.advantageblockchain.com"));
-        vSeeds.push_back(CDNSSeedData("seeder3", "seed03.advantageblockchain.com"));
-        vSeeds.push_back(CDNSSeedData("seeder4", "seed04.advantageblockchain.com"));
+        vSeeds.push_back(CDNSSeedData("seeder1", "seed01.getitcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seeder2", "seed02.getitcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seeder3", "seed03.getitcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seeder4", "seed04.getitcoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 102);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 103);

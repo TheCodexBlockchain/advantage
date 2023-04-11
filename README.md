@@ -13,7 +13,7 @@ itcoin Wallet Repository
 • Prefix: itcoin adresses start with the capital letter "A"
 • Ports: __PORT_MAINNET__ (p2p) / __RPCPORT_MAINNET__ (rpc)
 
-• Website [www.theadvantageblockchain.com/](theadvantageblockchain.com)
+• Website [getitcoin.com/](getitcoin.com)
 
 ### Rewards Breakdown
 Masternodes: 20%

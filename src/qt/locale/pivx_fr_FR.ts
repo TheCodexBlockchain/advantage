@@ -3476,8 +3476,8 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
         <translation>2) Pourquoi mes itcoin ne peuvent pas être dépensés?</translation>
     </message>
     <message>
-        <source>https://www.advantageblockchain.com/</source>
-        <translation>https://www.advantageblockchain.com/</translation>
+        <source>https://getitcoin.com/</source>
+        <translation>https://getitcoin.com/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3525,8 +3525,8 @@ lorsqu'ils sécurisent le réseau au moyen de leur portefeuille full node, ainsi
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received itcoin requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
+                           Newly received itcoin requires 3 confirmations on the network
+                           to become eligible for spending which can take ~3 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.

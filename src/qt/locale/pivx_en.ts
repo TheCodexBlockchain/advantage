@@ -4349,7 +4349,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
     </message>
     <message>
         <location line="+148"/>
-        <source>https://www.advantageblockchain.com/</source>
+        <source>https://getitcoin.com/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4393,8 +4393,8 @@ There was an error trying to save the address list to %1. Please try again.</sou
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           Newly received itcoin requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
+                           Newly received itcoin requires 3 confirmations on the network
+                           to become eligible for spending which can take ~3 minutes.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
