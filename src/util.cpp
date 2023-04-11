@@ -394,10 +394,10 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
                           "rpcallowip=127.0.0.1\n"
                           "\n"
                           "# ADDNODES:\n"
-                          "addnode=seed01.advantageblockchain.com\n"
-                          "addnode=seed02.advantageblockchain.com\n"
-                          "addnode=seed03.advantageblockchain.com\n"
-                          "addnode=seed04.advantageblockchain.com\n"
+                          "addnode=seed01.getitcoin.com\n"
+                          "addnode=seed02.getitcoin.com\n"
+                          "addnode=seed03.getitcoin.com\n"
+                          "addnode=seed04.getitcoin.com\n"
                           "\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);

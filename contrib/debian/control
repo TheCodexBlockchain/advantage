@@ -28,7 +28,7 @@ Build-Depends: debhelper,
  libzmq3-dev,
  dh-systemd
 Standards-Version: 3.9.2
-Homepage: https://www.advantageblockchain.com
+Homepage: https://getitcoin.com
 Vcs-Git: git://github.com/TheCodexBlockchain/Advantage.git
 Vcs-Browser: https://github.com/TheCodexBlockchain/Advantage
 

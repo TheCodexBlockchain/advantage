@@ -3479,8 +3479,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
         <translation>2) Waarom is mijn itcoin niet besteedbaar?</translation>
     </message>
     <message>
-        <source>https://www.advantageblockchain.com/</source>
-        <translation>https://www.advantageblockchain.com/</translation>
+        <source>https://getitcoin.com/</source>
+        <translation>https://getitcoin.com/</translation>
     </message>
     <message>
         <source>1</source>
@@ -3529,8 +3529,8 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           Newly received itcoin requires 6 confirmations on the network
-                           to become eligible for spending which can take ~6 minutes.
+                           Newly received itcoin requires 3 confirmations on the network
+                           to become eligible for spending which can take ~3 minutes.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Your itcoin wallet also needs to be completely synchronized
                            to see and spend balances on the network.
