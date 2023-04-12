@@ -421,7 +421,7 @@ void TopBar::updateStakingStatus()
                            !walletModel->isWalletLocked() &&
                            fStakingActive);
 
-    // Taking itcoin of this timer to update Tor status if needed.
+    // Taking advantage of this timer to update Tor status if needed.
     updateTorIcon();
 
     if(fStakingActive && fStakingStatus && pwalletMain->pStakerStatus->GetLastValue() > 100) {

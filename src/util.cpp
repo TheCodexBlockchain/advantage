@@ -377,7 +377,7 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
 {
     fs::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty tecsatether.conf if it does not exist
+        // Create empty itcoin.conf if it does not exist
         FILE* configFile = fsbridge::fopen(GetConfigFile(), "a");
         if (configFile != NULL){
             std::string strHeader = "# itcoin config file\n"

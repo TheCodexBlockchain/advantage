@@ -579,6 +579,23 @@ RES_IMAGES = \
   qt/res/images/splash_testnet.png \
   qt/res/images/splash_regtest.png
 
+RES_FONTS = \
+  qt/pivx/res/font/Nevan.ttf \
+  qt/pivx/res/font/Nunito-Black.ttf \
+  qt/pivx/res/font/Nunito-BlackItalic.ttf \
+  qt/pivx/res/font/Nunito-Bold.ttf \
+  qt/pivx/res/font/Nunito-BoldItalic.ttf \
+  qt/pivx/res/font/Nunito-ExtraBold.ttf \
+  qt/pivx/res/font/Nunito-ExtraBoldItalic.ttf \
+  qt/pivx/res/font/Nunito-ExtraLight.ttf \
+  qt/pivx/res/font/Nunito-ExtraLightItalic.ttf \
+  qt/pivx/res/font/Nunito-Italic.ttf \
+  qt/pivx/res/font/Nunito-Light.ttf \
+  qt/pivx/res/font/Nunito-LightItalic.ttf \
+  qt/pivx/res/font/Nunito-Regular.ttf \
+  qt/pivx/res/font/Nunito-SemiBold.ttf \
+  qt/pivx/res/font/Nunito-SemiBoldItalic.ttf
+
 RES_CSS = \
   qt/res/css/default.css \
   qt/pivx/res/css/style_dark.css \
@@ -595,7 +612,7 @@ qt_libbitcoinqt_a_CXXFLAGS = $(AM_CXXFLAGS) $(QT_PIE_FLAGS)
 qt_libbitcoinqt_a_OBJCXXFLAGS = $(AM_OBJCXXFLAGS) $(QT_PIE_FLAGS)
 
 qt_libbitcoinqt_a_SOURCES = $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(QT_FORMS_UI) \
-  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS)
+  $(QT_QRC) $(QT_QRC_LOCALE) $(QT_TS) $(PROTOBUF_PROTO) $(RES_ICONS) $(RES_IMAGES) $(RES_FONTS) $(RES_CSS)
 
 nodist_qt_libbitcoinqt_a_SOURCES = $(QT_MOC_CPP) $(QT_MOC) $(PROTOBUF_CC) \
   $(PROTOBUF_H) $(QT_QRC_CPP) $(QT_QRC_LOCALE_CPP)
@@ -658,7 +675,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 	@rm $(@D)/temp_$(<F)
 
-$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(PROTOBUF_H)
+$(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_FONTS) $(RES_CSS) $(PROTOBUF_H)
 	@test -f $(RCC)
 	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name pivx $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@

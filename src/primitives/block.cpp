@@ -1,7 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2015-2019 The PIVX developers
-// Copyright (c) 2021-2022 The DECENOMY Core Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -14,10 +13,9 @@
 #include "utilstrencodings.h"
 #include "util.h"
 
-// TODO: Change X11KVS algorithm call to whatever the coin being adapted is used.
 uint256 CBlockHeader::GetHash() const
 {
-     if (nVersion < 4)  { // nVersion = 1, 2, 3
+     if (nVersion < 4)  {
 #if defined(WORDS_BIGENDIAN)
         uint8_t data[80];
         WriteLE32(&data[0], nVersion);
@@ -26,14 +24,13 @@ uint256 CBlockHeader::GetHash() const
         WriteLE32(&data[68], nTime);
         WriteLE32(&data[72], nBits);
         WriteLE32(&data[76], nNonce);
-
-        return HashX11KVS(data, data + 80);
+        return HashQuark(data, data + 80);
 #else // Can take shortcut for little endian
-        return HashX11KVS(BEGIN(nVersion), END(nNonce));
+        return HashQuark(BEGIN(nVersion), END(nNonce));
 #endif
     }
-	
-    return SerializeHash(*this); // nVersion >= 4
+	// version >= 4
+    return SerializeHash(*this);
 }
 
 std::string CBlock::ToString() const

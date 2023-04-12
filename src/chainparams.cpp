@@ -79,7 +79,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000009908c1a698482e5e726435c4c35a92544a295309bb06a84945567f5f62b")) // Genesis
+    (0, uint256("0x000009b39bb66a715cd607f03edc9a11266c2093cc041208a0db6055de50de4a")) // Genesis
 ; 
 
 static const Checkpoints::CCheckpointData data =
@@ -87,7 +87,7 @@ static const Checkpoints::CCheckpointData data =
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-    (0, uint256S("0x00000270d6554fb682d5a87533cbd76dfb1194493af142ca9d8ff107c0c9eb87"));
+    (0, uint256S("0x000006215453a491a8399669a0b85b159c2e5b96dc9ddcb67e12f04cbc952f11"));
 
 static const Checkpoints::CCheckpointData dataTestnet =
 	{ &mapCheckpoints, 1679841112, 0, 0 };
@@ -96,7 +96,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256S("0x0"));
 
 static const Checkpoints::CCheckpointData dataRegtest =
-	{ &mapCheckpoints, 1679841111, 0, 0 };
+	{ &mapCheckpoints, 1679841113, 0, 0 };
 
 class CMainParams : public CChainParams
 {
@@ -106,10 +106,10 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1679841111, 458136, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841111, 292899, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x000009908c1a698482e5e726435c4c35a92544a295309bb06a84945567f5f62b"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000009b39bb66a715cd607f03edc9a11266c2093cc041208a0db6055de50de4a"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -215,10 +215,10 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1679841112, 1622751, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841112, 419920, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x00000270d6554fb682d5a87533cbd76dfb1194493af142ca9d8ff107c0c9eb87"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000006215453a491a8399669a0b85b159c2e5b96dc9ddcb67e12f04cbc952f11"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
@@ -318,9 +318,9 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1679841113, 251774, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841113, 489325, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000d1538f22f4b21083f47cb5eeaa2dd0efc262ceb8d49ab6d1a8b445526b8"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000002c71690096cd435a4b15de3f8807e06d28d0ef1964afc6eb5becac9a8b6"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
@@ -330,7 +330,7 @@ public:
         consensus.nCoinbaseMaturity = 3;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 250 * COIN;
+        consensus.nMaxMoneyOut = 45000000 * COIN;
         consensus.nPoolMaxTransactions = 2;
         consensus.nStakeMinAge = 0;
         consensus.nStakeMinDepth = 2;

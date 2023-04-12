@@ -558,6 +558,7 @@ int main(int argc, char* argv[])
     BitcoinApplication app(argc, argv);
 
     // Custom fonts.
+    QFontDatabase::addApplicationFont(":/font/Nevan.ttf");
     QFontDatabase::addApplicationFont(":/font/Nunito-Black.ttf");
     QFontDatabase::addApplicationFont(":/font/Nunito-BlackItalic.ttf");
     QFontDatabase::addApplicationFont(":/font/Nunito-Bold.ttf");
@@ -572,28 +573,6 @@ int main(int argc, char* argv[])
     QFontDatabase::addApplicationFont(":/font/Nunito-Regular.ttf");
     QFontDatabase::addApplicationFont(":/font/Nunito-SemiBold.ttf");
     QFontDatabase::addApplicationFont(":/font/Nunito-SemiBoldItalic.ttf");
-
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Black.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-BlackItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Bold.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-BoldItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-ExtraBold.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-ExtraBoldItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-ExtraLight.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-ExtraLightItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Italic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Light.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-LightItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Regular.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-SemiBold.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-SemiBoldItalic.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-Thin.ttf");
-    QFontDatabase::addApplicationFont(":/font/Montserrat-ThinItalic.ttf");
-
-    QFontDatabase::addApplicationFont(":/font/Nevan.ttf");
-    QFontDatabase::addApplicationFont(":/font/Azonix.otf");
-    QFontDatabase::addApplicationFont(":/font/GoodTiming.ttf");
-    QFontDatabase::addApplicationFont(":/font/BankGothicLight.otf");
 
     // Register meta types used for QMetaObject::invokeMethod
     qRegisterMetaType<bool*>();
