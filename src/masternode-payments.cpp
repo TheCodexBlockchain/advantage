@@ -339,7 +339,7 @@ void CMasternodePayments::FillBlockPayee(CMutableTransaction& txNew, const CBloc
              * Two additional outputs are appended for the masternode and treasury payment
              */
             unsigned int i = txNew.vout.size();
-            txNew.vout.resize(i + treasuryActive ? 2 : 1);
+            txNew.vout.resize(i + (treasuryActive ? 2 : 1));
             txNew.vout[i].scriptPubKey = masternodePayee;
             txNew.vout[i].nValue = masternodePayment;
             if (treasuryActive) {
