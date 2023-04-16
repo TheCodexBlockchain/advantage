@@ -29,8 +29,8 @@ Build-Depends: debhelper,
  dh-systemd
 Standards-Version: 3.9.2
 Homepage: https://getitcoin.com
-Vcs-Git: git://github.com/TheCodexBlockchain/Advantage.git
-Vcs-Browser: https://github.com/TheCodexBlockchain/Advantage
+Vcs-Git: git://github.com/TheCodexBlockchain/itcoin.git
+Vcs-Browser: https://github.com/TheCodexBlockchain/itcoin
 
 Package: itcoind
 Architecture: any

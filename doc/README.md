@@ -26,7 +26,7 @@ Drag itcoin-Qt to your applications folder, and then run itcoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [itcoin Wiki](https://github.com/TheCodexBlockchain/Advantage/)
+* See the documentation at the [itcoin Wiki](https://github.com/TheCodexBlockchain/itcoin/)
 for help and more information.
 * Join our Discord server [Discord Server](https://discord.gg/vCgKhFFeJt)
 
@@ -48,7 +48,7 @@ The itcoin repo's [root README](/README.md) contains relevant information on the
 - [Multiwallet Qt Development](multiwallet-qt.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://github.com/TheCodexBlockchain/Advantage/)
+- [Source Code Documentation (External Link)](https://github.com/TheCodexBlockchain/itcoin/)
 - [Translation Process](translation_process.md)
 - [Unit Tests](unit-tests.md)
 - [Unauthenticated REST Interface](REST-interface.md)

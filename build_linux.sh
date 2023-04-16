@@ -34,7 +34,7 @@ esac
 
 # Clone code from official Github repository
 	rm -rf itcoin
-	git clone https://github.com/TheCodexBlockchain/Advantage.git
+	git clone https://github.com/TheCodexBlockchain/itcoin.git
 
 # Entering directory
 	cd itcoin
