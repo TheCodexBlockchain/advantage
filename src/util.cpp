@@ -398,6 +398,14 @@ void ReadConfigFile(std::map<std::string, std::string>& mapSettingsRet,
                           "addnode=seed02.getitcoin.com\n"
                           "addnode=seed03.getitcoin.com\n"
                           "addnode=seed04.getitcoin.com\n"
+                          "addnode=seed05.getitcoin.com\n"
+                          "addnode=seed06.getitcoin.com\n"
+                          "\n"
+                          "# MASTERNODES:\n"
+                          "# masternode=1\n"
+                          "# externalip=X.X.X.X\n"
+                          "# masternodeaddr=X.X.X.X:8338\n"
+                          "# masternodeprivkey=\n"
                           "\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);

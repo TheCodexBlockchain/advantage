@@ -79,15 +79,19 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000009b39bb66a715cd607f03edc9a11266c2093cc041208a0db6055de50de4a")) // Genesis
+    (0, uint256("0x000009908c1a698482e5e726435c4c35a92544a295309bb06a84945567f5f62b")) // Genesis
+    (1, uint256("0x000008f480350e9d8565dd8715859560bbadb3448bda369b9ea3c5807f3ac676"))
+    (3, uint256("0x0000046c8004374f73f1acda45695bd424447da8e840284e45a3a6436fa5d413"))
+    (6, uint256("0x000008bb953c56f4676b5283f5ee8014e3bb4a6d1d977aa394096565c7c00551"))
+    (505, uint256("0x9015d5cc4e8d2cb8b4d3f05ee3fdd8c2a4d63041fb2da4935173187e923079b0"))
 ; 
 
 static const Checkpoints::CCheckpointData data =
-	{ &mapCheckpoints, 1679841111, 0, 0 };
+	{ &mapCheckpoints, 1681797420, 962, 1.0000 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
-    (0, uint256S("0x000006215453a491a8399669a0b85b159c2e5b96dc9ddcb67e12f04cbc952f11"));
+    (0, uint256S("0x00000270d6554fb682d5a87533cbd76dfb1194493af142ca9d8ff107c0c9eb87"));
 
 static const Checkpoints::CCheckpointData dataTestnet =
 	{ &mapCheckpoints, 1679841112, 0, 0 };
@@ -96,7 +100,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256S("0x0"));
 
 static const Checkpoints::CCheckpointData dataRegtest =
-	{ &mapCheckpoints, 1679841113, 0, 0 };
+	{ &mapCheckpoints, 1679841111, 0, 0 };
 
 class CMainParams : public CChainParams
 {
@@ -106,10 +110,10 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        genesis = CreateGenesisBlock(1679841111, 292899, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841111, 458136, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x000009b39bb66a715cd607f03edc9a11266c2093cc041208a0db6055de50de4a"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000009908c1a698482e5e726435c4c35a92544a295309bb06a84945567f5f62b"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = false;
@@ -121,16 +125,16 @@ public:
         consensus.nFutureTimeDriftPoS = 180;
         consensus.nMaxMoneyOut = 45000000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
-        consensus.nStakeMinAge = 1 * 60 * 60;
-        consensus.nStakeMinDepth = 20;
-        consensus.nStakeMinDepthV2 = 20;
+        consensus.nStakeMinAge = 3 * 60;
+        consensus.nStakeMinDepth = 5;
+        consensus.nStakeMinDepthV2 = 30;
         consensus.nTargetTimespan = 40 * 60;
         consensus.nTargetTimespanV2 = 30 * 60;
         consensus.nTargetSpacing = 1 * 60;
         consensus.nTimeSlotLength = 15;
 
         // spork keys
-        consensus.strSporkPubKey = "035d32754b87da4cac2a47a041f3ea5e1e49aa4e4e70ad1bfe7b6e956cf586088d";
+        consensus.strSporkPubKey = "0333ff627c6ab58ebf46a75e938b42a15fbd51d9b11d96fabad8c677109fce28f3";
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
@@ -143,39 +147,41 @@ public:
         // Network upgrades
         consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight                   = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight              = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
-        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 101;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 141;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 141;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 151;
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 161;
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 171;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 501;
-        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = 15000;
+        consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 51;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 73;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 73;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 78;
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 83;
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 88;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 251;
+        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = 5751;
 
-        consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock                    = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].hashActivationBlock                  = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].hashActivationBlock      = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].hashActivationBlock       = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock = uint256S("0x0");
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].hashActivationBlock     = uint256S("0x0");
+        consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock                    = uint256S("0xd39b142efb0b8dc81408f85b1a571e0d4f51bc834d0e08086e379d0a65b6a5e0");
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0x1eb89b5a665c108b75e6f43a7a20a898a227d636012404ab15c41a5b54acb542");
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].hashActivationBlock                  = uint256S("0x1eb89b5a665c108b75e6f43a7a20a898a227d636012404ab15c41a5b54acb542");
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].hashActivationBlock      = uint256S("0xe3431b2f38b7a1849bf712f045bb0e89c3ad6d807e641b1cfd8761889e743e0f");
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].hashActivationBlock       = uint256S("0x76a0f4e2061838c93e414f0ad2125cb5c62da756e52a7cf04ff1a623fb9c72a3");
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].hashActivationBlock = uint256S("0xe5a7dc6b87f5cb5add2ce4b895b7b1dab92751ff6140887a721473f4bea3972f");
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].hashActivationBlock     = uint256S("0x2f532c49d0d0c3c4f4399de32a2bd683cfd953541dcb1c485bb509fd1c53f3be");
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].hashActivationBlock     = uint256S("0x0");
 
         // Treasury
         consensus.nTreasuryActivationHeight = 3;
         consensus.nTreasuryPercentage = 23;
-        consensus.strTreasuryAddress = "i3qRocUsu1FSLeFdrJj2GGPP5NdDMuwD3D";
+        consensus.strTreasuryAddress = "i81JLdo3j4a6y2pdxcrCms8TiHyfgZn6D3";
 
-        pchMessageStart[0] = 0xf4;
-        pchMessageStart[1] = 0xf4;
-        pchMessageStart[2] = 0xf4;
-        pchMessageStart[3] = 0xf4;
+        pchMessageStart[0] = 0xf1;
+        pchMessageStart[1] = 0xf1;
+        pchMessageStart[2] = 0xf1;
+        pchMessageStart[3] = 0xf1;
         nDefaultPort = __PORT_MAINNET__;
 
         vSeeds.push_back(CDNSSeedData("seeder1", "seed01.getitcoin.com"));
         vSeeds.push_back(CDNSSeedData("seeder2", "seed02.getitcoin.com"));
         vSeeds.push_back(CDNSSeedData("seeder3", "seed03.getitcoin.com"));
         vSeeds.push_back(CDNSSeedData("seeder4", "seed04.getitcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seeder4", "seed05.getitcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seeder4", "seed06.getitcoin.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 102);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 103);
@@ -215,10 +221,10 @@ public:
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
 
-        genesis = CreateGenesisBlock(1679841112, 419920, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841112, 1622751, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x000006215453a491a8399669a0b85b159c2e5b96dc9ddcb67e12f04cbc952f11"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000270d6554fb682d5a87533cbd76dfb1194493af142ca9d8ff107c0c9eb87"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
@@ -318,9 +324,9 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
 
-        genesis = CreateGenesisBlock(1679841113, 489325, 0x1e0ffff0, 1, 0 * COIN);
+        genesis = CreateGenesisBlock(1679841113, 251774, 0x1e0ffff0, 1, 0 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000002c71690096cd435a4b15de3f8807e06d28d0ef1964afc6eb5becac9a8b6"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000d1538f22f4b21083f47cb5eeaa2dd0efc262ceb8d49ab6d1a8b445526b8"));
         assert(genesis.hashMerkleRoot == uint256S("0xb5a80f37a095330b1cbc83b64a56167deb1af949fcf80e38d562d2fef3f1fb05"));
 
         consensus.fPowAllowMinDifficultyBlocks = true;
@@ -330,7 +336,7 @@ public:
         consensus.nCoinbaseMaturity = 3;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 45000000 * COIN;
+        consensus.nMaxMoneyOut = 250 * COIN;
         consensus.nPoolMaxTransactions = 2;
         consensus.nStakeMinAge = 0;
         consensus.nStakeMinDepth = 2;

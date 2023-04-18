@@ -1,6 +1,6 @@
 /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 HH       CONTAINER
-HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
+HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH HH*/
 
 * {
   font-family: Nunito;
@@ -363,19 +363,19 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 
 *[cssClass="text-title-topbar"] {
-  color:#EAEADE;
-  font-size:15px;
-  font-weight: ligther;
+    color:#EAEADE;
+    font-size:15px;
+    font-weight: ligther;
 }
 
 *[cssClass="amount-topbar"] {
-  color:#31A3FF;
-  font-size:20px;
+    color:#31A3FF;
+    font-size:20px;
 }
 
 *[cssClass="amount-small-topbar"] {
-  color:#31A3FF;
-  font-size:20px;
+    color:#31A3FF;
+    font-size:20px;
 }
 
 *[cssClass="container-qr"] {
@@ -759,7 +759,7 @@ QPushButton[cssClass="btn-check-lock-sub-menu-staking"]:checked:hover {
 }
 
 *[cssClass="top-sub-menu"] {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 *[cssClass="top-sub-menu-text"] {
@@ -2899,6 +2899,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
   qproperty-iconSize: 100px 100px;
   background-color: transparent;
 }
+
 
 
 *[cssClass="img-empty-staking-on"] {
