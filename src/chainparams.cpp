@@ -10,19 +10,19 @@
 
 
 /*
-  _   _                    _         
- (_) | |                  (_)        
-  _  | |_    ___    ___    _   _ __  
- | | | __|  / __|  / _ \  | | | '_ \ 
+  _   _                    _
+ (_) | |                  (_)
+  _  | |_    ___    ___    _   _ __
+ | | | __|  / __|  / _ \  | | | '_ \
  | | | |_  | (__  | (_) | | | | | | |
- |_|  \__|  \___|  \___/  |_| |_| |_|    
+ |_|  \__|  \___|  \___/  |_| |_| |_|
 
-  _     _            _        _           _       
- | |__ | | ___   ___| | _____| |__   __ _(_)_ __  
- | '_ \| |/ _ \ / __| |/ / __| '_ \ / _` | | '_ \ 
+  _     _            _        _           _
+ | |__ | | ___   ___| | _____| |__   __ _(_)_ __
+ | '_ \| |/ _ \ / __| |/ / __| '_ \ / _` | | '_ \
  | |_) | | (_) | (__|   < (__| | | | (_| | | | | |
  |_.__/|_|\___/ \___|_|\_\___|_| |_|\__,_|_|_| |_|
-                                     
+
 */
 
 
@@ -69,21 +69,25 @@ static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits
 
 
 /**
-  __  __           _                          _   
- |  \/  |   __ _  (_)  _ __    _ __     ___  | |_ 
+  __  __           _                          _
+ |  \/  |   __ _  (_)  _ __    _ __     ___  | |_
  | |\/| |  / _` | | | | '_ \  | '_ \   / _ \ | __|
- | |  | | | (_| | | | | | | | | | | | |  __/ | |_ 
+ | |  | | | (_| | | | | | | | | | | | |  __/ | |_
  |_|  |_|  \__,_| |_| |_| |_| |_| |_|  \___|  \__|
-                                                  
+
  */
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
     (0, uint256("0x000009b39bb66a715cd607f03edc9a11266c2093cc041208a0db6055de50de4a")) // Genesis
-; 
+    (50, uint256("0x000000b83c4a42db899e5d3692e458d1b62e2fb6a898ca94f041ecc613bffb3b"))
+    (100, uint256("0x000000f032022858b638d9e2e385921cdbdd3c78ab2dbb52f8a2a85ab9d12a74"))
+    (101, uint256("0x8d9ad16118c3e7eb935a0d862f7d995149110eab609f51d505279d5e773fd0f5"))
+    (300, uint256("0x6815bdb9c69fdff58b48b14371f418b34d9c97ca6c16eab60cac3f0bc3cc7977"))
+    (600, uint256("0x73978ccfeeb10db39dc672bdac2b4d22f1cd338e854262481dbc791bb4d68831"));
 
 static const Checkpoints::CCheckpointData data =
-	{ &mapCheckpoints, 1679841111, 0, 0 };
+	{ &mapCheckpoints, 1682001825, 1101, 1440 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of
@@ -119,7 +123,7 @@ public:
         consensus.nCoinbaseMaturity = 3;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 45000000000 * COIN;
+        consensus.nMaxMoneyOut = 46000000000 * COIN;
         consensus.nPoolMaxTransactions = 3;
         consensus.nStakeMinAge = 1 * 60 * 60;
         consensus.nStakeMinDepth = 20;
@@ -130,7 +134,7 @@ public:
         consensus.nTimeSlotLength = 15;
 
         // spork keys
-        consensus.strSporkPubKey = "035d32754b87da4cac2a47a041f3ea5e1e49aa4e4e70ad1bfe7b6e956cf586088d";
+        consensus.strSporkPubKey = "0272bff0e938c7a60fb910ff9b91c60523deb7f7b750804484a9af82df1e7460b6";
         consensus.strSporkPubKeyOld = "";
         consensus.nTime_EnforceNewSporkKey = 0;
         consensus.nTime_RejectOldSporkKey = 0;
@@ -144,13 +148,13 @@ public:
         consensus.vUpgrades[Consensus::BASE_NETWORK].nActivationHeight                   = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
         consensus.vUpgrades[Consensus::UPGRADE_TESTDUMMY].nActivationHeight              = Consensus::NetworkUpgrade::NO_ACTIVATION_HEIGHT;
         consensus.vUpgrades[Consensus::UPGRADE_POS].nActivationHeight                    = 101;
-        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 141;
-        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 141;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 151;
-        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 161;
-        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 171;
-        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 501;
-        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = 15000;
+        consensus.vUpgrades[Consensus::UPGRADE_POS_V2].nActivationHeight                 = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_BIP65].nActivationHeight                  = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MODIFIER_V2].nActivationHeight      = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_TIME_PROTOCOL_V2].nActivationHeight       = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_P2PKH_BLOCK_SIGNATURES].nActivationHeight = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_STAKE_MIN_DEPTH_V2].nActivationHeight     = 101;
+        consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].nActivationHeight     = Consensus::NetworkUpgrade::ALWAYS_ACTIVE;
 
         consensus.vUpgrades[Consensus::UPGRADE_POS].hashActivationBlock                    = uint256S("0x0");
         consensus.vUpgrades[Consensus::UPGRADE_POS_V2].hashActivationBlock                 = uint256S("0x0");
@@ -162,9 +166,9 @@ public:
         consensus.vUpgrades[Consensus::UPGRADE_MASTERNODE_RANK_V2].hashActivationBlock     = uint256S("0x0");
 
         // Treasury
-        consensus.nTreasuryActivationHeight = 3;
+        consensus.nTreasuryActivationHeight = 2;
         consensus.nTreasuryPercentage = 23;
-        consensus.strTreasuryAddress = "i3qRocUsu1FSLeFdrJj2GGPP5NdDMuwD3D";
+        consensus.strTreasuryAddress = "iEz5k1Frk4oTLr5QSFmdyRxawdBZcQyRMT";
 
         pchMessageStart[0] = 0xf4;
         pchMessageStart[1] = 0xf4;
@@ -200,12 +204,12 @@ static CMainParams mainParams;
 
 
 /**
-  _____                _                    _   
- |_   _|   ___   ___  | |_   _ __     ___  | |_ 
+  _____                _                    _
+ |_   _|   ___   ___  | |_   _ __     ___  | |_
    | |    / _ \ / __| | __| | '_ \   / _ \ | __|
-   | |   |  __/ \__ \ | |_  | | | | |  __/ | |_ 
+   | |   |  __/ \__ \ | |_  | | | | |  __/ | |_
    |_|    \___| |___/  \__| |_| |_|  \___|  \__|
-                                                
+
  */
 class CTestNetParams : public CMainParams
 {
@@ -303,12 +307,12 @@ static CTestNetParams testNetParams;
 
 
 /**
-  ____                   _                  _   
- |  _ \    ___    __ _  | |_    ___   ___  | |_ 
+  ____                   _                  _
+ |  _ \    ___    __ _  | |_    ___   ___  | |_
  | |_) |  / _ \  / _` | | __|  / _ \ / __| | __|
- |  _ <  |  __/ | (_| | | |_  |  __/ \__ \ | |_ 
+ |  _ <  |  __/ | (_| | | |_  |  __/ \__ \ | |_
  |_| \_\  \___|  \__, |  \__|  \___| |___/  \__|
-                 |___/                          
+                 |___/
  */
 class CRegTestParams : public CTestNetParams
 {
