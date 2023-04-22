@@ -1,7 +1,7 @@
 ![](https://i.imgur.com/EI4Qrd1.jpeg)
 ### Coin Specs
 - PoW Algorithm: Quark
-- Premine: 40,000,000,000 itcoin
+- Premine: 45,000,000,000 itcoin
 - PoW Blocks: 1 - 100
 - PoS Blocks: Starting from 101+
 - Block Time: 60 Seconds
