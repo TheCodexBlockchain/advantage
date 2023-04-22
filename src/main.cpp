@@ -1024,10 +1024,10 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState &state, const C
             }
         }
 
-        if (fRejectAbsurdFee && nFees > nValueIn * 0.05)
-            return state.Invalid(false,
-                REJECT_HIGHFEE, "absurdly-high-fee",
-                strprintf("%d > %d", nFees, nValueIn * 0.05));
+        // if (fRejectInsaneFee && nFees > nValueIn * 0.05)
+        //     return error("AcceptableInputs: : insane fees %s, %d > %d",
+        //         hash.ToString(),
+        //         nFees, nValueIn * 0.05);
 
         // As zero fee transactions are not going to be accepted in the near future (4.0) and the code will be fully refactored soon.
         // This is just a quick inline towards that goal, the mempool by default will not accept them. Blocking
@@ -1268,10 +1268,10 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
             }
         }
 
-        if (fRejectInsaneFee && nFees > nValueIn * 0.05)
-            return error("AcceptableInputs: : insane fees %s, %d > %d",
-                hash.ToString(),
-                nFees, nValueIn * 0.05);
+        // if (fRejectAbsurdFee && nFees > nValueIn * 0.05)
+        //     return state.Invalid(false,
+        //         REJECT_HIGHFEE, "absurdly-high-fee",
+        //         strprintf("%d > %d", nFees, nValueIn * 0.05));
 
         bool fCLTVIsActivated = consensus.NetworkUpgradeActive(chainActive.Tip()->nHeight, Consensus::UPGRADE_BIP65);
 
